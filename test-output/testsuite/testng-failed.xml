@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="methods" name="Failed suite [testsuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.supplycopia.report.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="3" parallel="methods" name="testname(failed)">
+    <classes>
+      <class name="com.supplycopia.template.test.APIUserAccessCheck">
+        <methods>
+          <include name="getResult"/>
+          <include name="Reportsetup"/>
+          <include name="UserAccessTest"/>
+          <include name="testName"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.supplycopia.template.test.APIUserAccessCheck -->
+    </classes>
+  </test> <!-- testname(failed) -->
+</suite> <!-- Failed suite [testsuite] -->

@@ -1,0 +1,1 @@
+# sc-qa-taf-template

@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="testsuite">
+	<test name="testname">
+		<groups>
+            <run>
+              <include name = "group2"></include>
+            </run>
+        </groups>
+        <classes>
+			<class name="com.supplycopia.template.test.UserLoginTests"></class>
+			<class name="com.supplycopia.template.test.UserAccessCheck">
+			</class>	
+		</classes>
+	</test>
+	<listeners>	
+		<!-- <listener class-name="com.supplycopia.listeners.AutoTestListener"></listener>
+		<listener class-name="com.supplycopia.listeners.RetryListener"></listener>
+		 -->
+		 <listener class-name="com.supplycopia.report.ExtentReportListener"></listener>
+	</listeners>
+</suite> 
