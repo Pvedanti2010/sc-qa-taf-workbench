@@ -1,152 +1,648 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Starting Test Execution]]>
+      <![CDATA[####### Starting  Test Case: CategoryMasterTest #######]]>
+    </line>
+    <line>
+      <![CDATA[Test Execution ID : 21Jan_114111]]>
+    </line>
+    <line>
+      <![CDATA[Getting test data for CategoryMasterTest]]>
+    </line>
+    <line>
+      <![CDATA[checking if driver exist]]>
+    </line>
+    <line>
+      <![CDATA[Getting driver ]]>
+    </line>
+    <line>
+      <![CDATA[Getting driver ]]>
+    </line>
+    <line>
+      <![CDATA[Getting driver ]]>
+    </line>
+    <line>
+      <![CDATA[Setting driver]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114115.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Getting driver ]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114115.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Launching driver]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114116.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Executing; ui_launch]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> name: userId]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Setting value on element USER_NAME]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114122.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> name: password]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Setting value on element PASSWORD]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114123.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //input[@value='Next']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element LOGIN_BTN]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114123.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Getting driver ]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114123.jpg]]>
+    </line>
+    <line>
+      <![CDATA[checking if driver exist]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114124.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Getting driver ]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114124.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Getting driver ]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114124.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //div[@class='greet-text' and text()=' Welcome Back! ']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //p[text()='Procedure Cards']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //p[text()='VIM-Workbench']/../../../div/p[contains(text(),'Start Using')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Successful navigation is validated for LaunchPad]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //p[text()='VIM-Workbench']/../../../div/p[contains(text(),'Start Using')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element Procedure button]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114127.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Navigating to Preference card]]>
+    </line>
+    <line>
+      <![CDATA[Getting driver ]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114128.jpg]]>
+    </line>
+    <line>
+      <![CDATA[checking if driver exist]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114128.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Getting driver ]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114128.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Getting driver ]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114128.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //app-workbench-your-apps//div[text()='Your Workbench Apps']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //div[text()='Bulk Upload']/../..//div[@class='arrow arrow-right']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Successful navigation is validated for Workbench]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //div[text()='Bulk Upload']/../..//div[@class='arrow arrow-right']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element Bulk Upload link]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114129.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Navigating to Preference card]]>
+    </line>
+    <line>
+      <![CDATA[Getting driver ]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114129.jpg]]>
+    </line>
+    <line>
+      <![CDATA[checking if driver exist]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114130.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Getting driver ]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114130.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Getting driver ]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114130.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //ul[@class='process-step']/li/span[text()='File Upload']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Successful navigation is validated for BulkUpload]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //button[text()='Upload']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element Upload button]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114133.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //button/span[text()='Proceed To Upload']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element Proceed To Upload button]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114134.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //button[@class='importBtn']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element Proceed To Upload button]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114136.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //div[@id='cdk-drop-list-1']/div[2]/span]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //div[@id='cdk-drop-list-0']/div[2]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //div[@id='cdk-drop-list-1']/div[1]/span]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //div[@id='cdk-drop-list-0']/div[1]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //button[@class='saveBtn']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element proceedToReview&Edit]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114144.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //a[@class='text-danger']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //span[@class='totalCount']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //button[@class='saveBtn']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element proceedToUpdate]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114149.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //a[@class='text-danger']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //span[@class='totalCount']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //button[@class='saveBtn']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element proceedToUpdate]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114154.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //app-confirm-dialog//button[text()='Yes']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element Confirmation Yes button]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114154.jpg]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //app-workbench-success-dialog//p[contains(text(),'All the attributes have been update')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[####### End of Test Case: CategoryMasterTest #######]]>
+    </line>
+    <line>
+      <![CDATA[closing driver]]>
+    </line>
+    <line>
+      <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114156.jpg]]>
     </line>
   </reporter-output>
-  <suite started-at="2021-12-20T14:09:57 IST" name="Default suite" finished-at="2021-12-20T14:09:57 IST" duration-ms="41">
+  <suite started-at="2022-01-21T11:41:10 IST" name="Default suite" finished-at="2022-01-21T11:41:57 IST" duration-ms="46836">
     <groups>
-      <group name="group1">
-        <method signature="APIUserAccessCheck.UserAccessTest()[pri:0, instance:com.supplycopia.template.test.APIUserAccessCheck@7526515b]" name="UserAccessTest" class="com.supplycopia.template.test.APIUserAccessCheck"/>
-      </group> <!-- group1 -->
+      <group name="categoryMaster">
+        <method signature="CategoryMaster.CategoryMasterTest()[pri:0, instance:com.supplycopia.template.bulkupload.CategoryMaster@78e4deb0]" name="CategoryMasterTest" class="com.supplycopia.template.bulkupload.CategoryMaster"/>
+      </group> <!-- categoryMaster -->
     </groups>
-    <test started-at="2021-12-20T14:09:57 IST" name="Default test" finished-at="2021-12-20T14:09:57 IST" duration-ms="41">
-      <class name="com.supplycopia.template.test.APIUserAccessCheck">
-        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.supplycopia.template.test.APIUserAccessCheck@7526515b]" started-at="2021-12-20T14:09:57 IST" name="setUp" finished-at="2021-12-20T14:09:57 IST" duration-ms="10" status="PASS">
+    <test started-at="2022-01-21T11:41:10 IST" name="Default test" finished-at="2022-01-21T11:41:57 IST" duration-ms="46836">
+      <class name="com.supplycopia.template.bulkupload.CategoryMaster">
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.supplycopia.template.bulkupload.CategoryMaster@78e4deb0]" started-at="2022-01-21T11:41:10 IST" name="setUp" finished-at="2022-01-21T11:41:10 IST" duration-ms="16" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@43015c69]]>
+                <![CDATA[org.testng.TestRunner@3f68a7f8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="Reportsetup()[pri:0, instance:com.supplycopia.template.test.APIUserAccessCheck@7526515b]" started-at="2021-12-20T14:09:57 IST" name="Reportsetup" finished-at="2021-12-20T14:09:57 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="Reportsetup()[pri:0, instance:com.supplycopia.template.bulkupload.CategoryMaster@78e4deb0]" started-at="2022-01-21T11:41:10 IST" name="Reportsetup" finished-at="2022-01-21T11:41:10 IST" duration-ms="0" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[Starting Test Execution]]>
-            </line>
           </reporter-output>
         </test-method> <!-- Reportsetup -->
-        <test-method is-config="true" signature="testName(java.lang.reflect.Method)[pri:0, instance:com.supplycopia.template.test.APIUserAccessCheck@7526515b]" started-at="2021-12-20T14:09:57 IST" name="testName" finished-at="2021-12-20T14:09:57 IST" duration-ms="7" status="FAIL">
+        <test-method is-config="true" signature="testName(org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:com.supplycopia.template.bulkupload.CategoryMaster@78e4deb0]" started-at="2022-01-21T11:41:10 IST" name="testName" finished-at="2022-01-21T11:41:12 IST" duration-ms="1976" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.supplycopia.template.test.APIUserAccessCheck.UserAccessTest() throws java.lang.Throwable]]>
+                <![CDATA[org.testng.TestRunner@3f68a7f8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.supplycopia.template.bulkupload.CategoryMaster.CategoryMasterTest() throws java.lang.Throwable]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.ExceptionInInitializerError">
-            <full-stacktrace>
-              <![CDATA[java.lang.ExceptionInInitializerError
-at com.supplycopia.utils.ExcelUtility.<init>(ExcelUtility.java:47)
-at com.supplycopia.base.TestBase.testName(TestBase.java:51)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NullPointerException: inStream parameter is null
-at java.base/java.util.Objects.requireNonNull(Objects.java:246)
-at java.base/java.util.Properties.load(Properties.java:407)
-at com.supplycopia.utils.Configuration.loadProperties(Configuration.java:25)
-at com.supplycopia.utils.Configuration.<clinit>(Configuration.java:15)
-... 34 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ExceptionInInitializerError -->
           <reporter-output>
+            <line>
+              <![CDATA[####### Starting  Test Case: CategoryMasterTest #######]]>
+            </line>
+            <line>
+              <![CDATA[Test Execution ID : 21Jan_114111]]>
+            </line>
+            <line>
+              <![CDATA[Getting test data for CategoryMasterTest]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testName -->
-        <test-method signature="UserAccessTest()[pri:0, instance:com.supplycopia.template.test.APIUserAccessCheck@7526515b]" started-at="2021-12-20T14:09:57 IST" name="UserAccessTest" finished-at="2021-12-20T14:09:57 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.ExceptionInInitializerError">
-            <full-stacktrace>
-              <![CDATA[java.lang.ExceptionInInitializerError
-at com.supplycopia.utils.ExcelUtility.<init>(ExcelUtility.java:47)
-at com.supplycopia.base.TestBase.testName(TestBase.java:51)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NullPointerException: inStream parameter is null
-at java.base/java.util.Objects.requireNonNull(Objects.java:246)
-at java.base/java.util.Properties.load(Properties.java:407)
-at com.supplycopia.utils.Configuration.loadProperties(Configuration.java:25)
-at com.supplycopia.utils.Configuration.<clinit>(Configuration.java:15)
-... 34 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ExceptionInInitializerError -->
+        <test-method signature="CategoryMasterTest()[pri:0, instance:com.supplycopia.template.bulkupload.CategoryMaster@78e4deb0]" started-at="2022-01-21T11:41:12 IST" name="CategoryMasterTest" finished-at="2022-01-21T11:41:55 IST" duration-ms="43421" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[checking if driver exist]]>
+            </line>
+            <line>
+              <![CDATA[Getting driver ]]>
+            </line>
+            <line>
+              <![CDATA[Getting driver ]]>
+            </line>
+            <line>
+              <![CDATA[Getting driver ]]>
+            </line>
+            <line>
+              <![CDATA[Setting driver]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114115.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Getting driver ]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114115.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Launching driver]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114116.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Executing; ui_launch]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> name: userId]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Setting value on element USER_NAME]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114122.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> name: password]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Setting value on element PASSWORD]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114123.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //input[@value='Next']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element LOGIN_BTN]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114123.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Getting driver ]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114123.jpg]]>
+            </line>
+            <line>
+              <![CDATA[checking if driver exist]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114124.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Getting driver ]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114124.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Getting driver ]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114124.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //div[@class='greet-text' and text()=' Welcome Back! ']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //p[text()='Procedure Cards']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //p[text()='VIM-Workbench']/../../../div/p[contains(text(),'Start Using')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Successful navigation is validated for LaunchPad]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //p[text()='VIM-Workbench']/../../../div/p[contains(text(),'Start Using')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element Procedure button]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114127.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Navigating to Preference card]]>
+            </line>
+            <line>
+              <![CDATA[Getting driver ]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114128.jpg]]>
+            </line>
+            <line>
+              <![CDATA[checking if driver exist]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114128.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Getting driver ]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114128.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Getting driver ]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114128.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //app-workbench-your-apps//div[text()='Your Workbench Apps']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //div[text()='Bulk Upload']/../..//div[@class='arrow arrow-right']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Successful navigation is validated for Workbench]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //div[text()='Bulk Upload']/../..//div[@class='arrow arrow-right']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element Bulk Upload link]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114129.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Navigating to Preference card]]>
+            </line>
+            <line>
+              <![CDATA[Getting driver ]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114129.jpg]]>
+            </line>
+            <line>
+              <![CDATA[checking if driver exist]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114130.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Getting driver ]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114130.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Getting driver ]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114130.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //ul[@class='process-step']/li/span[text()='File Upload']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Successful navigation is validated for BulkUpload]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //button[text()='Upload']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element Upload button]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114133.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //button/span[text()='Proceed To Upload']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element Proceed To Upload button]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114134.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //button[@class='importBtn']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element Proceed To Upload button]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114136.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //div[@id='cdk-drop-list-1']/div[2]/span]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //div[@id='cdk-drop-list-0']/div[2]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //div[@id='cdk-drop-list-1']/div[1]/span]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //div[@id='cdk-drop-list-0']/div[1]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //button[@class='saveBtn']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element proceedToReview&Edit]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114144.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //a[@class='text-danger']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //span[@class='totalCount']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //button[@class='saveBtn']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element proceedToUpdate]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114149.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //a[@class='text-danger']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //span[@class='totalCount']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //button[@class='saveBtn']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element proceedToUpdate]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114154.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //app-confirm-dialog//button[text()='Yes']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element Confirmation Yes button]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114154.jpg]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (6628a3f5c6b0332dbcef68978e465f61)] -> xpath: //app-workbench-success-dialog//p[contains(text(),'All the attributes have been update')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[####### End of Test Case: CategoryMasterTest #######]]>
+            </line>
+            <line>
+              <![CDATA[closing driver]]>
+            </line>
+            <line>
+              <![CDATA[C:\Users\smehta\eclipse-workspace\sc-qa-taf-workbench\Reports\Screenshots\21Jan_114111\CategoryMasterTest\CategoryMasterTest_chrome_21_Jan_114156.jpg]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- UserAccessTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.supplycopia.template.test.APIUserAccessCheck@7526515b]" started-at="2021-12-20T14:09:57 IST" name="getResult" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1639989597162" status="SKIP">
+        </test-method> <!-- CategoryMasterTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.supplycopia.template.bulkupload.CategoryMaster@78e4deb0]" started-at="2022-01-21T11:41:55 IST" name="getResult" finished-at="2022-01-21T11:41:57 IST" duration-ms="1390" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CategoryMasterTest status=SUCCESS method=CategoryMaster.CategoryMasterTest()[pri:0, instance:com.supplycopia.template.bulkupload.CategoryMaster@78e4deb0] output=checking if driver exist]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.supplycopia.template.test.APIUserAccessCheck@7526515b]" started-at="2021-12-20T14:09:57 IST" name="tearDown" finished-at="2021-12-20T14:09:57 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.supplycopia.template.bulkupload.CategoryMaster@78e4deb0]" started-at="2022-01-21T11:41:57 IST" name="tearDown" finished-at="2022-01-21T11:41:57 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.supplycopia.template.test.APIUserAccessCheck -->
+      </class> <!-- com.supplycopia.template.bulkupload.CategoryMaster -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
