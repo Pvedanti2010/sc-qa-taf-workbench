@@ -29,16 +29,16 @@ public class CategoryMaster extends BaseTest{
 		selectCustomeSet("Category Master").
 		clickUpload().
 		clickProceedToUpload().
-		uploadFromComputer("C:\\Users\\smehta\\eclipse-workspace\\sc-qa-taf-workbench\\src\\test\\resources\\testfiles\\upload\\Category_Master.xlsx").
+		uploadFromComputer("C:\\Users\\praveen\\Downloads\\Category_Master (31).xlsx").
 		clickImportFile().
 		dragHeader("2", "2").
 		dragHeader("1", "1").
 		proceedToReviewAndEdit().
 		checkValidationErrorsOnReviewAndEdit("0").
-		checktotalRecordsOnReviewAndEdit("4").
+		checktotalRecordsOnReviewAndEdit("10").
 		proceedToUpdate().
 		checkValidationErrorsOnUpdatePage("0").
-		checktotalRecordsOnUpdatePage("4").
+		checktotalRecordsOnUpdatePage("10").
 		saveAndUpdate().
 		confirmUpdate().validateSuccessMessage();
 
