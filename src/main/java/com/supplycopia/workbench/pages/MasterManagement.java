@@ -352,7 +352,7 @@ public class MasterManagement extends BasePage {
 		clickYesBtn();
 		return this;		
 	}
-	public Object bulkDeleteContractsupplier() {
+	public MasterManagement bulkDeleteContractsupplier() {
 		// TODO Auto-generated method stub
 		clickSelectSubcheckbox();
 		clickBulkDelete();
@@ -360,12 +360,18 @@ public class MasterManagement extends BasePage {
 		return this;
 		
 	}
-	public Object exportContractsupplierItems() {
+
+	public MasterManagement exportContractsupplier() {
 		// TODO Auto-generated method stub
+		clickMasterCheckBoxes();
+		clickExport();
+		clickExportButtomTray();
+		clickMasterCheckBoxes();
 		return this;
 		
-		}
+	}
 }
+
 
 		
 	
