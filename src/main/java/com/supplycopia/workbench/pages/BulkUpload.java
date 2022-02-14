@@ -3,16 +3,17 @@ package com.supplycopia.workbench.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Reporter;
+
 import com.supplycopia.report.Log;
-import com.supplycopia.utils.Wait;
+import com.supplycopia.utils.Configuration;
+import com.supplycopia.utils.Pause;
 import com.supplycopia.workbench.base.BasePage;
 
 
 
 public class BulkUpload extends BasePage {
 
-	//div[text()='All Done!']
+	
 	
 	
 	@FindBy(xpath = "//ul[@class='process-step']/li/span[text()='File Upload']" )
@@ -29,6 +30,9 @@ public class BulkUpload extends BasePage {
 	
 	@FindBy(xpath = "//button/span[text()='Proceed To Upload']" )
 	WebElement proceedToUpload_btn;
+	
+	@FindBy(xpath = "//div[@class='uploadContent']//button[@class='uploadBtn']" )
+	WebElement fileUploadPopUp_btn;
 	
 	@FindBy(xpath = "//input[@id='fileDropRef']" )
 	WebElement uploadFile_txt;
@@ -48,20 +52,23 @@ public class BulkUpload extends BasePage {
 	@FindBy(xpath = "//app-confirm-dialog//button[text()='Yes']" )
 	WebElement updateConfirmation;
 	
-	@FindBy(xpath = "//app-workbench-success-dialog//p[contains(text(),'All the attributes have been update')]")
+	@FindBy(xpath = "//app-workbench-success-dialog//p[contains(text(),'All files have been uploaded!')]")
 	WebElement successMessage;
+	
+	@FindBy(xpath = "//div[text()='All Done!']")
+	WebElement uploadSuccessMessage;
 	
 	String ListFromMatch="//div[@id='cdk-drop-list-1']/div[%s]/span";
 	String ListToMatch="//div[@id='cdk-drop-list-0']/div[%s]";
-	
-	
+	String ListToMatchWithText=	"//div[@id='cdk-drop-list-0']/div[count(//div[@class='drag-scroll']/div[@class='drag-col']/div/span[normalize-space(text())='%s']/../preceding-sibling::*)+1]";
+	String ListFromMatchWithText="//div[@id='cdk-drop-list-1']//span[normalize-space(text())='%s']/parent::div";
 	public BulkUpload(){	
     		
 	}
 
 	public BulkUpload validatePageLoad() {
 		// TODO Auto-generated method stub
-		ui_IsElementPresent(ui_waitForElementToAppear(pageIdentifier_ele,Wait.MEDIUM));
+		ui_IsElementPresent(ui_waitForElementToDisplay(pageIdentifier_ele,Pause.MEDIUM));
 		Log.info("Successful navigation is validated for "+this.getClass().getSimpleName());
 		return this;
 	}
@@ -80,7 +87,7 @@ public class BulkUpload extends BasePage {
 	
 	public BulkUpload selectCustomeSet(String customeSet) {
 		// TODO Auto-generated method stub
-		ui_wait(2);
+		ui_wait((int)Pause.V_SMALL);
 		ui_selectValueFromDropDownByText(customeSet_sel, customeSet);
 	    return this;
 	}
@@ -100,19 +107,36 @@ public class BulkUpload extends BasePage {
 	public BulkUpload uploadFromComputer(String file) {
 		// TODO Auto-generated method stub
 		ui_wait(2);
-		uploadFile_txt.sendKeys(file);
+		String completeFile = System.getProperty("user.dir")+"/"+Configuration.get("uploadFilePath")+"//"+file;
+		ui_waitForElementToDisplay(fileUploadPopUp_btn, Pause.MEDIUM);
+		uploadFile_txt.sendKeys(completeFile);
+		
 	    return this;
 	}
+	
+	
+	public BulkUpload validateUploadSuccessMessage() {
+		ui_IsElementPresent(ui_waitForElementToDisplay(uploadSuccessMessage, Pause.HIGH));
+		return this;	
+	}
+	
 	public BulkUpload clickImportFile() {
 		// TODO Auto-generated method stub
 		ui_click(importFile_btn, "Proceed To Upload button");
 	    return this;
 	}
 	
-	public BulkUpload dragHeader(String fromRowItem,String toRowItem) {
+	public BulkUpload dragHeaderWithIndex(String fromRowItem,String toRowItem) {
 		// TODO Auto-generated method stub
 		ui_wait(2);
 		ui_clickHoldAndDrop(ui_getElementWithXpath(String.format(ListFromMatch,fromRowItem)),ui_getElementWithXpath(String.format(ListToMatch, toRowItem)));
+	    return this;
+	}
+	
+	public BulkUpload dragHeaderWithName(String fromRowItem,String toRowItem) {
+		// TODO Auto-generated method stub
+		ui_wait(2);
+		ui_clickHoldAndDrop(ui_getElementWithXpath(String.format(ListFromMatchWithText,fromRowItem)),ui_getElementWithXpath(String.format(ListToMatchWithText, toRowItem)));
 	    return this;
 	}
 	
@@ -166,7 +190,7 @@ public class BulkUpload extends BasePage {
 	}
 	
 	public BulkUpload validateSuccessMessage() {
-		ui_IsElementPresent(ui_waitForElementToAppear(successMessage, Wait.HIGH));
+		ui_IsElementPresent(ui_waitForElementToDisplay(successMessage, Pause.HIGH));
 		return this;	
 	}
 	

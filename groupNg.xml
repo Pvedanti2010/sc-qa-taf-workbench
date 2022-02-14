@@ -3,14 +3,18 @@
 	<test name="testname">
 		<groups>
             <run>
-              <include name = "group2"></include>
+              <include name = "sanity"></include>
             </run>
         </groups>
-        <classes>
-			<class name="com.supplycopia.template.test.UserLoginTests"></class>
-			<class name="com.supplycopia.template.test.UserAccessCheck">
-			</class>	
-		</classes>
+        <packages>
+            <package name="com.supplycopia.bulkupload.dataattribute"/>
+        </packages>
+        <!-- <classes>
+			<class name="com.supplycopia.template.bulkupload.CategoryMaster"></class>
+			<class name="com.supplycopia.template.bulkupload.ContractSupplierMaster"></class>
+			<class name="com.supplycopia.template.bulkupload.CountryAccountMaster"></class>
+			<class name="com.supplycopia.template.bulkupload.ProductAttributes"></class>	
+		</classes> -->
 	</test>
 	<listeners>	
 		<!-- <listener class-name="com.supplycopia.listeners.AutoTestListener"></listener>

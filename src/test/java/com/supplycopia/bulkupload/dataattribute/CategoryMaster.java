@@ -1,7 +1,5 @@
-package com.supplycopia.template.bulkupload;
+package com.supplycopia.bulkupload.dataattribute;
 
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import com.supplycopia.workbench.base.BaseTest;
@@ -14,12 +12,12 @@ import com.supplycopia.workbench.pages.LoginPage;
 
 public class CategoryMaster extends BaseTest{
 
-	@Test(groups = {"categoryMaster" })
+	@Test(groups = {"bulkupload" ,"sanity"})
 	public void CategoryMasterTest() throws Throwable {
 
 		new 
 		LoginPage().
-		login().	
+		login("qauser").	
 		validatePageLoad().
 		navigateToWorkbench().
 		validatePageLoad().
@@ -29,18 +27,22 @@ public class CategoryMaster extends BaseTest{
 		selectCustomeSet("Category Master").
 		clickUpload().
 		clickProceedToUpload().
-		uploadFromComputer("C:\\Users\\smehta\\eclipse-workspace\\sc-qa-taf-workbench\\src\\test\\resources\\testfiles\\upload\\Category_Master.xlsx").
+		uploadFromComputer("Category_Master.xlsx").
 		clickImportFile().
-		dragHeader("2", "2").
-		dragHeader("1", "1").
+		validateUploadSuccessMessage().
+		dragHeaderWithIndex("2", "2").
+		dragHeaderWithIndex("1", "1").
 		proceedToReviewAndEdit().
 		checkValidationErrorsOnReviewAndEdit("0").
-		checktotalRecordsOnReviewAndEdit("4").
+		checktotalRecordsOnReviewAndEdit("9").
 		proceedToUpdate().
 		checkValidationErrorsOnUpdatePage("0").
-		checktotalRecordsOnUpdatePage("4").
+		checktotalRecordsOnUpdatePage("9").
 		saveAndUpdate().
 		confirmUpdate().validateSuccessMessage();
+		
+		
+	
 
 	}
 

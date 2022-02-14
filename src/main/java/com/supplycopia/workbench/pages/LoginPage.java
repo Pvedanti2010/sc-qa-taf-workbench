@@ -3,11 +3,10 @@ package com.supplycopia.workbench.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Reporter;
 
 import com.supplycopia.report.Log;
 import com.supplycopia.utils.Configuration;
-import com.supplycopia.utils.Wait;
+import com.supplycopia.utils.Pause;
 import com.supplycopia.workbench.base.BasePage;
 
 
@@ -50,9 +49,10 @@ public class LoginPage extends BasePage {
 	/*
 	 * This method will login into application
 	 */
-	public LaunchPad login() {
-		
-		return login(_session.get_dataValue("UserName"),_session.get_dataValue("Password"));
+	public LaunchPad login(String user) {
+		String username=Configuration.getEnvironmentVariable("project.user."+user);
+		String password=Configuration.getEnvironmentVariable("project.password."+user);
+		return login(username,password);
 		
 	}
 	
@@ -62,7 +62,7 @@ public class LoginPage extends BasePage {
 	 */
 	public LoginPage validatePageLoad() {
 		
-	    ui_IsElementPresent(ui_waitForElementToAppear(pageIdentifier_ele,Wait.MEDIUM));
+	    ui_IsElementDisplay(ui_waitForElementToDisplay(pageIdentifier_ele,Pause.MEDIUM));
 	    Log.info("Successful navigation is validated for "+this.getClass().getSimpleName());
 	    return this;
 	}

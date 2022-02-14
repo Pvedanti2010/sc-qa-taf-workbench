@@ -2,7 +2,7 @@
 <suite name="testsuite" verbose="1" preserve-order="true" parallel="methods" thread-count="3">
 	<test name="testname">
 		<classes>
-			<class name="com.supplycopia.template.test.APIUserAccessCheck">
+			<class name="com.supplycopia.workbench.template.CategoryMaster">
 				<!-- <methods>							
 					<include name="UserLoginTest"></include>
 				</methods> -->

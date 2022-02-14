@@ -3,9 +3,9 @@ package com.supplycopia.workbench.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Reporter;
+
 import com.supplycopia.report.Log;
-import com.supplycopia.utils.Wait;
+import com.supplycopia.utils.Pause;
 import com.supplycopia.workbench.base.BasePage;
 
 
@@ -28,9 +28,9 @@ public class LaunchPad extends BasePage {
 
 	public LaunchPad validatePageLoad() {
 		// TODO Auto-generated method stub
-		ui_IsElementPresent(ui_waitForElementToAppear(pageIdentifier_ele,Wait.MEDIUM));
-		ui_IsElementPresent(ui_waitForElementToAppear(procedureCard_ele,Wait.MEDIUM));
-		ui_IsElementPresent(ui_waitForElementToAppear(procedureCardStart_lnk,Wait.MEDIUM));
+		ui_IsElementDisplay(ui_waitForElementToDisplay(pageIdentifier_ele,Pause.MEDIUM));
+		ui_IsElementDisplay(ui_waitForElementToDisplay(procedureCard_ele,Pause.MEDIUM));
+		ui_IsElementDisplay(ui_waitForElementToDisplay(procedureCardStart_lnk,Pause.MEDIUM));
 		Log.info("Successful navigation is validated for "+this.getClass().getSimpleName());
 		return this;
 	}
