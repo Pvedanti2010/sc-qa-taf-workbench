@@ -8,11 +8,10 @@ import com.supplycopia.workbench.pages.LoginPage;
  *
  */
 
-public class CategoryMasterManagement extends BaseTest{
+public class ProductManufactureMasterManagement extends BaseTest{
 
 	@Test(groups = {"categoryMaster" })
-	public void CategoryMasterManagementTest() throws Throwable {
-
+	public void ContractSupplierMasteTest() throws Throwable {
 		new 
 		LoginPage().
 		login().	
@@ -20,14 +19,19 @@ public class CategoryMasterManagement extends BaseTest{
 		navigateToWorkbench().
 		validatePageLoad().	
 		navigateToMasterManagement().
-		//addNewCategorySubcategory().
-		//editNewCategorySubcategory().
-		//deleteCategory().
-		bulkDeleteCategory().
-		exportCategoryItem().
-		updateCategory();
+		ClickProductManufacture().
+		addNewProductManufacture().
+		editNewProductManufacture().
+		deleteProductManufactureItem().
+		bulkDeleteProductManufacture().		
+		exportProductManufacture().
+		updateProductManufacture();
 		}		
 	}
+
+		
+
+	
 
 	
 

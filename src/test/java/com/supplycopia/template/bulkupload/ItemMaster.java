@@ -19,27 +19,18 @@ public class ItemMaster extends BaseTest{
 		validatePageLoad().
 		navigateToWorkbench().
 		validatePageLoad().
-		navigateToItemMaster();
-		//uploadFromComputer("C:\\Users\\praveen\\Downloads\\IM_Product_Data_2022_1_31 9_20_28.xlsx");
-		
+		navigateToItemMaster().
+		exportFunctionallty().		
+		columnsSelectorFunctionallty().
+		//actionItemToEditFunctionallty().		
+		actionItemToDocumnetManagementFunctionallty().
+		actionItemToFunctionallyEquivalent().
+		actionItemToSingledeleteFunctionallty().
+		markAsFunctionalEquivalentFunctionallty().
+		bulkUpdateFunctionallty().
+		bulkdeleteFunctionallty();
+		}
 	
-//		clickProceedToUpload().
-//		uploadFromComputer("C:\\Users\\smehta\\eclipse-workspace\\sc-qa-taf-workbench\\src\\test\\resources\\testfiles\\upload\\Category_Master.xlsx").
-//		clickImportFile().
-//		dragHeader("2", "2").
-//		dragHeader("1", "1").
-//		proceedToReviewAndEdit().
-//		checkValidationErrorsOnReviewAndEdit("0").
-//		checktotalRecordsOnReviewAndEdit("4").
-//		proceedToUpdate().
-//		checkValidationErrorsOnUpdatePage("0").
-//		checktotalRecordsOnUpdatePage("4").
-//		saveAndUpdate().
-//		confirmUpdate().validateSuccessMessage();
-
-	}
-
-		
 	}
 
 	

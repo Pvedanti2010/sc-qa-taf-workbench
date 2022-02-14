@@ -52,6 +52,8 @@ public class MasterManagement extends BasePage {
 	WebElement export_btn;
 	@FindBy(xpath = "//th//mat-checkbox[@class=\"mat-checkbox mat-accent\"]")	
 	WebElement Master_checkbox;
+	@FindBy(xpath = "//th//mat-checkbox[@id=\"mat-checkbox-1\"]")	
+	WebElement unCheckMaster_checkbox;	
 	@FindBy(xpath = "//button[@id=\"exportCardsBtn\" and contains(.,'Export')]")
 	WebElement exportButtomTray_btn;
 	@FindBy(xpath = "//button[@class=\"mat-menu-trigger btn functionality-equi-button functionality-equi-button-enabled ng-star-inserted\" and contains(.,'Update')]")
@@ -68,7 +70,7 @@ public class MasterManagement extends BasePage {
 	WebElement UpdateManufacturer_btn;
 	@FindBy(xpath = "//input[@formcontrolname=\"subCategory\"]")
 	WebElement choose_textbox;
-	@FindBy(xpath = "//span[@class=\"mat-option-text\"][1]")
+	@FindBy(xpath = "//mat-option[@class=\"mat-option mat-focus-indicator ng-star-inserted\"]")
 	WebElement selectDropDownValue;
 	@FindBy(xpath = "//input[@formcontrolname=\"category\"]")
 	WebElement enterRename;
@@ -84,10 +86,11 @@ public class MasterManagement extends BasePage {
 	WebElement ContractSuprMaster_btn;
 	
 	
+	
+	
 	public MasterManagement(){	
 		
 	}
-
 	public MasterManagement validatePageLoad() {
 		// TODO Auto-generated method stub
 		ui_IsElementPresent(ui_waitForElementToAppear(pageIdentifier_ele,Wait.MEDIUM));
@@ -151,20 +154,21 @@ public class MasterManagement extends BasePage {
 	public MasterManagement clickDeleteBtn() {
 		// TODO Auto-generated method stub
 		ui_click(Delete_btn, "DeleteButton");
-		//ui_IsElementPresent(ui_waitForElementToAppear(Popup_Text,Wait.MEDIUM));
-		//Log.info("popup message"+this.getClass().getSimpleName());
+		ui_IsElementPresent(ui_waitForElementToAppear(Popup_Text,Wait.HIGH));
+		Log.info("popup message"+this.getClass().getSimpleName());
 	    return this;
 	}
 	public MasterManagement clickYesBtn() {	
 		ui_click(clickYes_btn, "YesButtonOnDeletePopup");
-		//ui_IsElementPresent(ui_waitForElementToAppear(deleteStatus_Message,Wait.MEDIUM));
+		//ui_IsElementPresent(ui_waitForElementToAppear(deleteStatus_Message,Wait.HIGH));
+		//Sorry! This mapping is currently being used in the platform and cannot be deleted
 		//Log.info("Successful navigation is validated for "+this.getClass().getSimpleName());
 	    return this;
 	}
 	public MasterManagement clickSelectSubcheckbox() {
 		// TODO Auto-generated method stub
 		int subcheckboxesSize=SubCheckboxes.size();
-		for (int i =subcheckboxesSize-1; i>subcheckboxesSize-4; i--) {
+		for (int i=subcheckboxesSize-1; i>subcheckboxesSize-4;i--) {
 			SubCheckboxes.get(i).click();}
 	    return this;
 	}
@@ -184,8 +188,12 @@ public class MasterManagement extends BasePage {
 	} 
 	public MasterManagement clickExportButtomTray() {		
 		ui_click(exportButtomTray_btn, "ExportButtomTray");	
-		//ui_IsElementPresent(ui_waitForElementToAppear(ExportStatus_Message,Wait.MEDIUM));
-		//Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
+		ui_IsElementPresent(ui_waitForElementToAppear(ExportStatus_Message,Wait.HIGH));
+		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
+	    return this;
+	} 
+	public MasterManagement clickUnCheckMastrChechkBox() {		
+		ui_click(unCheckMaster_checkbox, "UnchechkMastrChechkbox");
 	    return this;
 	} 
 	public MasterManagement clickUpdateBtn() {
@@ -201,25 +209,28 @@ public class MasterManagement extends BasePage {
 		ui_click(updateValue_2_btn, "UpdateValue1button");				
 	    return this; 
 	} 
-	public MasterManagement selectDropDownValue() {
-		ui_selectValueFromDropDownByIndex(selectDropDownValue,2);
+	public MasterManagement selectDropDownValue() {		
+		ui_selectValueFromDropDownByIndex(selectDropDownValue, 1);
 		ui_click(selectDropDownValue,"SelectDropDownValue");
 		return this; 
 	}
 	public MasterManagement UpdateBtnOnPopUp() {
 		// TODO Auto-generated method stub
 		ui_click(updateValue_btn, "UpdateButton");	
-		ui_IsElementPresent(ui_waitForElementToAppear(UpdateStatus_Message,Wait.MEDIUM));
+		ui_IsElementPresent(ui_waitForElementToAppear(UpdateStatus_Message,Wait.HIGH));
 		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
 		return this; 
 		}
 	
+	
+////Contract supplier master
+	
 	public MasterManagement ClickContractSuprMaster() {
 		// TODO Auto-generated method stub
 		ui_click(ContractSuprMaster_btn, "ClickOnContratctSupplirMaster");
-		return this;		
+		return this;	
 	}
-	//
+	
 	public MasterManagement clickOnRadioBtnOnAddNewSuppler() {
 		ui_waitForElementToAppear(radio_Btn, 2);
 		ui_click(radio_Btn, "RadioBtn");
@@ -253,13 +264,107 @@ public class MasterManagement extends BasePage {
 		ui_clearUsingJavaScript(InputBox1,"AutomationSupplierTest name29");		
 		return this;
 	}
+	public MasterManagement clickUpdateSupplier() {	
+		ui_click(updateValue_1_btn, "UpdateValue1button");				
+	    return this; 
+	} 
+	
+		
+	//CountryAccount
+	
+	public MasterManagement ClickcountryAccountMaster() {
+		// TODO Auto-generated method stub
+		ui_click(countryAccountMaster_btn, "ClickOnContratctSupplirMaster");
+		return this;
+	}	
+	public MasterManagement clickUpdateCountry() {	
+		ui_click(updateValue_1_btn, "UpdateValue1button");				
+	    return this; 
+	} 
+	public MasterManagement clickOnRadioBtnOnAddNewCountry() {
+		ui_waitForElementToAppear(radio_Btn, 2);
+		ui_click(radio_Btn, "RadioBtn");
+		   return this;			
+	}
+	public MasterManagement InputBoxCountry_random() {			
+		ui_setvalue(InputBox1, "EnterValueInputBox", "AotoCountry_"+StringUtility.randomGenarotor("number", 4));
+		return this;			
+	}
+	public MasterManagement InputBoxAccount_random() {	
+		ui_setvalue(InputBox2, "EnterValueInputBox", "AutoAccount_"+StringUtility.randomGenarotor("number", 5));
+		ui_wait(5);
+		return this;		
+	}
+	public MasterManagement ClickTextBoxAccount() {			
+		ui_click(InputBox2,"EnterAccount");		
+		ui_wait(5);
+		return this;		
+	}
+	public MasterManagement clearChooseAccountTextBox() {
+		// TODO Auto-generated method stub
+		ui_clearUsingJavaScript(InputBox2,"AutomationContractTest name29");		
+		return this;
+	}
+	public MasterManagement ClickTextBoxCountry() {	
+		ui_click(InputBox1,"Text box");
+		return this;			
+	}
+	public MasterManagement clearMainCountryTextBox() {
+		// TODO Auto-generated method stub
+		ui_clearUsingJavaScript(InputBox1,"AutomationSupplierTest name29");		
+		return this;
+	}
+	
+	//ProductManufacture
+
+		
+	public MasterManagement ClickProductManufacturerMaster() {
+		// TODO Auto-generated method stub
+		ui_click(ProductManufacturerMaster_btn, "ClickOnContratctSupplirMaster");
+		return this;
+	}
+	public MasterManagement clickUpdateManufacturer() {	
+		ui_click(updateValue_1_btn, "UpdateValue1button");				
+	    return this; 
+	} 
+	public MasterManagement clickOnRadioBtnOnAddNewManufacturer() {
+		ui_waitForElementToAppear(radio_Btn, 2);
+		ui_click(radio_Btn, "RadioBtn");
+		   return this;			
+	}
+	public MasterManagement InputBoxManufacturer_random() {			
+		ui_setvalue(InputBox1, "EnterValueInputBox", "AotoManufacturer_"+StringUtility.randomGenarotor("number", 4));
+		return this;			
+	}
+	public MasterManagement InputBoxProductRef_random() {	
+		ui_setvalue(InputBox2, "EnterValueInputBox", "AutoProductRef_"+StringUtility.randomGenarotor("number", 5));
+		ui_wait(5);
+		return this;		
+	}
+	public MasterManagement ClickTextBoxProductRef() {			
+		ui_click(InputBox2,"EnterAccount");		
+		ui_wait(5);
+		return this;		
+	}
+	public MasterManagement clearChooseProductRefTextBox() {
+		// TODO Auto-generated method stub
+		ui_clearUsingJavaScript(InputBox2,"AutomationProductRefName29");		
+		return this;
+	}
+	public MasterManagement ClickTextBoxManufacturer() {	
+		ui_click(InputBox1,"Text box");
+		return this;			
+	}
+	public MasterManagement clearMainManufacturerTextBox() {
+		// TODO Auto-generated method stub
+		ui_clearUsingJavaScript(InputBox1,"AutomationManufacturerName29");		
+		return this;
+	}
 	
 	
 	
-	
-	
-	
-	
+	//{Method Grouping }	
+	//Category Master////////////////////////////////////////////////
 	
 	public MasterManagement addNewCategorySubcategory() {
 		// TODO Auto-generated method stub
@@ -296,43 +401,44 @@ public class MasterManagement extends BasePage {
 		clickYesBtn();
 		return this;
 	}
-
 	public MasterManagement exportCategoryItem() {
 		// TODO Auto-generated method stub
+		ui_wait(1);
 		clickMasterCheckBoxes();
 		clickExport();
 		clickExportButtomTray();
-		clickMasterCheckBoxes();
+		ui_wait(1);
+		clickUnCheckMastrChechkBox();
 		return this;
-		
 	}
-
 	public MasterManagement updateCategory() {
 		// TODO Auto-generated method stub
 		clickUpdateBtn();
 		clickUpdateCategory();		
 		clearChooseCategoryTextBox();
-		ui_wait(5);
+		ui_wait(5);		
+		ui_keyPress("AutoCategory_2402");
 		selectDropDownValue();
 		InputBoxCategory_random();
 		UpdateBtnOnPopUp();
 		return this;
-		
-	//Contract supplier master
-			
-		}
-
+	}
+	
+	
+	
+	
+	
+	//Contract supplier master/////////////////////////////////////
 	public MasterManagement addNewContractsupplier() {
 		// TODO Auto-generated method stub
+		ClickContractSuprMaster();
 		clickAddNewBtn();
 		clickOnRadioBtnOnAddNewSuppler();
 		InputBoxSupplier_random();
 		InputBoxContract_random();
 		clickOnSaveBtn();
-		return this;
-		
+		return this;		
 	}
-
 	public MasterManagement editNewContractsupplier() {
 		// TODO Auto-generated method stub
 		clickEditBtn();
@@ -354,22 +460,162 @@ public class MasterManagement extends BasePage {
 	}
 	public MasterManagement bulkDeleteContractsupplier() {
 		// TODO Auto-generated method stub
+		ui_wait(5);
 		clickSelectSubcheckbox();
 		clickBulkDelete();
 		clickYesBtn();
-		return this;
-		
+		return this;		
 	}
-
 	public MasterManagement exportContractsupplier() {
 		// TODO Auto-generated method stub
 		clickMasterCheckBoxes();
 		clickExport();
 		clickExportButtomTray();
 		clickMasterCheckBoxes();
+		return this;		
+	}
+	public MasterManagement updateContractsupplier() {
+		// TODO Auto-generated method stub
+		clickUpdateBtn();
+		clickUpdateSupplier();
+		ui_wait(2);
+		clearChooseContractTextBox();		
+		selectDropDownValue();
+		InputBoxSupplier_random();
+		UpdateBtnOnPopUp();
+		return this;
+	}
+		
+	//CountryAccount Master//////////////////////////////////////
+	
+	
+	public MasterManagement addNewCountryAccount() {
+		// TODO Auto-generated method stub
+		ClickcountryAccountMaster();
+		clickAddNewBtn();
+		clickOnRadioBtnOnAddNewSuppler();
+		InputBoxCountry_random();
+		InputBoxAccount_random();
+		clickOnSaveBtn();
+		return this;
+	}
+	public MasterManagement editNewCountryAccount() {
+			// TODO Auto-generated method stub
+		clickEditBtn();
+		clickOnRadioBtnOnAddNewCountry();
+		ClickTextBoxAccount();
+		clearChooseAccountTextBox();
+		InputBoxAccount_random();
+		ClickTextBoxCountry();
+		clearMainCountryTextBox();
+		InputBoxCountry_random();		
+		clickOnSaveBtn();
+		return this;		
+	}
+	public MasterManagement deleteCountryAccountItem() {
+			// TODO Auto-generated method stub
+		clickDeleteBtn();
+		clickYesBtn();
+		ui_wait(2);
+		return this;		
+	}
+	public MasterManagement bulkDeleteCountryAccount() {
+			// TODO Auto-generated method stub
+		ui_wait(2);
+		clickSelectSubcheckbox();
+		ui_wait(1);
+		clickBulkDelete();
+		clickYesBtn();
+		return this;
+	}
+	public MasterManagement exportCountryAccount() {
+			// TODO Auto-generated method stub
+		clickMasterCheckBoxes();
+		clickExport();
+	    clickExportButtomTray();
+		clickMasterCheckBoxes();
+		return this;
+	}
+	public MasterManagement updateCountryAccount() {
+			// TODO Auto-generated method stub
+		clickUpdateBtn();
+		clickUpdateCountry();
+		clearChooseAccountTextBox();
+		ui_wait(2);
+	    selectDropDownValue();
+		InputBoxCountry_random();
+		UpdateBtnOnPopUp();
+		return this;
+	}
+	
+	
+	//ProductManufacture//////////////////////////////////////
+	
+	
+	
+	public MasterManagement ClickProductManufacture() {
+		// TODO Auto-generated method stub
+		ClickProductManufacturerMaster();
+		return this;
+	}
+	public MasterManagement addNewProductManufacture() {
+				// TODO Auto-generated method stub
+		clickAddNewBtn();
+		clickOnRadioBtnOnAddNewManufacturer();
+		InputBoxManufacturer_random();
+		InputBoxProductRef_random();
+		clickOnSaveBtn();
+		return this;
+	}
+	public MasterManagement editNewProductManufacture() {
+		// TODO Auto-generated method stub
+		clickEditBtn();
+		clickOnRadioBtnOnAddNewManufacturer();
+		ClickTextBoxProductRef();
+		clearChooseProductRefTextBox();
+		InputBoxProductRef_random();
+		ClickTextBoxManufacturer();
+		clearMainManufacturerTextBox();
+		InputBoxManufacturer_random();		
+		clickOnSaveBtn();
+		return this;		
+	}
+	public MasterManagement deleteProductManufactureItem() {
+			// TODO Auto-generated method stub
+		clickDeleteBtn();
+		clickYesBtn();
+		return this;		
+	}
+	public MasterManagement bulkDeleteProductManufacture() {
+				// TODO Auto-generated method stub
+		ui_wait(2);
+		clickSelectSubcheckbox();
+		clickBulkDelete();
+		clickYesBtn();
+		return this;
+	}
+	public MasterManagement exportProductManufacture() {
+			// TODO Auto-generated method stub
+		clickMasterCheckBoxes();
+		clickExport();
+		clickExportButtomTray();
+		clickMasterCheckBoxes();
+		return this;
+	}
+	public MasterManagement updateProductManufacture() {
+				// TODO Auto-generated method stub
+		clickUpdateBtn();
+		clickUpdateManufacturer();
+		clearChooseProductRefTextBox();		
+		ui_wait(2);
+		selectDropDownValue();
+		InputBoxManufacturer_random();
+		UpdateBtnOnPopUp();
 		return this;
 		
 	}
+
+		
 }
 
 
