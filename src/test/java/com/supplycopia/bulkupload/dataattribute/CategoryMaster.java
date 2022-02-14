@@ -39,7 +39,8 @@ public class CategoryMaster extends BaseTest{
 		checkValidationErrorsOnUpdatePage("0").
 		checktotalRecordsOnUpdatePage("9").
 		saveAndUpdate().
-		confirmUpdate().validateSuccessMessage();
+		confirmUpdate().
+		validateSuccessMessage();
 		
 		
 	

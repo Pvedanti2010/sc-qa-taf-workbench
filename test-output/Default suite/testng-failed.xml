@@ -3,16 +3,27 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.supplycopia.bulkupload.uploaddocument.UploadDocument">
         <methods>
           <include name="getResult"/>
           <include name="UploadDocumentTest"/>
+=======
+      <class name="com.supplycopia.template.mastermanagement.CategoryMasterManagement">
+        <methods>
+          <include name="getResult"/>
+          <include name="CategoryMasterManagementTest"/>
+>>>>>>> origin/praveen
           <include name="Reportsetup"/>
           <include name="testName"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.supplycopia.bulkupload.uploaddocument.UploadDocument -->
+=======
+      </class> <!-- com.supplycopia.template.mastermanagement.CategoryMasterManagement -->
+>>>>>>> origin/praveen
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

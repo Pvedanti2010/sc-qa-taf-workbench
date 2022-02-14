@@ -1,12 +1,16 @@
 package com.supplycopia.workbench.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.supplycopia.report.Log;
 import com.supplycopia.utils.Configuration;
 import com.supplycopia.utils.Pause;
+import com.supplycopia.utils.StringUtility;
+
+
 import com.supplycopia.workbench.base.BasePage;
 
 
@@ -40,6 +44,7 @@ public class BulkUpload extends BasePage {
 	@FindBy(xpath = "//button[@class='importBtn']" )
 	WebElement importFile_btn;
 	
+	
 	@FindBy(xpath = "//button[@class='saveBtn']" )
 	WebElement saveAndProceed_btn;
 	
@@ -57,7 +62,7 @@ public class BulkUpload extends BasePage {
 	
 	@FindBy(xpath = "//div[text()='All Done!']")
 	WebElement uploadSuccessMessage;
-	
+
 	String ListFromMatch="//div[@id='cdk-drop-list-1']/div[%s]/span";
 	String ListToMatch="//div[@id='cdk-drop-list-0']/div[%s]";
 	String ListToMatchWithText=	"//div[@id='cdk-drop-list-0']/div[count(//div[@class='drag-scroll']/div[@class='drag-col']/div/span[normalize-space(text())='%s']/../preceding-sibling::*)+1]";
@@ -193,5 +198,14 @@ public class BulkUpload extends BasePage {
 		ui_IsElementPresent(ui_waitForElementToDisplay(successMessage, Pause.HIGH));
 		return this;	
 	}
+     
+	}
+		
 	
-}
+
+
+
+
+
+
+
