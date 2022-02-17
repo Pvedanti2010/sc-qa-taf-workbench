@@ -137,35 +137,35 @@ public class Workbench extends BasePage {
 		ui_click(itemMaster_lnk, "ItemMasterLink");
 		return this;
 	}
-	public Workbench MasterCheckBox() {
-		ui_waitForElementToDisplay(Master_checkbox, 10);
+	public Workbench clickSelectAllProductCheckBox() {
+
 		ui_click(Master_checkbox, "Masterchechkbox");
 		return this;
 	}
-	public Workbench ExportBtn() {
+	public Workbench clickExportBtn() {
 		ui_waitForElementToDisplay(export_btn,10);
 		ui_click(export_btn, "ExportButton");
 		return this;
 	}	
-	public Workbench SelectThis() {
+	public Workbench clickSelectThisPage() {
 		ui_click(selectThis_checkbox, "SelectThisPage");
 		return this;
 	}	
-	public Workbench exportButtomTray() {
+	public Workbench clickExportButtonOnBottomTray() {
 		ui_click(exportButtomTray_btn,"ExportButtonOnButtomTray");
 		return this;
 	}
-	public Workbench ProductdataExport() {
+	public Workbench selectProductdataExport() {
 		ui_click(selectProductData_btn, "SelectProductdataOnBottomTray");
 		return this;
 	}	
 	
-	public Workbench ColumnBtn() {		
+	public Workbench clickColumnDropDown() {		
 		ui_waitForElementToDisplay(Column_btn,10);
 		ui_click(Column_btn, "ClickColumnButton");	
 		return this;
 	}	
-	public Workbench DeselectAllCheckBox() {
+	public Workbench deselectAllCheckBox() {
 		ui_click(DeselectAll_CheckBox, "DeselectAllCheckbox");	
 		return this;
 	}		
@@ -345,21 +345,21 @@ public class Workbench extends BasePage {
 	
 	
 	//Group Method////////////////////
-	public Workbench exportFunctionallty() {
+	public Workbench exportProductEntries() {
 		// TODO Auto-generated method stub
-		MasterCheckBox();
-		ExportBtn();
-		SelectThis();
-		exportButtomTray();
-		ProductdataExport();
+		clickSelectAllProductCheckBox();
+		clickExportBtn();
+		clickSelectThisPage();
+		clickExportButtonOnBottomTray();
+		selectProductdataExport();
 		return this;
 		}
 
-	public Workbench columnsSelectorFunctionallty() {
+	public Workbench selectAllColumns() {
 		// TODO Auto-generated method stub
-		ColumnBtn();
-		DeselectAllCheckBox();
-		ColumnBtn();
+		clickColumnDropDown();
+		deselectAllCheckBox();
+		clickColumnDropDown();
 		selectAllCheckBox();
 		return this;
 	}
@@ -431,9 +431,9 @@ public class Workbench extends BasePage {
 		// TODO Auto-generated method stub
 		ui_wait(10);
 		clickPaginationToNext_Btn();
-		MasterCheckBox();
+		clickSelectAllProductCheckBox();
 		ClickbulkDelete();
-		SelectThis();
+		clickSelectThisPage();
 		clickbulkDeleteButtomTray_Btn();
 		ClickdeletYes_btn();
 		return this;

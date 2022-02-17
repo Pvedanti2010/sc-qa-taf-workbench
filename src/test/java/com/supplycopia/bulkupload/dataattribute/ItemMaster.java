@@ -21,8 +21,8 @@ public class ItemMaster extends BaseTest{
 		navigateToWorkbench().
 		validatePageLoad().
 		navigateToItemMaster().
-		exportFunctionallty().		
-		columnsSelectorFunctionallty().
+		exportProductEntries().		
+		selectAllColumns().
 		//actionItemToEditFunctionallty().		
 		actionItemToDocumnetManagementFunctionallty().
 		actionItemToFunctionallyEquivalent().
