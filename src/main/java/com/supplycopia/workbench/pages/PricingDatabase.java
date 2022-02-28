@@ -5,13 +5,24 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.supplycopia.report.Log;
 import com.supplycopia.utils.StringUtility;
 import com.supplycopia.utils.Pause;
 import com.supplycopia.workbench.base.BasePage;
+import static org.hamcrest.Matchers.lessThan;
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
 
-public class MasterManagement extends BasePage {
+public class PricingDatabase extends BasePage {
+	
+	
+
+	String rowelement="(//tr/td//span[contains(@class,'edit-icon')])[%s]";
+	@FindBy(xpath = "//table/tbody/tr/td/span[contains(span,text())]")
+	WebElement productPricetableIdentifier;
+	
 	@FindBy(xpath = "//div[@role=\"tab\" and contains(.,'Category Master')]")
 	WebElement pageIdentifier_ele;
 	@FindBy(xpath = "//button[@class=\"mat-focus-indicator btn functionality-equi-button functionality-equi-button-enabled mat-button mat-button-base\" and contains(.,' Add New ')]")
@@ -90,159 +101,171 @@ public class MasterManagement extends BasePage {
 	WebElement ProductManufacturerMaster_btn;
 	@FindBy(xpath = "//div[@role=\"tab\" and contains(.,'Contract Supplier Master')]")
 	WebElement ContractSuprMaster_btn;
+
+	@FindBy(xpath = "//span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]")
+	WebElement ColumnDropDown;
+	
+	@FindBy(xpath = "//div[@role='menu']//span[contains(.,'Account') and @class='mat-checkbox-label']/../span[@class='mat-checkbox-inner-container']")
+	WebElement AccountOption;
+	
+	@FindBy(xpath = "//th/div[text()=' Account ']")
+	WebElement accountHeader;
 	
 	
-	
-	
-	public MasterManagement(){	
+	public PricingDatabase(){	
 		
 	}
-	public MasterManagement validatePageLoad() {
+	
+	public PricingDatabase bulkSelectReferenceNumbers(String numberOfMapping) {
+		// TODO Auto-generated method stub
+		int num=Integer.valueOf(numberOfMapping);
+		ui_waitForElementToDisplay(productPricetableIdentifier, 6);
+		int subcheckboxesSize=SubCheckboxes.size()-1;
+		assertThat(num, is(lessThan(subcheckboxesSize)));
+		for (int i=0; i<num;i++) {
+			SubCheckboxes.get(i).click();}
+	    return this;
+	}
+	
+	public PricingDatabase validatePageLoad() {
 		// TODO Auto-generated method stub
 		ui_IsElementPresent(ui_waitForElementToDisplay(pageIdentifier_ele,Pause.MEDIUM));
 		Log.info("Successful navigation is validated for "+this.getClass().getSimpleName());
 		return this;
 	}		
-	public MasterManagement navigateToMasterManagement() {
+	public PricingDatabase navigateToMasterManagement() {
 		// TODO Auto-generated method stub
 		Log.info("Navigating to  MasterManagemnet");
-	    return PageFactory.initElements(ui_getUIDriver(), MasterManagement.class);
+	    return PageFactory.initElements(ui_getUIDriver(), PricingDatabase.class);
 	}	
-	public MasterManagement clickAddNewBtn() {
+	public PricingDatabase clickAddNewBtn() {
 		// TODO Auto-generated method stub
 		ui_click(addNew_btn,"AddNewButton");
 		  return this;			
 	}
-	public MasterManagement clickOnRadioBtnOnAddNewCategory() {
+	public PricingDatabase clickOnRadioBtnOnAddNewCategory() {
 		ui_waitForElementToDisplay(radio_Btn, 2);
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}
-	public MasterManagement setCategory(String boxCategory) {			
+	public PricingDatabase setCategory(String boxCategory) {			
 		ui_setvalue(InputBox1, "EnterValueInputBox", boxCategory );
 		return this;			
 	}	
-	public MasterManagement ClickTextBoxCategory() {	
+	public PricingDatabase ClickTextBoxCategory() {	
 		ui_click(InputBox1,"Text box");
 		return this;			
 	}
-	public MasterManagement setSubCategory(String subCategory) {	
+	public PricingDatabase setSubCategory(String subCategory) {	
 		ui_setvalue(InputBox2, "EnterValueInputBox", subCategory);
 		ui_wait(5);
 		return this;		
 	}
-	public MasterManagement ClickTextBoxSubCategory() {			
+	public PricingDatabase ClickTextBoxSubCategory() {			
 		ui_click(InputBox2,"EnterSubCategory");		
 		ui_wait(5);
 		return this;		
 	}
-	public MasterManagement clickOnSaveBtn() {	
+	public PricingDatabase clickOnSaveBtn() {	
 		ui_click(saveAddNew_btn, "ClickOnSave");
 		ui_IsElementPresent(ui_waitForElementToDisplay(SaveStatus_Message,Pause.MEDIUM));
 		Log.info("Successful navigation is validated for "+this.getClass().getSimpleName());
 	    return this;	    
 	}
-	public MasterManagement clickEditBtn() {
+	public PricingDatabase clickEditBtn() {
 		// TODO Auto-generated method stub
 		ui_click(Edit_btn, "Editbtn");
 		return this;
 	}
-	public MasterManagement clearMainCategoryTextBox() {
+	public PricingDatabase clearMainCategoryTextBox() {
 		// TODO Auto-generated method stub
 		ui_clearUsingJavaScript(InputBox1,"AutomationCategoryTest name29");		
 		return this;
 	}
-	public MasterManagement clearChooseCategoryTextBox() {
+	public PricingDatabase clearChooseCategoryTextBox() {
 		// TODO Auto-generated method stub
 		ui_clearUsingJavaScript(InputBox2,"AutomationCategoryTest name29");		
 		return this;
 	}
-	public MasterManagement clickDeleteBtn() {
+	public PricingDatabase clickDeleteBtn() {
 		// TODO Auto-generated method stub
 		ui_click(Delete_btn, "DeleteButton");
 		ui_IsElementPresent(ui_waitForElementToDisplay(Popup_Text,Pause.HIGH));
 		Log.info("popup message"+this.getClass().getSimpleName());
 	    return this;
 	}
-	public MasterManagement clickYesBtn() {	
+	public PricingDatabase clickYesBtn() {	
 		ui_click(clickYes_btn, "YesButtonOnDeletePopup");
 		//ui_IsElementPresent(ui_waitForElementToAppear(deleteStatus_Message,Wait.HIGH));
 		//Sorry! This mapping is currently being used in the platform and cannot be deleted
 		//Log.info("Successful navigation is validated for "+this.getClass().getSimpleName());
 	    return this;
 	}
-	public MasterManagement bulkSelectMapping(String numberOfMapping) {
-		// TODO Auto-generated method stub
-		int num=Integer.valueOf(numberOfMapping);
-		int subcheckboxesSize=SubCheckboxes.size()-1;
-		for (int i=subcheckboxesSize; i>subcheckboxesSize-num;i--) {
-			SubCheckboxes.get(i).click();}
-	    return this;
-	}
-	public MasterManagement clickBulkDelete() {
+
+	public PricingDatabase clickBulkDelete() {
 		// TODO Auto-generated method stub
 		ui_click(bulkDelete_btn, "BulkDeleteButton");
 	    return this;
 	} 
-	public MasterManagement clickMasterCheckBoxes() {
+	public PricingDatabase clickMasterCheckBoxes() {
 		// TODO Auto-generated method stub
 		ui_click(Master_checkbox, "SelectMasterCheckBox");		
 	    return this;    
 	}
-	public MasterManagement clickExport() {	
+	public PricingDatabase clickExport() {	
 		ui_click(export_btn, "ExportButton");
 	    return this;
 	} 
-	public MasterManagement clickExportButtomTray() {		
+	public PricingDatabase clickExportButtomTray() {		
 		ui_click(exportButtomTray_btn, "ExportButtomTray");	
-		ui_IsElementPresent(ui_waitForElementToDisplay(ExportStatus_Message,Pause.HIGH));
-		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
+		//ui_IsElementPresent(ui_waitForElementToDisplay(ExportStatus_Message,Pause.HIGH));
+		Log.info("Export function successfully validated for "+this.getClass().getSimpleName());
 	    return this;
 	} 
-	public MasterManagement unCheckMastrChechkBox() {		
+	public PricingDatabase unCheckMastrChechkBox() {		
 		ui_click(unCheckMaster_checkbox, "UnchechkMastrChechkbox");
 	    return this;
 	} 
-	public MasterManagement clickUpdateBtn() {
+	public PricingDatabase clickUpdateBtn() {
 		// TODO Auto-generated method stub
 		ui_click(update_btn, "UpdatebButton");
 		return this; 
 	}
-	public MasterManagement clickUpdateCategory() {	
+	public PricingDatabase clickUpdateCategory() {	
 		ui_click(updateValue_1_btn, "UpdateValue1button");				
 	    return this; 
 	}   
-	public MasterManagement clickUpdateSubCategory() {	
+	public PricingDatabase clickUpdateSubCategory() {	
 		ui_click(updateValue_2_btn, "UpdateValue1button");				
 	    return this; 
 	} 
-	public MasterManagement selectDropDownValue() {		
+	public PricingDatabase selectDropDownValue() {		
 		//ui_selectValueFromDropDownByIndex(selectDropDownValue, 1);
 		ui_click(selectDropDownValue,"SelectDropDownValue");
 		return this; 
 	}
-	public MasterManagement clickUpdatePopUp() {
+	public PricingDatabase clickUpdatePopUp() {
 		// TODO Auto-generated method stub
 		ui_click(updateValue_btn, "UpdateButton");	
 		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Manufacturer,Pause.HIGH));
 		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
 		return this; 
 		}
-	public MasterManagement clickUpdateManufacturerPopUp() {
+	public PricingDatabase clickUpdateManufacturerPopUp() {
 		// TODO Auto-generated method stub
 		ui_click(updateValue_btn, "UpdateButton");	
 		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Manufacturer,Pause.HIGH));
 		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
 		return this; 
 		}
-	public MasterManagement clickUpdateSupplierPopUp() {
+	public PricingDatabase clickUpdateSupplierPopUp() {
 		// TODO Auto-generated method stub
 		ui_click(updateValue_btn, "UpdateButton");	
 		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Supplier,Pause.HIGH));
 		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
 		return this; 
 		}
-	public MasterManagement clickUpdateCountryPopUp() {
+	public PricingDatabase clickUpdateCountryPopUp() {
 		// TODO Auto-generated method stub
 		ui_click(updateValue_btn, "UpdateButton");	
 		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Country,Pause.HIGH));
@@ -250,7 +273,7 @@ public class MasterManagement extends BasePage {
 		return this; 
 		}
 	
-	public MasterManagement clickUpdateCategoryPopUp() {
+	public PricingDatabase clickUpdateCategoryPopUp() {
 		// TODO Auto-generated method stub
 		ui_click(updateValue_btn, "UpdateButton");	
 		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Category,Pause.HIGH));
@@ -260,46 +283,46 @@ public class MasterManagement extends BasePage {
 	
 
 	
-	public MasterManagement ClickContractSuprMaster() {
+	public PricingDatabase ClickContractSuprMaster() {
 		// TODO Auto-generated method stub
 		ui_click(ContractSuprMaster_btn, "ClickOnContratctSupplirMaster");
 		return this;	
 	}
 	
-	public MasterManagement clickOnRadioBtnOnAddNewSuppler() {
+	public PricingDatabase clickOnRadioBtnOnAddNewSuppler() {
 		ui_waitForElementToDisplay(radio_Btn, 2);
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}
-	public MasterManagement InputBoxSupplier_random() {			
+	public PricingDatabase InputBoxSupplier_random() {			
 		ui_setvalue(InputBox1, "EnterValueInputBox", "AotoSupplier_"+StringUtility.randomGenarotor("number", 4));
 		return this;			
 	}
-	public MasterManagement InputBoxContract_random() {	
+	public PricingDatabase InputBoxContract_random() {	
 		ui_setvalue(InputBox2, "EnterValueInputBox", "AutoContract_"+StringUtility.randomGenarotor("number", 5));
 		ui_wait(5);
 		return this;		
 	}
-	public MasterManagement ClickTextBoxContract() {			
+	public PricingDatabase ClickTextBoxContract() {			
 		ui_click(InputBox2,"EnterContract");		
 		ui_wait(5);
 		return this;		
 	}
-	public MasterManagement clearChooseContractTextBox() {
+	public PricingDatabase clearChooseContractTextBox() {
 		// TODO Auto-generated method stub
 		ui_clearUsingJavaScript(InputBox2,"AutomationContractTest name29");		
 		return this;
 	}
-	public MasterManagement ClickTextBoxSupplier() {	
+	public PricingDatabase ClickTextBoxSupplier() {	
 		ui_click(InputBox1,"Text box");
 		return this;			
 	}
-	public MasterManagement clearMainSupplerTextBox() {
+	public PricingDatabase clearMainSupplerTextBox() {
 		// TODO Auto-generated method stub
 		ui_clearUsingJavaScript(InputBox1,"AutomationSupplierTest name29");		
 		return this;
 	}
-	public MasterManagement clickUpdateSupplier() {	
+	public PricingDatabase clickUpdateSupplier() {	
 		ui_click(updateValue_1_btn, "UpdateValue1button");				
 	    return this; 
 	} 
@@ -307,44 +330,44 @@ public class MasterManagement extends BasePage {
 		
 	//CountryAccount
 	
-	public MasterManagement clickCountryAccountMaster() {
+	public PricingDatabase clickCountryAccountMaster() {
 		// TODO Auto-generated method stub
 		ui_click(countryAccountMaster_btn, "ClickOnContratctSupplirMaster");
 		return this;
 	}	
-	public MasterManagement clickUpdateCountry() {	
+	public PricingDatabase clickUpdateCountry() {	
 		ui_click(updateValue_1_btn, "UpdateValue1button");				
 	    return this; 
 	} 
-	public MasterManagement clickOnRadioBtnOnAddNewCountry() {
+	public PricingDatabase clickOnRadioBtnOnAddNewCountry() {
 		ui_waitForElementToDisplay(radio_Btn, 2);
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}
-	public MasterManagement InputBoxCountry_random() {			
+	public PricingDatabase InputBoxCountry_random() {			
 		ui_setvalue(InputBox1, "EnterValueInputBox", "AotoCountry_"+StringUtility.randomGenarotor("number", 4));
 		return this;			
 	}
-	public MasterManagement InputBoxAccount_random() {	
+	public PricingDatabase InputBoxAccount_random() {	
 		ui_setvalue(InputBox2, "EnterValueInputBox", "AutoAccount_"+StringUtility.randomGenarotor("number", 5));
 		ui_wait(5);
 		return this;		
 	}
-	public MasterManagement ClickTextBoxAccount() {			
+	public PricingDatabase ClickTextBoxAccount() {			
 		ui_click(InputBox2,"EnterAccount");		
 		ui_wait(5);
 		return this;		
 	}
-	public MasterManagement clearChooseAccountTextBox() {
+	public PricingDatabase clearChooseAccountTextBox() {
 		// TODO Auto-generated method stub
 		ui_clearUsingJavaScript(InputBox2,"AutomationContractTest name29");		
 		return this;
 	}
-	public MasterManagement ClickTextBoxCountry() {	
+	public PricingDatabase ClickTextBoxCountry() {	
 		ui_click(InputBox1,"Text box");
 		return this;			
 	}
-	public MasterManagement clearMainCountryTextBox() {
+	public PricingDatabase clearMainCountryTextBox() {
 		// TODO Auto-generated method stub
 		ui_clearUsingJavaScript(InputBox1,"AutomationSupplierTest name29");		
 		return this;
@@ -353,51 +376,51 @@ public class MasterManagement extends BasePage {
 	//ProductManufacture
 
 		
-	public MasterManagement ClickProductManufacturerMaster() {
+	public PricingDatabase ClickProductManufacturerMaster() {
 		// TODO Auto-generated method stub
 		ui_click(ProductManufacturerMaster_btn, "ClickOnContratctSupplirMaster");
 		return this;
 	}
-	public MasterManagement clickUpdateManufacturer() {	
+	public PricingDatabase clickUpdateManufacturer() {	
 		ui_click(updateValue_1_btn, "UpdateValue1button");				
 	    return this; 
 	} 
-	public MasterManagement clickOnRadioBtnOnAddNewManufacturer() {
+	public PricingDatabase clickOnRadioBtnOnAddNewManufacturer() {
 		ui_waitForElementToDisplay(radio_Btn, 2);
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}
-	public MasterManagement InputBoxManufacturer_random() {			
+	public PricingDatabase InputBoxManufacturer_random() {			
 		ui_setvalue(InputBox1, "EnterValueInputBox", "AotoManufacturer_"+StringUtility.randomGenarotor("number", 4));
 		return this;			
 	}
-	public MasterManagement InputBoxProductRef_random() {	
+	public PricingDatabase InputBoxProductRef_random() {	
 		ui_setvalue(InputBox2, "EnterValueInputBox", "AutoProductRef_"+StringUtility.randomGenarotor("number", 5));
 		ui_wait(5);
 		return this;		
 	}
-	public MasterManagement ClickTextBoxProductRef() {			
+	public PricingDatabase ClickTextBoxProductRef() {			
 		ui_click(InputBox2,"EnterAccount");		
 		ui_wait(5);
 		return this;		
 	}
-	public MasterManagement clearChooseProductRefTextBox() {
+	public PricingDatabase clearChooseProductRefTextBox() {
 		// TODO Auto-generated method stub
 		ui_clearUsingJavaScript(InputBox2,"AutomationProductRefName29");		
 		return this;
 	}
-	public MasterManagement ClickTextBoxManufacturer() {	
+	public PricingDatabase ClickTextBoxManufacturer() {	
 		ui_click(InputBox1,"Text box");
 		return this;			
 	}
-	public MasterManagement clearMainManufacturerTextBox() {
+	public PricingDatabase clearMainManufacturerTextBox() {
 		// TODO Auto-generated method stub
 		ui_clearUsingJavaScript(InputBox1,"AutomationManufacturerName29");		
 		return this;
 	}
 	
 		
-	public MasterManagement addNewCategory(String category,String subCategory) {
+	public PricingDatabase addNewCategory(String category,String subCategory) {
 		// TODO Auto-generated method stub
 		clickAddNewBtn();
 		clickOnRadioBtnOnAddNewCategory();
@@ -406,7 +429,7 @@ public class MasterManagement extends BasePage {
 		clickOnSaveBtn();
 		return this;		
 	}	
-	public MasterManagement editNewCategorySubcategory(String category,String subCategory) {
+	public PricingDatabase editNewCategorySubcategory(String category,String subCategory) {
 		// TODO Auto-generated method stub
 		clickEditBtn();
 		clickOnRadioBtnOnAddNewCategory();
@@ -419,20 +442,25 @@ public class MasterManagement extends BasePage {
 		clickOnSaveBtn();
 		return this;		
 	}
-	public MasterManagement deleteMapping() {
+	public PricingDatabase deleteMapping() {
 		// TODO Auto-generated method stub
 		clickDeleteBtn();
 		clickYesBtn();
 		return this;		
 	}
-	public MasterManagement bulkDeleteMapping(String numberOfMapping) {
+	public PricingDatabase bulkDeleteMapping(String numberOfMapping) {
 		// TODO Auto-generated method stub
 		bulkSelectMapping(numberOfMapping);
 		clickBulkDelete();
 		clickYesBtn();
 		return this;
 	}
-	public MasterManagement exportCategoryItem() {
+	private void bulkSelectMapping(String numberOfMapping) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public PricingDatabase exportCategoryItem() {
 		// TODO Auto-generated method stub
 		ui_wait(1);
 		clickMasterCheckBoxes();
@@ -442,7 +470,7 @@ public class MasterManagement extends BasePage {
 		unCheckMastrChechkBox();
 		return this;
 	}
-	public MasterManagement updateCategory() {
+	public PricingDatabase updateCategory() {
 		// TODO Auto-generated method stub
 		clickUpdateBtn();
 		clickUpdateCategory();		
@@ -460,7 +488,7 @@ public class MasterManagement extends BasePage {
 	
 	
 	//Contract supplier master/////////////////////////////////////
-	public MasterManagement addNewContractsupplier() {
+	public PricingDatabase addNewContractsupplier() {
 		// TODO Auto-generated method stub
 		ClickContractSuprMaster();
 		clickAddNewBtn();
@@ -470,7 +498,7 @@ public class MasterManagement extends BasePage {
 		clickOnSaveBtn();
 		return this;		
 	}
-	public MasterManagement editNewContractsupplier() {
+	public PricingDatabase editNewContractsupplier() {
 		// TODO Auto-generated method stub
 		clickEditBtn();
 		clickOnRadioBtnOnAddNewSuppler();
@@ -483,13 +511,13 @@ public class MasterManagement extends BasePage {
 		clickOnSaveBtn();
 		return this;		
 	}
-	public MasterManagement deleteContractsupplierItem() {
+	public PricingDatabase deleteContractsupplierItem() {
 		// TODO Auto-generated method stub
 		clickDeleteBtn();
 		clickYesBtn();
 		return this;		
 	}
-	public MasterManagement bulkDeleteContractsupplier(String numberOfMapping) {
+	public PricingDatabase bulkDeleteContractsupplier(String numberOfMapping) {
 		// TODO Auto-generated method stub
 		ui_wait(5);
 		bulkSelectMapping(numberOfMapping);
@@ -497,7 +525,7 @@ public class MasterManagement extends BasePage {
 		clickYesBtn();
 		return this;		
 	}
-	public MasterManagement exportContractsupplier() {
+	public PricingDatabase exportContractsupplier() {
 		// TODO Auto-generated method stub
 		clickMasterCheckBoxes();
 		clickExport();
@@ -505,7 +533,7 @@ public class MasterManagement extends BasePage {
 		clickMasterCheckBoxes();
 		return this;		
 	}
-	public MasterManagement updateContractsupplier() {
+	public PricingDatabase updateContractsupplier() {
 		// TODO Auto-generated method stub
 		clickUpdateBtn();
 		clickUpdateSupplier();
@@ -520,7 +548,7 @@ public class MasterManagement extends BasePage {
 	//CountryAccount Master//////////////////////////////////////
 	
 	
-	public MasterManagement addNewCountryAccount() {
+	public PricingDatabase addNewCountryAccount() {
 		// TODO Auto-generated method stub
 		clickCountryAccountMaster();
 		clickAddNewBtn();
@@ -530,7 +558,7 @@ public class MasterManagement extends BasePage {
 		clickOnSaveBtn();
 		return this;
 	}
-	public MasterManagement editNewCountryAccount() {
+	public PricingDatabase editNewCountryAccount() {
 			// TODO Auto-generated method stub
 		clickEditBtn();
 		clickOnRadioBtnOnAddNewCountry();
@@ -543,14 +571,14 @@ public class MasterManagement extends BasePage {
 		clickOnSaveBtn();
 		return this;		
 	}
-	public MasterManagement deleteCountryAccountItem() {
+	public PricingDatabase deleteCountryAccountItem() {
 			// TODO Auto-generated method stub
 		clickDeleteBtn();
 		clickYesBtn();
 		ui_wait(2);
 		return this;		
 	}
-	public MasterManagement bulkDeleteCountryAccount(String numberOfMapping) {
+	public PricingDatabase bulkDeleteCountryAccount(String numberOfMapping) {
 			// TODO Auto-generated method stub
 		ui_wait(2);
 		bulkSelectMapping(numberOfMapping);
@@ -559,7 +587,7 @@ public class MasterManagement extends BasePage {
 		clickYesBtn();
 		return this;
 	}
-	public MasterManagement exportCountryAccount() {
+	public PricingDatabase exportCountryAccount() {
 			// TODO Auto-generated method stub
 		clickMasterCheckBoxes();
 		clickExport();
@@ -567,7 +595,7 @@ public class MasterManagement extends BasePage {
 		clickMasterCheckBoxes();
 		return this;
 	}
-	public MasterManagement updateCountryAccount() {
+	public PricingDatabase updateCountryAccount() {
 			// TODO Auto-generated method stub
 		clickUpdateBtn();
 		clickUpdateCountry();
@@ -580,12 +608,12 @@ public class MasterManagement extends BasePage {
 	}
 	
 	
-	public MasterManagement clickProductManufacture() {
+	public PricingDatabase clickProductManufacture() {
 		// TODO Auto-generated method stub
 		ClickProductManufacturerMaster();
 		return this;
 	}
-	public MasterManagement addNewProductManufacture() {
+	public PricingDatabase addNewProductManufacture() {
 				// TODO Auto-generated method stub
 		clickAddNewBtn();
 		clickOnRadioBtnOnAddNewManufacturer();
@@ -594,7 +622,7 @@ public class MasterManagement extends BasePage {
 		clickOnSaveBtn();
 		return this;
 	}
-	public MasterManagement editNewProductManufacture() {
+	public PricingDatabase editNewProductManufacture() {
 		// TODO Auto-generated method stub
 		clickEditBtn();
 		clickOnRadioBtnOnAddNewManufacturer();
@@ -607,13 +635,13 @@ public class MasterManagement extends BasePage {
 		clickOnSaveBtn();
 		return this;		
 	}
-	public MasterManagement deleteProductManufactureItem() {
+	public PricingDatabase deleteProductManufactureItem() {
 			// TODO Auto-generated method stub
 		clickDeleteBtn();
 		clickYesBtn();
 		return this;		
 	}
-	public MasterManagement bulkDeleteProductManufacture(String numberOfMapping) {
+	public PricingDatabase bulkDeleteProductManufacture(String numberOfMapping) {
 				// TODO Auto-generated method stub
 		ui_wait(2);
 		bulkSelectMapping(numberOfMapping);
@@ -621,7 +649,7 @@ public class MasterManagement extends BasePage {
 		clickYesBtn();
 		return this;
 	}
-	public MasterManagement exportProductManufacture() {
+	public PricingDatabase exportProductManufacture() {
 			// TODO Auto-generated method stub
 		clickMasterCheckBoxes();
 		clickExport();
@@ -629,7 +657,7 @@ public class MasterManagement extends BasePage {
 		clickMasterCheckBoxes();
 		return this;
 	}
-	public MasterManagement updateProductManufacture() {
+	public PricingDatabase updateProductManufacture() {
 				// TODO Auto-generated method stub
 		clickUpdateBtn();
 		clickUpdateManufacturer();
@@ -642,5 +670,42 @@ public class MasterManagement extends BasePage {
 		
 	}
 
+	public PricingDatabase clickColumns() {
+		// TODO Auto-generated method stub
+		ui_click(ColumnDropDown, "");
+		return this;
+	}
+	public PricingDatabase selectColumnAccount() {
+		// TODO Auto-generated method stub
+		ui_click(AccountOption, "");
+		return this;
+	}
+
+	public PricingDatabase validateColumnPresent(String choice,boolean value) {
+		ui_waitForElementToDisplay(productPricetableIdentifier, 30);
+		switch(choice) {
+		case "Account":Assert.assertEquals(ui_IsElementPresent(accountHeader), value);
+		break;
+		default:
+			Assert.assertTrue(value);
 		
+		}
+		return this;	
+	}
+
+	public PricingDatabase selectRowfor(String choice, String row) {
+		// TODO Auto-generated method stub
+	
+		switch(choice.toLowerCase()) {
+		case "edit":
+			ui_click(String.format(rowelement, row),"");   
+		break;
+		default:
+			Assert.assertTrue(false);
+		     
+		}
+		return this;	
+	}
+	
+	
 }

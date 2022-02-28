@@ -19,11 +19,10 @@ public class CountryAccountManagement extends BaseTest{
 		navigateToWorkbench().
 		validatePageLoad().	
 		navigateToMasterManagement().
-		//ClickCountryAccount().
 		addNewCountryAccount().
 		editNewCountryAccount().
 		deleteCountryAccountItem().
-		bulkDeleteCountryAccount().		
+		bulkDeleteCountryAccount("3").		
 		exportCountryAccount().
 		updateCountryAccount();
 		}		

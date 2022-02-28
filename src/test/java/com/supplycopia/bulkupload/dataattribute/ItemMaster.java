@@ -1,6 +1,8 @@
 package com.supplycopia.bulkupload.dataattribute;
 
 import org.testng.annotations.Test;
+
+import com.supplycopia.utils.StringUtility;
 import com.supplycopia.workbench.base.BaseTest;
 import com.supplycopia.workbench.pages.LoginPage;
 
@@ -23,13 +25,13 @@ public class ItemMaster extends BaseTest{
 		navigateToItemMaster().
 		exportProductEntries().		
 		selectAllColumns().
-		//actionItemToEditFunctionallty().		
-		actionItemToDocumnetManagementFunctionallty().
-		actionItemToFunctionallyEquivalent().
-		actionItemToSingledeleteFunctionallty().
+		editProductEntry("productDesc_"+StringUtility.randomGenarotor("number", 4),"cat").		
+		validateDocumentManagement("Category_Master.xlsx").
+		validateFunctionallyEquivalent().
+		deleteSingleProduct().
 		markAsFunctionalEquivalentFunctionallty().
-		bulkUpdateFunctionallty().
-		bulkdeleteFunctionallty();
+		validateBulkUpdateFunctionality().
+		validateBulkdeleteFunctionality();
 		}
 	
 	}

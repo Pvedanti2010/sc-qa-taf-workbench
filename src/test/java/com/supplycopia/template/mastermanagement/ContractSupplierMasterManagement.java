@@ -23,7 +23,7 @@ public class ContractSupplierMasterManagement extends BaseTest{
 		addNewContractsupplier().
 		editNewContractsupplier().
 		deleteContractsupplierItem().
-		bulkDeleteContractsupplier().		
+		bulkDeleteContractsupplier("3").		
 		exportContractsupplier().
 		updateContractsupplier();
 		}		

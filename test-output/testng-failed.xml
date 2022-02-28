@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.supplycopia.bulkupload.dataattribute.ItemMaster">
+      <class name="com.supplycopia.bulkupload.pricingdatabase.PricingDatabase">
         <methods>
           <include name="getResult"/>
           <include name="Reportsetup"/>
-          <include name="CategoryMasterManagementTest"/>
           <include name="testName"/>
           <include name="tearDown"/>
+          <include name="UploadDocumentTest"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.supplycopia.bulkupload.dataattribute.ItemMaster -->
+      </class> <!-- com.supplycopia.bulkupload.pricingdatabase.PricingDatabase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

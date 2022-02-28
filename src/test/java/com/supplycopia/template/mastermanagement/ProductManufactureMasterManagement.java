@@ -19,11 +19,11 @@ public class ProductManufactureMasterManagement extends BaseTest{
 		navigateToWorkbench().
 		validatePageLoad().	
 		navigateToMasterManagement().
-		ClickProductManufacture().
+		clickProductManufacture().
 		addNewProductManufacture().
 		editNewProductManufacture().
 		deleteProductManufactureItem().
-		bulkDeleteProductManufacture().		
+		bulkDeleteProductManufacture("3").		
 		exportProductManufacture().
 		updateProductManufacture();
 		}		
