@@ -1,9 +1,12 @@
 package com.supplycopia.workbench.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.supplycopia.cms.pages.CmsBulkUpload;
 import com.supplycopia.report.Log;
 import com.supplycopia.utils.Configuration;
 import com.supplycopia.utils.Pause;
@@ -58,6 +61,41 @@ public class BulkUpload extends BasePage {
 	
 	@FindBy(xpath = "//div[text()='All Done!']")
 	WebElement uploadSuccessMessage;
+
+
+	
+	@FindBy(xpath = "//td[contains(@class,'isFalse')]//div/img[@class=\"validateIcon\"]" )
+	List<WebElement> errorFlagIcons;
+	@FindBy(xpath = "//td[contains(@class,'isFalse') and contains(@class,'Category')]//input" )
+	List<WebElement> categoryList;
+	
+	@FindBy(xpath = "//td[contains(@class,'isFalse') and contains(@class,'Subcategory')]//input" )
+	List<WebElement> subCategoryList;
+	
+	@FindBy(xpath = "//div[contains(@id,'container-Category')]//span[1]")
+	List<WebElement> categoryDropDownList;
+	@FindBy(xpath = "//div[contains(@id,'container-Subcategory')]//span[1]")
+	List<WebElement> subcategoryDropDownList;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 	String ListFromMatch="//div[@id='cdk-drop-list-1']/div[%s]/span";
 	String ListToMatch="//div[@id='cdk-drop-list-0']/div[%s]";
@@ -146,7 +184,28 @@ public class BulkUpload extends BasePage {
 		ui_click(saveAndProceed_btn,"proceedToReview&Edit");
 	    return this;
 	}
-	
+	public BulkUpload insertValueinValidationErrorTable(String CategoryVal, String SubCategoryVal,int index)
+	{
+		List<WebElement> listErrorFlag=errorFlagIcons;
+		for(int i=0;i<listErrorFlag.size();i++) {
+			ui_wait(20);			
+			categoryList.get(i).clear();
+			categoryList.get(i).sendKeys(CategoryVal);
+			ui_wait(4);
+			categoryDropDownList.get(index);			
+			ui_wait(20);			
+			subCategoryList.get(i).clear();
+			ui_wait(10);
+			subCategoryList.get(i).sendKeys(SubCategoryVal);
+			ui_wait(4);
+			subcategoryDropDownList.get(index);
+			ui_wait(20);
+			
+		}
+		
+		return this;
+	}
+		
 	public BulkUpload checkValidationErrorsOnReviewAndEdit(String numberOfError) {
 		// TODO Auto-generated method stub]
 		ui_wait(4);

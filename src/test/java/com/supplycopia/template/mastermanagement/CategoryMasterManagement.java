@@ -20,9 +20,9 @@ public class CategoryMasterManagement extends BaseTest{
 		navigateToWorkbench().
 		validatePageLoad().	
 		navigateToMasterManagement().
-		//addNewCategorySubcategory().
-		//editNewCategorySubcategory().
-		//deleteCategory().
+		addNewCategorySubcategory().
+		editNewCategorySubcategory().
+		deleteCategory().
 		bulkDeleteCategory().
 		exportCategoryItem().
 		updateCategory();
