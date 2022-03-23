@@ -69,7 +69,7 @@ public class BulkUpload extends BasePage {
 
 	public BulkUpload validatePageLoad() {
 		// TODO Auto-generated method stub
-		ui_IsElementPresent(ui_waitForElementToDisplay(pageIdentifier_ele,Pause.MEDIUM));
+		ui_IsElementPresent(ui_waitForElementToDisplay(pageIdentifier_ele,Pause.MEDIUM),"5");
 		Log.info("Successful navigation is validated for "+this.getClass().getSimpleName());
 		return this;
 	}
@@ -117,7 +117,7 @@ public class BulkUpload extends BasePage {
 	
 	
 	public BulkUpload validateUploadSuccessMessage() {
-		ui_IsElementPresent(ui_waitForElementToDisplay(uploadSuccessMessage, Pause.HIGH));
+		ui_IsElementPresent(ui_waitForElementToDisplay(uploadSuccessMessage, Pause.HIGH),"5");
 		return this;	
 	}
 	
@@ -191,10 +191,13 @@ public class BulkUpload extends BasePage {
 	}
 	
 	public BulkUpload validateSuccessMessage() {
-		ui_IsElementPresent(ui_waitForElementToDisplay(successMessage, Pause.HIGH));
+		ui_IsElementPresent(ui_waitForElementToDisplay(successMessage, Pause.HIGH),"5");
 		return this;	
 	}
-     
+	public BulkUpload ui_wait(String time) {
+		ui_wait(Integer.parseInt(time));
+		return this;	
+	}
 	}
 		
 	

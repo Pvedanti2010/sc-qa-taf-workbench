@@ -1,4 +1,4 @@
-package com.supplycopia.template.mastermanagement;
+package com.supplycopia.bulkupload.mastermanagement;
 import org.testng.annotations.Test;
 
 import com.supplycopia.utils.StringUtility;
@@ -12,7 +12,7 @@ import com.supplycopia.workbench.pages.LoginPage;
 
 public class CategoryMasterManagement extends BaseTest{
 
-	@Test(groups = {"categoryMaster" })
+	@Test(groups = {"categoryMaster","sanity" })
 	public void CategoryMasterManagementTest() throws Throwable {
 
 		String category="AutoMainCategory_"+StringUtility.randomGenarotor("number", 4);

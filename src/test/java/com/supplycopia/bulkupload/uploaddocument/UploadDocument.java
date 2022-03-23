@@ -12,7 +12,7 @@ import com.supplycopia.workbench.pages.LoginPage;
 
 public class UploadDocument extends BaseTest{
 
-	@Test(groups = {"bulkupload" ,"sanity"})
+	@Test(groups = {"uploaddocument" ,"sanity"})
 	public void UploadDocumentTest() throws Throwable {
 
 		new 
@@ -35,6 +35,7 @@ public class UploadDocument extends BaseTest{
 		dragHeaderWithName("Filename", "Filename").
 		dragHeaderWithName("Product Reference No.", "Product Ref No").
 		proceedToReviewAndEdit().
+		ui_wait("10").
 		checkValidationErrorsOnReviewAndEdit("0").
 		checktotalRecordsOnReviewAndEdit("17").
 		proceedToUpdate().

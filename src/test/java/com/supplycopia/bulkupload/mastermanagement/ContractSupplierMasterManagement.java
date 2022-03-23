@@ -1,4 +1,4 @@
-package com.supplycopia.template.mastermanagement;
+package com.supplycopia.bulkupload.mastermanagement;
 import org.testng.annotations.Test;
 import com.supplycopia.workbench.base.BaseTest;
 import com.supplycopia.workbench.pages.LoginPage;
@@ -10,8 +10,8 @@ import com.supplycopia.workbench.pages.LoginPage;
 
 public class ContractSupplierMasterManagement extends BaseTest{
 
-	@Test(groups = {"categoryMaster" })
-	public void ContractSupplierMasteTest() throws Throwable {
+	@Test(groups = {"categoryMaster","sanity" })
+	public void ContractSupplierMasterManagementTest() throws Throwable {
 		new 
 		LoginPage().
 		login("qauser").	

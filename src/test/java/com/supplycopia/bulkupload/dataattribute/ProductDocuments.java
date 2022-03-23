@@ -35,6 +35,7 @@ public class ProductDocuments extends BaseTest{
 		dragHeaderWithName("Product Reference No.", "Product Ref No").
 		dragHeaderWithName("Filename", "Filename").
 		proceedToReviewAndEdit().
+		ui_wait("10").
 		checkValidationErrorsOnReviewAndEdit("0").
 		checktotalRecordsOnReviewAndEdit("17").
 		proceedToUpdate().

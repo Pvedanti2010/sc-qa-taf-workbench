@@ -11,13 +11,34 @@
       </run>
     </groups>
     <classes>
-      <class name="com.supplycopia.bulkupload.dataattribute.ProductAttributes">
+      <class name="com.supplycopia.bulkupload.mastermanagement.ContractSupplierMasterManagement">
         <methods>
           <include name="getResult"/>
-          <include name="ProductAttributeTest"/>
+          <include name="ContractSupplierMasterManagementTest"/>
           <include name="testName"/>
         </methods>
-      </class> <!-- com.supplycopia.bulkupload.dataattribute.ProductAttributes -->
+      </class> <!-- com.supplycopia.bulkupload.mastermanagement.ContractSupplierMasterManagement -->
+      <class name="com.supplycopia.bulkupload.mastermanagement.ProductManufactureMasterManagement">
+        <methods>
+          <include name="getResult"/>
+          <include name="testName"/>
+          <include name="ProductManufactureMasterManagementTest"/>
+        </methods>
+      </class> <!-- com.supplycopia.bulkupload.mastermanagement.ProductManufactureMasterManagement -->
+      <class name="com.supplycopia.bulkupload.mastermanagement.CategoryMasterManagement">
+        <methods>
+          <include name="getResult"/>
+          <include name="CategoryMasterManagementTest"/>
+          <include name="testName"/>
+        </methods>
+      </class> <!-- com.supplycopia.bulkupload.mastermanagement.CategoryMasterManagement -->
+      <class name="com.supplycopia.bulkupload.mastermanagement.CountryAccountManagement">
+        <methods>
+          <include name="getResult"/>
+          <include name="CountryAccountManagementTest"/>
+          <include name="testName"/>
+        </methods>
+      </class> <!-- com.supplycopia.bulkupload.mastermanagement.CountryAccountManagement -->
     </classes>
   </test> <!-- testname(failed) -->
 </suite> <!-- Failed suite [testsuite] -->

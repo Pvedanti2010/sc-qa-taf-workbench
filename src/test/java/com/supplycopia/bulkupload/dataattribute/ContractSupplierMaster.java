@@ -12,7 +12,7 @@ import com.supplycopia.workbench.pages.LoginPage;
 
 public class ContractSupplierMaster extends BaseTest{
 
-	@Test(groups = {"bulkupload" ,"sanity"})
+	@Test(groups = {"dataattribute" ,"sanity"})
 	public void ContractSupplierMasterTest() throws Throwable {
 
 		new 
@@ -24,6 +24,7 @@ public class ContractSupplierMaster extends BaseTest{
 		navigateToBulkUpload().
 		validatePageLoad().
 		selectDataType("Upload Data Attributes").
+		ui_wait("8").
 		selectCustomeSet("Contract Supplier Master").
 		clickUpload().
 		clickProceedToUpload().

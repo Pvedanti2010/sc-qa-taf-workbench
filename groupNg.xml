@@ -8,6 +8,9 @@
         </groups>
         <packages>
             <package name="com.supplycopia.bulkupload.dataattribute"/>
+            <package name="com.supplycopia.bulkupload.pricingdatabase"/>
+            <package name="com.supplycopia.bulkupload.mastermanagement"/> 
+             <package name="com.supplycopia.bulkupload.uploaddocument"/>
         </packages>
         <!-- <classes>
 			<class name="com.supplycopia.template.bulkupload.CategoryMaster"></class>

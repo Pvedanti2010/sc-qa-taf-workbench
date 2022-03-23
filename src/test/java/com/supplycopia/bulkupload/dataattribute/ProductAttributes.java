@@ -24,6 +24,7 @@ public class ProductAttributes extends BaseTest{
 		navigateToBulkUpload().
 		validatePageLoad().
 		selectDataType("Upload Data Attributes").
+		ui_wait("3").                               // waiting for option to upload
 		selectCustomeSet("Product Attributes").
 		clickUpload().
 		clickProceedToUpload().
