@@ -3,6 +3,7 @@ package com.supplycopia.bulkupload.dataattribute;
 import org.testng.annotations.Test;
 
 import com.supplycopia.workbench.base.BaseTest;
+
 import com.supplycopia.workbench.pages.LoginPage;
 
 /**
@@ -10,10 +11,10 @@ import com.supplycopia.workbench.pages.LoginPage;
  *
  */
 
-public class ProductPrices extends BaseTest{
+public class ProductPricesValidationErrorCurrectToFly extends BaseTest{
 
-	@Test(groups = {"bulkupload" ,"regresion"})
-	public void ProductPriceTest() throws Throwable {
+	@Test(groups = {"bulkupload" ,"Functional"})
+	public void ProductPriceValidationErrorCurrectToFlyTest() throws Throwable {
 
 		new 
 		LoginPage().
@@ -27,7 +28,7 @@ public class ProductPrices extends BaseTest{
 		selectCustomeSet("Products Prices").
 		clickUpload().
 		clickProceedToUpload().
-		uploadFromComputer("Product_Prices.xlsx").
+		uploadFromComputer("Product_Prices_Fly.xlsx").
 		clickImportFile().
 		validateUploadSuccessMessage().
 		dragHeaderWithName("Product Reference No", "Product Ref No").
@@ -42,11 +43,14 @@ public class ProductPrices extends BaseTest{
 		dragHeaderWithName("Pack Price", "Pack Price").
 		dragHeaderWithName("Pack Price USD", "Pack Price USD").
 		proceedToReviewAndEdit().
-		checkValidationErrorsOnReviewAndEdit("0").
-		checktotalRecordsOnReviewAndEdit("9").
+		checktotalRecordsOnReviewAndEdit("50").
+		validateProductNumber("Prod RefAAnkit -001").
+		insertValueinValidationErrorPriceTable("Co","ind","Acc","Sup",0).
+		checkValidationErrorsOnReviewAndEdit("23").
+		checktotalRecordsOnReviewAndEdit("50").
 		proceedToUpdate().
-		checkValidationErrorsOnUpdatePage("0").
-		checktotalRecordsOnUpdatePage("9").
+		checkValidationErrorsOnUpdatePage("23").
+		checktotalRecordsOnUpdatePage("50").
 		saveAndUpdate().
 		confirmUpdate().validateSuccessMessage();
 

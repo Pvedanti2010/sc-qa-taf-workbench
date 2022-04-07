@@ -7,17 +7,24 @@
   <test thread-count="5" name="testname(failed)">
     <groups>
       <run>
-        <include name="sanity"/>
+        <include name="Sanity"/>
       </run>
     </groups>
     <classes>
-      <class name="com.supplycopia.bulkupload.dataattribute.ProductAttributes">
+      <class name="com.supplycopia.bulkupload.dataattribute.ItemMasterSanity">
         <methods>
           <include name="getResult"/>
-          <include name="ProductAttributeTest"/>
+          <include name="ItemMasterSanityTest"/>
           <include name="testName"/>
         </methods>
-      </class> <!-- com.supplycopia.bulkupload.dataattribute.ProductAttributes -->
+      </class> <!-- com.supplycopia.bulkupload.dataattribute.ItemMasterSanity -->
+      <class name="com.supplycopia.bulkupload.pricingdatabase.PricingDatabaseSanity">
+        <methods>
+          <include name="getResult"/>
+          <include name="testName"/>
+          <include name="PricingDatabaseSanityTest"/>
+        </methods>
+      </class> <!-- com.supplycopia.bulkupload.pricingdatabase.PricingDatabaseSanity -->
     </classes>
   </test> <!-- testname(failed) -->
 </suite> <!-- Failed suite [testsuite] -->

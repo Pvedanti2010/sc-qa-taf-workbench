@@ -12,7 +12,7 @@ import com.supplycopia.workbench.pages.LoginPage;
 
 public class ProductManufacturerMapping extends BaseTest{
 
-	@Test(groups = {"bulkupload" ,"sanity"})
+	@Test(groups = {"bulkupload" ,"regresion"})
 	public void ProductManufacturerMappingTest() throws Throwable {
 
 		new 

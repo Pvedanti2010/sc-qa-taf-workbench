@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.supplycopia.bulkupload.dataattribute.ProductCategoryValidationError">
+      <class name="com.supplycopia.bulkupload.dataattribute.ItemMaster">
         <methods>
           <include name="getResult"/>
           <include name="Reportsetup"/>
+          <include name="ItemMasterTest"/>
           <include name="testName"/>
           <include name="tearDown"/>
-          <include name="ProductCategoryMappingTest"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.supplycopia.bulkupload.dataattribute.ProductCategoryValidationError -->
+      </class> <!-- com.supplycopia.bulkupload.dataattribute.ItemMaster -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

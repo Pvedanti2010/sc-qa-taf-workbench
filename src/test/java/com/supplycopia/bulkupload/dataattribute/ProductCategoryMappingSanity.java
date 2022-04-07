@@ -10,9 +10,9 @@ import com.supplycopia.workbench.pages.LoginPage;
  *
  */
 
-public class ProductCategoryMapping extends BaseTest{
+public class ProductCategoryMappingSanity extends BaseTest{
 
-	@Test(groups = {"bulkupload" ,"sanity"})
+	@Test(groups = {"bulkupload" ,"regresion"})
 	public void ProductCategoryMappingTest() throws Throwable {
 
 		new 

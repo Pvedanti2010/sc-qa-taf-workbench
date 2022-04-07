@@ -12,7 +12,7 @@ import com.supplycopia.workbench.pages.LoginPage;
 
 public class ContractSupplierMaster extends BaseTest{
 
-	@Test(groups = {"bulkupload" ,"sanity"})
+	@Test(groups = {"bulkupload" ,"regresion"})
 	public void ContractSupplierMasterTest() throws Throwable {
 
 		new 

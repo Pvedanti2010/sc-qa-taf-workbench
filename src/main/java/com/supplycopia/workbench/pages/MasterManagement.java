@@ -1,11 +1,9 @@
 package com.supplycopia.workbench.pages;
 
 import java.util.List;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.supplycopia.report.Log;
 import com.supplycopia.utils.StringUtility;
 import com.supplycopia.utils.Pause;
@@ -14,22 +12,30 @@ import com.supplycopia.workbench.base.BasePage;
 public class MasterManagement extends BasePage {
 	@FindBy(xpath = "//div[@role=\"tab\" and contains(.,'Category Master')]")
 	WebElement pageIdentifier_ele;
-	@FindBy(xpath = "//button[@class=\"mat-focus-indicator btn functionality-equi-button functionality-equi-button-enabled mat-button mat-button-base\" and contains(.,' Add New ')]")
+	@FindBy(xpath = "//app-workbench-master-table//span [contains(.,'Showing ')]")
+	WebElement masterpageIdentifier_ele;
+	@FindBy(xpath = "//button[contains(.,'Add New')]")
 	WebElement addNew_btn;
 	@FindBy(xpath = "//input[@id=\"yes\" or contains(.,'Add New main category')]")
 	WebElement radio_Btn;
-	@FindBy(xpath = "//input[@formcontrolname=\"category\" or contains(.,'Enter main category')]")
+	@FindBy(xpath = "//input[@formcontrolname=\"category\"]")
 	WebElement InputBox1;	
-	@FindBy(xpath = "//input[@formcontrolname=\"subCategory\" or contains(.,'CHOOSE EXISTING')]")
+	@FindBy(xpath = "//input[@formcontrolname=\"subCategory\"]")
 	WebElement InputBox2;
-	@FindBy(xpath = "//button//span[@class=\"mat-button-wrapper\" and contains(.,'Save')]")
+	@FindBy(xpath = "//button//span[@class=contains(.,'Save')]")
 	WebElement saveAddNew_btn;
 	@FindBy(xpath = "//span[@class=\"text\"and contains(.,'Mapping(s) added successfully!')]")
 	WebElement SaveStatus_Message;
 	@FindBy(xpath = "//span[@class=\"text\"and contains(.,'Yayy! The file has been exported')]")
 	WebElement ExportStatus_Message;
+	@FindBy(xpath = "//span[@class=\"text\" and contains(.,'Yayy! The manufacturer name has been updated!')]")
+	WebElement updateStatus_Manufacturer;
+	@FindBy(xpath = "//span[@class=\"text\" and contains(.,'Yayy! The supplier name has been updated!')]")
+	WebElement updateStatus_Supplier;
+	@FindBy(xpath = "//span[@class=\"text\" and contains(.,'Yayy! The country name has been updated!')]")
+	WebElement updateStatus_Country;
 	@FindBy(xpath = "//span[@class=\"text\" and contains(.,'Yayy! The category name has been updated!')]")
-	WebElement UpdateStatus_Message;	
+	WebElement updateStatus_Category;
 	@FindBy(xpath = "//span[@class=\"text\" and contains(.,'The mapping has been deleted!')]")
 	WebElement deleteStatus_Message;	
 	@FindBy(xpath = "//input[@id=\"no\" or contains(.,'Add New main category')]")
@@ -44,11 +50,11 @@ public class MasterManagement extends BasePage {
 	WebElement Popup_Text;	
 	@FindBy(xpath = "//button[@class=\"btn save-button confirmButton\" and contains(.,'Yes')]")
 	WebElement clickYes_btn;
-	@FindBy(xpath = "//tbody//span[@class='mat-checkbox-inner-container mat-checkbox-inner-container-no-side-margin']")
+	@FindBy(xpath = "//tbody//span[contains(@class,'mat-checkbox-inner-container')]")
 	private List<WebElement> SubCheckboxes;
-	@FindBy(xpath = "//button[@class=\"btn functionality-equi-button float-right mr-2 bulkDeleteButton\" and contains(.,'Bulk Delete')]")
+	@FindBy(xpath = "//button[contains(.,'Bulk Delete')]")
 	WebElement bulkDelete_btn;
-	@FindBy(xpath = "//button[contains(.,' Export')]/span[@class='mat-button-wrapper']")
+	@FindBy(xpath = "//button[contains(.,' Export')]")
 	WebElement export_btn;
 	@FindBy(xpath = "//th//mat-checkbox[@class=\"mat-checkbox mat-accent\"]")	
 	WebElement Master_checkbox;
@@ -56,17 +62,17 @@ public class MasterManagement extends BasePage {
 	WebElement unCheckMaster_checkbox;	
 	@FindBy(xpath = "//button[@id=\"exportCardsBtn\" and contains(.,'Export')]")
 	WebElement exportButtomTray_btn;
-	@FindBy(xpath = "//button[@class=\"mat-menu-trigger btn functionality-equi-button functionality-equi-button-enabled ng-star-inserted\" and contains(.,'Update')]")
+	@FindBy(xpath = "//button[contains(.,'Update')]")
 	WebElement update_btn;
 	@FindBy(xpath = "//button[@role=\"menuitem\"][1]")
 	WebElement updateValue_1_btn;
 	@FindBy(xpath = "//button[@role=\"menuitem\"][2]")
 	WebElement updateValue_2_btn;
-	@FindBy(xpath = "//button[@role=\"menuitem\" and contains(.,'Update Supplier')]")
+	@FindBy(xpath = "//button[contains(.,'Update Supplier')]")
 	WebElement updateSupplierItem_btn;	
-	@FindBy(xpath = "//button[@role=\"menuitem\" and contains(.,'Update Country')]")
+	@FindBy(xpath = "//button[contains(.,'Update Country')]")
 	WebElement UpdateCountryItem_btn;
-	@FindBy(xpath = "//button[@role=\"menuitem\" and contains(.,'Update Manufacturer')]")
+	@FindBy(xpath = "//button[contains(.,'Update Manufacturer')]")
 	WebElement UpdateManufacturer_btn;
 	@FindBy(xpath = "//input[@formcontrolname=\"subCategory\"]")
 	WebElement choose_textbox;
@@ -91,66 +97,126 @@ public class MasterManagement extends BasePage {
 	public MasterManagement(){	
 		
 	}
+	/**
+	 * This method will validate page load
+	 * @return
+	 */
 	public MasterManagement validatePageLoad() {
 		// TODO Auto-generated method stub
 		ui_IsElementPresent(ui_waitForElementToDisplay(pageIdentifier_ele,Pause.MEDIUM));
 		Log.info("Successful navigation is validated for "+this.getClass().getSimpleName());
 		return this;
 	}		
+	/**
+	 * This method will navigate master management page
+	 * @return
+	 */
 	public MasterManagement navigateToMasterManagement() {
 		// TODO Auto-generated method stub
 		Log.info("Navigating to  MasterManagemnet");
 	    return PageFactory.initElements(ui_getUIDriver(), MasterManagement.class);
 	}	
+	public MasterManagement validateMasterPageLoad() {
+		// TODO Auto-generated method stub
+		ui_IsElementPresent(ui_waitForElementToDisplay(masterpageIdentifier_ele,Pause.MEDIUM));
+		Log.info("Successful navigation is validated for "+this.getClass().getSimpleName());
+		return this;
+	}	
+	/**
+	 * This method will click the add new button
+	 * @return
+	 */
 	public MasterManagement clickAddNewBtn() {
 		// TODO Auto-generated method stub
 		ui_click(addNew_btn,"AddNewButton");
 		  return this;			
 	}
+	/**
+	 * This method will click on radio button on add new category
+	 * @return
+	 */
 	public MasterManagement clickOnRadioBtnOnAddNewCategory() {
 		ui_waitForElementToDisplay(radio_Btn, 2);
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}
-	public MasterManagement InputBoxCategory_random() {			
-		ui_setvalue(InputBox1, "EnterValueInputBox", "AotoMainCategory_"+StringUtility.randomGenarotor("number", 4));
+	/**
+	 * This method will set value in category text box
+	 * @param boxCategory
+	 * @return
+	 */
+	public MasterManagement setCategory(String boxCategory) {			
+		ui_setvalue(InputBox1, "EnterValueInputBox", boxCategory );
 		return this;			
 	}	
-	public MasterManagement ClickTextBoxCategory() {	
+	/**
+	 * This method will set click the category text box
+	 * @return
+	 */
+	public MasterManagement clickTextBoxCategory() {	
 		ui_click(InputBox1,"Text box");
 		return this;			
 	}
-	public MasterManagement InputBoxSubCategory_random() {	
-		ui_setvalue(InputBox2, "EnterValueInputBox", "AutoSubCategory_"+StringUtility.randomGenarotor("number", 5));
+	/**
+	 * This method will set value in sub-category text box
+	 * @param subCategory
+	 * @return
+	 */
+	public MasterManagement setSubCategory(String subCategory) {	
+		ui_setvalue(InputBox2, "EnterValueInputBox", subCategory);
 		ui_wait(5);
 		return this;		
 	}
-	public MasterManagement ClickTextBoxSubCategory() {			
+	/**
+	 * This method will set click the Sub-category text box
+	 * @return
+	 */
+	public MasterManagement clickTextBoxSubCategory() {			
 		ui_click(InputBox2,"EnterSubCategory");		
 		ui_wait(5);
 		return this;		
 	}
+	/**
+	 * This method will click on save button on pop-up
+	 * @return
+	 */
 	public MasterManagement clickOnSaveBtn() {	
 		ui_click(saveAddNew_btn, "ClickOnSave");
 		ui_IsElementPresent(ui_waitForElementToDisplay(SaveStatus_Message,Pause.MEDIUM));
 		Log.info("Successful navigation is validated for "+this.getClass().getSimpleName());
 	    return this;	    
 	}
+	/**
+	 * This method will click on edit button on pop-up
+	 * @return
+	 */
 	public MasterManagement clickEditBtn() {
 		// TODO Auto-generated method stub
 		ui_click(Edit_btn, "Editbtn");
 		return this;
 	}
+	/**
+	 * This method will clear the main category text box
+	 * @return
+	 */
 	public MasterManagement clearMainCategoryTextBox() {
 		// TODO Auto-generated method stub
 		ui_clearUsingJavaScript(InputBox1,"AutomationCategoryTest name29");		
 		return this;
 	}
+	/**
+	 * This method will clear the choose category text box
+	 * @return
+	 */
 	public MasterManagement clearChooseCategoryTextBox() {
 		// TODO Auto-generated method stub
 		ui_clearUsingJavaScript(InputBox2,"AutomationCategoryTest name29");		
 		return this;
 	}
+	/**
+	 * This method will click on delete button on pop-up
+	 * @return
+	 */
 	public MasterManagement clickDeleteBtn() {
 		// TODO Auto-generated method stub
 		ui_click(Delete_btn, "DeleteButton");
@@ -158,112 +224,235 @@ public class MasterManagement extends BasePage {
 		Log.info("popup message"+this.getClass().getSimpleName());
 	    return this;
 	}
+	/**
+	 * This method will click on yes button on pop-up
+	 * @return
+	 */
 	public MasterManagement clickYesBtn() {	
-		ui_click(clickYes_btn, "YesButtonOnDeletePopup");
-		//ui_IsElementPresent(ui_waitForElementToAppear(deleteStatus_Message,Wait.HIGH));
-		//Sorry! This mapping is currently being used in the platform and cannot be deleted
-		//Log.info("Successful navigation is validated for "+this.getClass().getSimpleName());
+		ui_click(clickYes_btn, "YesButtonOnDeletePopup");		
 	    return this;
 	}
-	public MasterManagement clickSelectSubcheckbox() {
+	/**
+	 * This method will bulk select 
+	 * @param numberOfMapping
+	 * @return
+	 */
+	public MasterManagement bulkSelectMapping(String numberOfMapping) {
 		// TODO Auto-generated method stub
-		int subcheckboxesSize=SubCheckboxes.size();
-		for (int i=subcheckboxesSize-1; i>subcheckboxesSize-4;i--) {
+		int num=Integer.valueOf(numberOfMapping);
+		int subcheckboxesSize=SubCheckboxes.size()-1;
+		for (int i=subcheckboxesSize; i>subcheckboxesSize-num;i--) {
 			SubCheckboxes.get(i).click();}
 	    return this;
 	}
+	/**
+	 * This method will click on bulk delete button on bottom
+	 * @return
+	 */
 	public MasterManagement clickBulkDelete() {
 		// TODO Auto-generated method stub
 		ui_click(bulkDelete_btn, "BulkDeleteButton");
 	    return this;
 	} 
+	/**
+	 * This method will click on master check box
+	 * @return
+	 */
 	public MasterManagement clickMasterCheckBoxes() {
 		// TODO Auto-generated method stub
 		ui_click(Master_checkbox, "SelectMasterCheckBox");		
 	    return this;    
 	}
+	/**
+	 * This method will click on export button
+	 * @return
+	 */
 	public MasterManagement clickExport() {	
 		ui_click(export_btn, "ExportButton");
 	    return this;
 	} 
+	/**
+	 * This method will click on export button on bottom tray
+	 * @return
+	 */
 	public MasterManagement clickExportButtomTray() {		
 		ui_click(exportButtomTray_btn, "ExportButtomTray");	
 		ui_IsElementPresent(ui_waitForElementToDisplay(ExportStatus_Message,Pause.HIGH));
 		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
 	    return this;
 	} 
-	public MasterManagement clickUnCheckMastrChechkBox() {		
+	/**
+	 * This method will click on uncheck master check box
+	 * @return
+	 */
+	public MasterManagement unCheckMastrChechkBox() {		
 		ui_click(unCheckMaster_checkbox, "UnchechkMastrChechkbox");
 	    return this;
 	} 
+	/**
+	 * This method will click on update button
+	 * @return
+	 */
 	public MasterManagement clickUpdateBtn() {
 		// TODO Auto-generated method stub
 		ui_click(update_btn, "UpdatebButton");
 		return this; 
 	}
+	/**
+	 * This method will click on update category button
+	 * @return
+	 */
 	public MasterManagement clickUpdateCategory() {	
 		ui_click(updateValue_1_btn, "UpdateValue1button");				
 	    return this; 
 	}   
+	/**
+	 * This method will click on update sub-category button
+	 * @return
+	 */
 	public MasterManagement clickUpdateSubCategory() {	
 		ui_click(updateValue_2_btn, "UpdateValue1button");				
 	    return this; 
 	} 
-	public MasterManagement selectDropDownValue() {		
-		ui_selectValueFromDropDownByIndex(selectDropDownValue, 1);
+	/**
+	 * This method will select the drop down value
+	 * @return
+	 */
+	public MasterManagement selectDropDownValue() {			
 		ui_click(selectDropDownValue,"SelectDropDownValue");
 		return this; 
 	}
-	public MasterManagement UpdateBtnOnPopUp() {
+	/**
+	 * This method will click update pop up
+	 * @return
+	 */
+	public MasterManagement clickUpdatePopUp() {
 		// TODO Auto-generated method stub
 		ui_click(updateValue_btn, "UpdateButton");	
-		ui_IsElementPresent(ui_waitForElementToDisplay(UpdateStatus_Message,Pause.HIGH));
+		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Manufacturer,Pause.HIGH));
+		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
+		return this; 
+		}
+	/**
+	 * This method will click update Manufacturer on pop up
+	 * @return
+	 */
+	public MasterManagement clickUpdateManufacturerPopUp() {
+		// TODO Auto-generated method stub
+		ui_click(updateValue_btn, "UpdateButton");	
+		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Manufacturer,Pause.HIGH));
+		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
+		return this; 
+		}
+	/**
+	 * This method will click update supplier on pop up
+	 * @return
+	 */
+	public MasterManagement clickUpdateSupplierPopUp() {
+		// TODO Auto-generated method stub
+		ui_click(updateValue_btn, "UpdateButton");	
+		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Supplier,Pause.HIGH));
+		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
+		return this; 
+		}
+	/**
+	 * This method will click update country on pop up
+	 * @return
+	 */
+	public MasterManagement clickUpdateCountryPopUp() {
+		// TODO Auto-generated method stub
+		ui_click(updateValue_btn, "UpdateButton");	
+		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Country,Pause.HIGH));
 		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
 		return this; 
 		}
 	
-	
-////Contract supplier master
-	
-	public MasterManagement ClickContractSuprMaster() {
+	/**
+	 * This method will click update category on pop up
+	 * @return
+	 */
+	public MasterManagement clickUpdateCategoryPopUp() {
+		// TODO Auto-generated method stub
+		ui_click(updateValue_btn, "UpdateButton");	
+		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Category,Pause.HIGH));
+		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
+		return this; 
+		}	
+	/**
+	 * This method will click update Contract Supplier Master on pop up
+	 * @return
+	 */
+	public MasterManagement clickContractSupplierMaster() {
 		// TODO Auto-generated method stub
 		ui_click(ContractSuprMaster_btn, "ClickOnContratctSupplirMaster");
 		return this;	
 	}
 	
+	/**
+	 * This method will click on radio button 
+	 * @return
+	 */
 	public MasterManagement clickOnRadioBtnOnAddNewSuppler() {
 		ui_waitForElementToDisplay(radio_Btn, 2);
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}
-	public MasterManagement InputBoxSupplier_random() {			
+	/**
+	 * This method will enter random number in supplier text box
+	 * @return
+	 */
+	public MasterManagement inputBoxSupplier_random() {			
 		ui_setvalue(InputBox1, "EnterValueInputBox", "AotoSupplier_"+StringUtility.randomGenarotor("number", 4));
 		return this;			
 	}
-	public MasterManagement InputBoxContract_random() {	
+	/**
+	 * This method will enter random number in contract text box
+	 * @return
+	 */
+	public MasterManagement inputBoxContract_random() {	
 		ui_setvalue(InputBox2, "EnterValueInputBox", "AutoContract_"+StringUtility.randomGenarotor("number", 5));
 		ui_wait(5);
 		return this;		
 	}
-	public MasterManagement ClickTextBoxContract() {			
+	/**
+	 * This method will click contract text box
+	 * @return
+	 */
+	public MasterManagement clickTextBoxContract() {			
 		ui_click(InputBox2,"EnterContract");		
 		ui_wait(5);
 		return this;		
 	}
+	/**
+	 * This method will clear choose contract text box
+	 * @return
+	 */
 	public MasterManagement clearChooseContractTextBox() {
 		// TODO Auto-generated method stub
 		ui_clearUsingJavaScript(InputBox2,"AutomationContractTest name29");		
 		return this;
 	}
-	public MasterManagement ClickTextBoxSupplier() {	
+	/**
+	 * This method will click supplier text box
+	 * @return
+	 */
+	public MasterManagement clickTextBoxSupplier() {	
 		ui_click(InputBox1,"Text box");
 		return this;			
 	}
+	/**
+	 * This method will clear main supplier text box
+	 * @return
+	 */
 	public MasterManagement clearMainSupplerTextBox() {
 		// TODO Auto-generated method stub
 		ui_clearUsingJavaScript(InputBox1,"AutomationSupplierTest name29");		
 		return this;
 	}
+	/**
+	 * This method will update the supplier value
+	 * @return
+	 */
 	public MasterManagement clickUpdateSupplier() {	
 		ui_click(updateValue_1_btn, "UpdateValue1button");				
 	    return this; 
@@ -272,43 +461,79 @@ public class MasterManagement extends BasePage {
 		
 	//CountryAccount
 	
-	public MasterManagement ClickcountryAccountMaster() {
+	/**
+	 * This method will click the country Account Master
+	 * @return
+	 */
+	public MasterManagement clickCountryAccountMaster() {
 		// TODO Auto-generated method stub
 		ui_click(countryAccountMaster_btn, "ClickOnContratctSupplirMaster");
 		return this;
 	}	
+	/**
+	 * This method will click the update country
+	 * @return
+	 */
 	public MasterManagement clickUpdateCountry() {	
 		ui_click(updateValue_1_btn, "UpdateValue1button");				
 	    return this; 
 	} 
+	/**
+	 * This method will click the radio button on add new country
+	 * @return
+	 */
 	public MasterManagement clickOnRadioBtnOnAddNewCountry() {
 		ui_waitForElementToDisplay(radio_Btn, 2);
 		ui_click(radio_Btn, "RadioBtn");
-		   return this;			
+		return this;			
 	}
-	public MasterManagement InputBoxCountry_random() {			
+	/**
+	 * This method will enter random number in country text box
+	 * @return
+	 */
+	public MasterManagement inputBoxCountry_random() {			
 		ui_setvalue(InputBox1, "EnterValueInputBox", "AotoCountry_"+StringUtility.randomGenarotor("number", 4));
 		return this;			
 	}
-	public MasterManagement InputBoxAccount_random() {	
+	/**
+	 * This method will enter random number in account text box
+	 * @return
+	 */
+	public MasterManagement inputBoxAccount_random() {	
 		ui_setvalue(InputBox2, "EnterValueInputBox", "AutoAccount_"+StringUtility.randomGenarotor("number", 5));
 		ui_wait(5);
 		return this;		
 	}
-	public MasterManagement ClickTextBoxAccount() {			
+	/**
+	 * This method will enter the value in account text box
+	 * @return
+	 */
+	public MasterManagement clickTextBoxAccount() {			
 		ui_click(InputBox2,"EnterAccount");		
 		ui_wait(5);
 		return this;		
 	}
+	/**
+	 * This method will clear the choose account text box
+	 * @return
+	 */
 	public MasterManagement clearChooseAccountTextBox() {
 		// TODO Auto-generated method stub
 		ui_clearUsingJavaScript(InputBox2,"AutomationContractTest name29");		
 		return this;
 	}
-	public MasterManagement ClickTextBoxCountry() {	
+	/**
+	 * This method will enter the value in  the country text box
+	 * @return
+	 */
+	public MasterManagement clickTextBoxCountry() {	
 		ui_click(InputBox1,"Text box");
 		return this;			
 	}
+	/**
+	 * This method will clear the main country text box
+	 * @return
+	 */
 	public MasterManagement clearMainCountryTextBox() {
 		// TODO Auto-generated method stub
 		ui_clearUsingJavaScript(InputBox1,"AutomationSupplierTest name29");		
@@ -318,89 +543,147 @@ public class MasterManagement extends BasePage {
 	//ProductManufacture
 
 		
-	public MasterManagement ClickProductManufacturerMaster() {
+	/**
+	 * This method will click on Product Manufacturer Master button
+	 * @return
+	 */
+	public MasterManagement clickProductManufacturerMaster() {
 		// TODO Auto-generated method stub
 		ui_click(ProductManufacturerMaster_btn, "ClickOnContratctSupplirMaster");
 		return this;
 	}
+	/**
+	 * This method will click on Manufacturer Master button
+	 * @return
+	 */
 	public MasterManagement clickUpdateManufacturer() {	
 		ui_click(updateValue_1_btn, "UpdateValue1button");				
 	    return this; 
 	} 
+	/**
+	 * This method will click on radio button on add new Manufacturer
+	 * @return
+	 */
 	public MasterManagement clickOnRadioBtnOnAddNewManufacturer() {
 		ui_waitForElementToDisplay(radio_Btn, 2);
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}
-	public MasterManagement InputBoxManufacturer_random() {			
+	/**
+	 * This method will enter the random  value in Manufacturer text box
+	 * @return
+	 */
+	public MasterManagement inputBoxManufacturer_random() {			
 		ui_setvalue(InputBox1, "EnterValueInputBox", "AotoManufacturer_"+StringUtility.randomGenarotor("number", 4));
 		return this;			
 	}
-	public MasterManagement InputBoxProductRef_random() {	
+	/**
+	 * This method will enter the random  value in Product reference text box
+	 * @return
+	 */
+	public MasterManagement inputBoxProductRef_random() {	
 		ui_setvalue(InputBox2, "EnterValueInputBox", "AutoProductRef_"+StringUtility.randomGenarotor("number", 5));
 		ui_wait(5);
 		return this;		
 	}
-	public MasterManagement ClickTextBoxProductRef() {			
+	/**
+	 * This method will click on Product reference text box
+	 * @return
+	 */
+	public MasterManagement clickTextBoxProductRef() {			
 		ui_click(InputBox2,"EnterAccount");		
 		ui_wait(5);
 		return this;		
 	}
+	/**
+	 * This method will clear the choose Product reference text box
+	 * @return
+	 */
 	public MasterManagement clearChooseProductRefTextBox() {
 		// TODO Auto-generated method stub
 		ui_clearUsingJavaScript(InputBox2,"AutomationProductRefName29");		
 		return this;
 	}
-	public MasterManagement ClickTextBoxManufacturer() {	
+	/**
+	 * This method will click on manufacture text box
+	 * @return
+	 */
+	public MasterManagement clickTextBoxManufacturer() {	
 		ui_click(InputBox1,"Text box");
 		return this;			
 	}
+	/**
+	 * This method will clear the Main Manufacturer text box
+	 * @return
+	 */
 	public MasterManagement clearMainManufacturerTextBox() {
 		// TODO Auto-generated method stub
 		ui_clearUsingJavaScript(InputBox1,"AutomationManufacturerName29");		
 		return this;
 	}
 	
-	
-	
-	//{Method Grouping }	
-	//Category Master////////////////////////////////////////////////
-	
-	public MasterManagement addNewCategorySubcategory() {
+		
+	/**
+	 * This method will  add the new category in the category master
+	 * @param category
+	 * @param subCategory
+	 * @return
+	 */
+	public MasterManagement addNewCategory(String category,String subCategory) {
 		// TODO Auto-generated method stub
 		clickAddNewBtn();
 		clickOnRadioBtnOnAddNewCategory();
-		InputBoxCategory_random();
-		InputBoxSubCategory_random();
+		setCategory(category);
+		setSubCategory(subCategory);
 		clickOnSaveBtn();
 		return this;		
 	}	
-	public MasterManagement editNewCategorySubcategory() {
+	/**
+	 * This method will  edit the category and sub-category in the category master
+	 * @param category
+	 * @param subCategory
+	 * @return
+	 */
+	public MasterManagement editNewCategorySubcategory(String category,String subCategory) {
 		// TODO Auto-generated method stub
 		clickEditBtn();
 		clickOnRadioBtnOnAddNewCategory();
-		ClickTextBoxSubCategory();
+		clickTextBoxSubCategory();
 		clearChooseCategoryTextBox();
-		InputBoxSubCategory_random();
-		ClickTextBoxCategory();
+		setSubCategory(subCategory);
+		clickTextBoxCategory();
 		clearMainCategoryTextBox();
-		InputBoxCategory_random();		
+		setCategory(category);		
 		clickOnSaveBtn();
 		return this;		
 	}
-	public MasterManagement deleteCategory() {
+	
+	/**
+	 * This method will delete the category in the category master
+	 * @return
+	 */
+	public MasterManagement deleteMapping() {
 		// TODO Auto-generated method stub
 		clickDeleteBtn();
 		clickYesBtn();
 		return this;		
 	}
-	public MasterManagement bulkDeleteCategory() {
+	/**
+	 * This method will  bulk delete category master value
+	 * @param numberOfMapping
+	 * @return
+	 */
+	public MasterManagement bulkDeleteMapping(String numberOfMapping) {
 		// TODO Auto-generated method stub
-		clickSelectSubcheckbox();
+		bulkSelectMapping(numberOfMapping);
 		clickBulkDelete();
 		clickYesBtn();
 		return this;
 	}
+	/**
+	 * This method will export the category master  data
+	 * @return
+	 */
 	public MasterManagement exportCategoryItem() {
 		// TODO Auto-generated method stub
 		ui_wait(1);
@@ -408,9 +691,13 @@ public class MasterManagement extends BasePage {
 		clickExport();
 		clickExportButtomTray();
 		ui_wait(1);
-		clickUnCheckMastrChechkBox();
+		unCheckMastrChechkBox();
 		return this;
 	}
+	/**
+	 * This method will update the category on category master data base
+	 * @return
+	 */
 	public MasterManagement updateCategory() {
 		// TODO Auto-generated method stub
 		clickUpdateBtn();
@@ -419,8 +706,8 @@ public class MasterManagement extends BasePage {
 		ui_wait(5);		
 		ui_keyPress("AutoCategory_2402");
 		selectDropDownValue();
-		InputBoxCategory_random();
-		UpdateBtnOnPopUp();
+		setCategory("AotoMainCategory_"+StringUtility.randomGenarotor("number", 4));
+		clickUpdateCategoryPopUp();
 		return this;
 	}
 	
@@ -429,43 +716,64 @@ public class MasterManagement extends BasePage {
 	
 	
 	//Contract supplier master/////////////////////////////////////
+	/**
+	 * This method will  add the new contract supplier in the contractSupplier master
+	 * @return
+	 */
 	public MasterManagement addNewContractsupplier() {
 		// TODO Auto-generated method stub
-		ClickContractSuprMaster();
+		clickContractSupplierMaster();
 		clickAddNewBtn();
 		clickOnRadioBtnOnAddNewSuppler();
-		InputBoxSupplier_random();
-		InputBoxContract_random();
+		inputBoxSupplier_random();
+		inputBoxContract_random();
 		clickOnSaveBtn();
 		return this;		
 	}
+	/**
+	 * This method will  edit the contract supplier in the contractSupplier master
+	 * @return
+	 */
 	public MasterManagement editNewContractsupplier() {
 		// TODO Auto-generated method stub
 		clickEditBtn();
 		clickOnRadioBtnOnAddNewSuppler();
-		ClickTextBoxContract();
+		clickTextBoxContract();
 		clearChooseContractTextBox();
-		InputBoxContract_random();
-		ClickTextBoxSupplier();
+		inputBoxContract_random();
+		clickTextBoxSupplier();
 		clearMainSupplerTextBox();
-		InputBoxSupplier_random();		
+		inputBoxSupplier_random();		
 		clickOnSaveBtn();
 		return this;		
 	}
+	/**
+	 * This method will  delete the new contract supplier in the contractSupplier master
+	 * @return
+	 */
 	public MasterManagement deleteContractsupplierItem() {
 		// TODO Auto-generated method stub
 		clickDeleteBtn();
 		clickYesBtn();
 		return this;		
 	}
-	public MasterManagement bulkDeleteContractsupplier() {
+	/**
+	 * This method will bulk delete the new contract supplier in the contractSupplier master
+	 * @param numberOfMapping
+	 * @return
+	 */
+	public MasterManagement bulkDeleteContractsupplier(String numberOfMapping) {
 		// TODO Auto-generated method stub
 		ui_wait(5);
-		clickSelectSubcheckbox();
+		bulkSelectMapping(numberOfMapping);
 		clickBulkDelete();
 		clickYesBtn();
 		return this;		
 	}
+	/**
+	 * This method will export contractSupplier master data 
+	 * @return
+	 */
 	public MasterManagement exportContractsupplier() {
 		// TODO Auto-generated method stub
 		clickMasterCheckBoxes();
@@ -474,6 +782,10 @@ public class MasterManagement extends BasePage {
 		clickMasterCheckBoxes();
 		return this;		
 	}
+	/**
+	 * This method will update contract supplier in the contractSupplier master data base
+	 * @return
+	 */
 	public MasterManagement updateContractsupplier() {
 		// TODO Auto-generated method stub
 		clickUpdateBtn();
@@ -481,37 +793,49 @@ public class MasterManagement extends BasePage {
 		ui_wait(2);
 		clearChooseContractTextBox();		
 		selectDropDownValue();
-		InputBoxSupplier_random();
-		UpdateBtnOnPopUp();
+		inputBoxSupplier_random();
+		clickUpdateSupplierPopUp();
 		return this;
 	}
 		
 	//CountryAccount Master//////////////////////////////////////
 	
 	
+	/**
+	 * This method will add the new country account  in the country-account master
+	 * @return
+	 */
 	public MasterManagement addNewCountryAccount() {
 		// TODO Auto-generated method stub
-		ClickcountryAccountMaster();
+		clickCountryAccountMaster();
 		clickAddNewBtn();
 		clickOnRadioBtnOnAddNewSuppler();
-		InputBoxCountry_random();
-		InputBoxAccount_random();
+		inputBoxCountry_random();
+		inputBoxAccount_random();
 		clickOnSaveBtn();
 		return this;
 	}
+	/**
+	 * This method will edit the country account  in the country-account master
+	 * @return
+	 */
 	public MasterManagement editNewCountryAccount() {
 			// TODO Auto-generated method stub
 		clickEditBtn();
 		clickOnRadioBtnOnAddNewCountry();
-		ClickTextBoxAccount();
+		clickTextBoxAccount();
 		clearChooseAccountTextBox();
-		InputBoxAccount_random();
-		ClickTextBoxCountry();
+		inputBoxAccount_random();
+		clickTextBoxCountry();
 		clearMainCountryTextBox();
-		InputBoxCountry_random();		
+		inputBoxCountry_random();		
 		clickOnSaveBtn();
 		return this;		
 	}
+	/**
+	 * This method will delete the country account  in the country-account master
+	 * @return
+	 */
 	public MasterManagement deleteCountryAccountItem() {
 			// TODO Auto-generated method stub
 		clickDeleteBtn();
@@ -519,15 +843,24 @@ public class MasterManagement extends BasePage {
 		ui_wait(2);
 		return this;		
 	}
-	public MasterManagement bulkDeleteCountryAccount() {
+	/**
+	 * This method will bulk delete  the country account  in the country-account master data value
+	 * @param numberOfMapping
+	 * @return
+	 */
+	public MasterManagement bulkDeleteCountryAccount(String numberOfMapping) {
 			// TODO Auto-generated method stub
 		ui_wait(2);
-		clickSelectSubcheckbox();
+		bulkSelectMapping(numberOfMapping);
 		ui_wait(1);
 		clickBulkDelete();
 		clickYesBtn();
 		return this;
 	}
+	/**
+	 * This method will export the country account  in the country-account master data 
+	 * @return
+	 */
 	public MasterManagement exportCountryAccount() {
 			// TODO Auto-generated method stub
 		clickMasterCheckBoxes();
@@ -536,6 +869,10 @@ public class MasterManagement extends BasePage {
 		clickMasterCheckBoxes();
 		return this;
 	}
+	/**
+	 * This method will update the country account in the country-account master data base
+	 * @return
+	 */
 	public MasterManagement updateCountryAccount() {
 			// TODO Auto-generated method stub
 		clickUpdateBtn();
@@ -543,111 +880,104 @@ public class MasterManagement extends BasePage {
 		clearChooseAccountTextBox();
 		ui_wait(2);
 	    selectDropDownValue();
-		InputBoxCountry_random();
-		UpdateBtnOnPopUp();
+		inputBoxCountry_random();
+		clickUpdateCountryPopUp();
 		return this;
 	}
 	
-	
-	//ProductManufacture//////////////////////////////////////
-	
+	//Product Manufacture
 	
 	
-	public MasterManagement ClickProductManufacture() {
+	/**
+	 * This method will click the new Product Manufacture  in the ProductManufacture master
+	 * @return
+	 */
+	public MasterManagement clickProductManufacture() {
 		// TODO Auto-generated method stub
-		ClickProductManufacturerMaster();
+		clickProductManufacturerMaster();
 		return this;
 	}
+	/**
+	 * This method will add new the Product Manufacture  in the ProductManufacture master
+	 * @return
+	 */
 	public MasterManagement addNewProductManufacture() {
-				// TODO Auto-generated method stub
+		// TODO Auto-generated method stub
 		clickAddNewBtn();
 		clickOnRadioBtnOnAddNewManufacturer();
-		InputBoxManufacturer_random();
-		InputBoxProductRef_random();
+		inputBoxManufacturer_random();
+		inputBoxProductRef_random();
 		clickOnSaveBtn();
 		return this;
 	}
+	/**
+	 * This method will edit the Product Manufacture  in the ProductManufacture master
+	 * @return
+	 */
 	public MasterManagement editNewProductManufacture() {
 		// TODO Auto-generated method stub
 		clickEditBtn();
 		clickOnRadioBtnOnAddNewManufacturer();
-		ClickTextBoxProductRef();
+		clickTextBoxProductRef();
 		clearChooseProductRefTextBox();
-		InputBoxProductRef_random();
-		ClickTextBoxManufacturer();
+		inputBoxProductRef_random();
+		clickTextBoxManufacturer();
 		clearMainManufacturerTextBox();
-		InputBoxManufacturer_random();		
+		inputBoxManufacturer_random();		
 		clickOnSaveBtn();
 		return this;		
 	}
+	/**
+	 * This method will delete the Product Manufacture  in the ProductManufacture master
+	 * @return
+	 */
 	public MasterManagement deleteProductManufactureItem() {
 			// TODO Auto-generated method stub
 		clickDeleteBtn();
 		clickYesBtn();
 		return this;		
 	}
-	public MasterManagement bulkDeleteProductManufacture() {
+	/**
+	 * This method will bulk delete the Product Manufacture  in the ProductManufacture master data value
+	 * @param numberOfMapping
+	 * @return
+	 */
+	public MasterManagement bulkDeleteProductManufacture(String numberOfMapping) {
 				// TODO Auto-generated method stub
 		ui_wait(2);
-		clickSelectSubcheckbox();
+		bulkSelectMapping(numberOfMapping);
 		clickBulkDelete();
 		clickYesBtn();
 		return this;
 	}
+	/**
+	 * This method will export the ProductManufacture master data value
+	 * @return
+	 */
 	public MasterManagement exportProductManufacture() {
 			// TODO Auto-generated method stub
-		clickMasterCheckBoxes();
-		clickExport();
-		clickExportButtomTray();
-		clickMasterCheckBoxes();
-		return this;
-	}
+		    clickMasterCheckBoxes();
+		    clickExport();
+		    clickExportButtomTray();
+		    clickMasterCheckBoxes();
+		    return this;
+		}
+	/**
+	 * This method will update the Product Manufacture  in the ProductManufacture master data base
+	 * @return
+	 */
 	public MasterManagement updateProductManufacture() {
-				// TODO Auto-generated method stub
-		clickUpdateBtn();
-		clickUpdateManufacturer();
-		clearChooseProductRefTextBox();		
-		ui_wait(2);
-		selectDropDownValue();
-		InputBoxManufacturer_random();
-		UpdateBtnOnPopUp();
-		return this;
+			// TODO Auto-generated method stub
+			clickUpdateBtn();
+			clickUpdateManufacturer();
+			clearChooseProductRefTextBox();		
+			ui_wait(2);
+			selectDropDownValue();
+			inputBoxManufacturer_random();
+			clickUpdateManufacturerPopUp();
+			return this;
 		
 	}
 
 		
 }
-
-
-		
-	
-
-			
-	
-
-	
-	
-
-	
-		
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		
-		
-		
-			
-	
-	
-	
-	
-

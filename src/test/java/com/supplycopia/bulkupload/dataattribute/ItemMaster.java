@@ -1,6 +1,8 @@
 package com.supplycopia.bulkupload.dataattribute;
 
 import org.testng.annotations.Test;
+
+import com.supplycopia.utils.StringUtility;
 import com.supplycopia.workbench.base.BaseTest;
 import com.supplycopia.workbench.pages.LoginPage;
 
@@ -11,8 +13,8 @@ import com.supplycopia.workbench.pages.LoginPage;
 
 public class ItemMaster extends BaseTest{
 
-	@Test(groups = {"categoryMaster" })
-	public void CategoryMasterManagementTest() throws Throwable {
+	@Test(groups = {"itemClass","regresion" })
+	public void ItemMasterTest() throws Throwable {
 
 		new 
 		LoginPage().
@@ -22,14 +24,17 @@ public class ItemMaster extends BaseTest{
 		validatePageLoad().
 		navigateToItemMaster().
 		exportProductEntries().		
-		selectAllColumns().
-		//actionItemToEditFunctionallty().		
-		actionItemToDocumnetManagementFunctionallty().
-		actionItemToFunctionallyEquivalent().
-		actionItemToSingledeleteFunctionallty().
+		selectAllColumns().		
+		//editProductEntry("productDesc_"+StringUtility.randomGenarotor("number", 4),"cat").
+		//selectCategoryFromDropDown("Category-3").
+		//selectSubCategoryDropDown().
+		//clickOnSaveBtn().
+		validateDocumentManagement("Category_Master.xlsx").
+		validateFunctionallyEquivalent().
+		deleteSingleProduct().
 		markAsFunctionalEquivalentFunctionallty().
-		bulkUpdateFunctionallty().
-		bulkdeleteFunctionallty();
+		validateBulkUpdateFunctionality().
+		validateBulkdeleteFunctionality();
 		}
 	
 	}

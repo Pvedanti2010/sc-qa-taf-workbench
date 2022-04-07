@@ -10,8 +10,8 @@ import com.supplycopia.workbench.pages.LoginPage;
 
 public class CountryAccountManagement extends BaseTest{
 
-	@Test(groups = {"categoryMaster" })
-	public void ContractSupplierMasteTest() throws Throwable {
+	@Test(groups = {"masterManagement","Regresion" })
+	public void CountryAccountMasterTest() throws Throwable {
 		new 
 		LoginPage().
 		login("qauser").	
@@ -19,11 +19,10 @@ public class CountryAccountManagement extends BaseTest{
 		navigateToWorkbench().
 		validatePageLoad().	
 		navigateToMasterManagement().
-		//ClickCountryAccount().
 		addNewCountryAccount().
 		editNewCountryAccount().
 		deleteCountryAccountItem().
-		bulkDeleteCountryAccount().		
+		bulkDeleteCountryAccount("3").		
 		exportCountryAccount().
 		updateCountryAccount();
 		}		

@@ -1,5 +1,7 @@
 package com.supplycopia.template.mastermanagement;
 import org.testng.annotations.Test;
+
+
 import com.supplycopia.workbench.base.BaseTest;
 import com.supplycopia.workbench.pages.LoginPage;
 
@@ -8,10 +10,14 @@ import com.supplycopia.workbench.pages.LoginPage;
  *
  */
 
-public class ContractSupplierMasterManagement extends BaseTest{
+public class MasterManagement extends BaseTest{
 
-	@Test(groups = {"masterManagement","Regresion" })
-	public void ContractSupplierMasterTest() throws Throwable {
+	@Test(groups = {"masterManagement","Sanity" })
+	public void MasterManagementSanityTest() throws Throwable {
+
+		
+	
+		
 		new 
 		LoginPage().
 		login("qauser").	
@@ -19,18 +25,19 @@ public class ContractSupplierMasterManagement extends BaseTest{
 		navigateToWorkbench().
 		validatePageLoad().	
 		navigateToMasterManagement().
+		validateMasterPageLoad().
 		clickContractSupplierMaster().
-		addNewContractsupplier().
-		editNewContractsupplier().
-		deleteContractsupplierItem().
-		bulkDeleteContractsupplier("3").		
-		exportContractsupplier().
-		updateContractsupplier();
-		}		
-	}
-
+		validateMasterPageLoad().
+		clickCountryAccountMaster().
+		validateMasterPageLoad().
+		clickProductManufacture().
+		validateMasterPageLoad();
 		
+		}
 
+	
+		
+	}		
 	
 
 	

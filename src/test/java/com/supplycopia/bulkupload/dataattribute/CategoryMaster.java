@@ -12,7 +12,7 @@ import com.supplycopia.workbench.pages.LoginPage;
 
 public class CategoryMaster extends BaseTest{
 
-	@Test(groups = {"bulkupload" ,"sanity"})
+	@Test(groups = {"bulkupload" ,"regresion","Sanity"})
 	public void CategoryMasterTest() throws Throwable {
 
 		new 

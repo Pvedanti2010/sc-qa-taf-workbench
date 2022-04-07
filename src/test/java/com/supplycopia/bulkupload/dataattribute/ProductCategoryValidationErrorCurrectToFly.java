@@ -10,10 +10,10 @@ import com.supplycopia.workbench.pages.LoginPage;
  *
  */
 
-public class ProductCategoryValidationError extends BaseTest{
+public class ProductCategoryValidationErrorCurrectToFly extends BaseTest{
 
-	@Test(groups = {"bulkupload" ,"fun"})
-	public void ProductCategoryMappingTest() throws Throwable {
+	@Test(groups = {"bulkupload" ,"Functional"})
+	public void ValidationErrorCurrectToFlyTest() throws Throwable {
 
 		new 
 		LoginPage().
@@ -27,16 +27,23 @@ public class ProductCategoryValidationError extends BaseTest{
 		selectCustomeSet("Product Category Mapping").
 		clickUpload().
 		clickProceedToUpload().
-		uploadFromComputer("Product_Category_MappingOLD.xlsx").
+		uploadFromComputer("Product_Category_FlySheet.xlsx").
 		clickImportFile().
 		validateUploadSuccessMessage().
 		dragHeaderWithName("Product Reference No", "Product Reference No").
 		dragHeaderWithName("Category", "Category").
 		dragHeaderWithName("Sub Category", "Subcategory").
-		proceedToReviewAndEdit().
-		checkValidationErrorsOnReviewAndEdit("6").
+		proceedToReviewAndEdit().		
+		checkValidationErrorsOnReviewAndEdit("2").
 		checktotalRecordsOnReviewAndEdit("9").
-		insertValueinValidationErrorTable("cat kk","sub",1).
+		validateProductNumber("Prod RefAAnkit -001").
+		validateProductNumber("Prod RefAAnkit -002").
+		validateProductNumber("Prod RefAAnkit -003").
+		validateProductNumber("Prod RefAAnkit -004").
+		validateProductNumber("Prod RefAAnkit -005").
+		validateProductNumber("Prod RefAAnkit -006").
+		validateProductNumber("Prod RefAAnkit -007").
+		insertValueinValidationErrorTable("cat kk","sub",0).
 		checkValidationErrorsOnReviewAndEdit("0").
 		checktotalRecordsOnReviewAndEdit("9").
 		proceedToUpdate().
