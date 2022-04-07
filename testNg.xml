@@ -2,7 +2,7 @@
 <suite name="testsuite" verbose="1" preserve-order="true" parallel="methods" thread-count="3">
 	<test name="testname">
 		<classes>
-			<class name="com.supplycopia.workbench.template.CategoryMaster">
+			<class name="com.supplycopia.bulkupload.dataattribute.CategoryMaster">
 				<!-- <methods>							
 					<include name="UserLoginTest"></include>
 				</methods> -->
@@ -14,5 +14,6 @@
 		<listener class-name="com.supplycopia.listeners.RetryListener"></listener>
 		 -->
 		 <listener class-name="com.supplycopia.report.ExtentReportListener"></listener>
+		 		  <listener class-name="com.supplycopia.listeners.AnnotationTransformer"></listener> 
 	</listeners>
 </suite> 

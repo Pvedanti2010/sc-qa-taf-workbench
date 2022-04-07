@@ -2,6 +2,7 @@ package com.supplycopia.bulkupload.dataattribute;
 
 import org.testng.annotations.Test;
 
+import com.supplycopia.listeners.RetryCountIfFailed;
 import com.supplycopia.workbench.base.BaseTest;
 import com.supplycopia.workbench.pages.LoginPage;
 
@@ -11,8 +12,9 @@ import com.supplycopia.workbench.pages.LoginPage;
  */
 
 public class ProductPrices extends BaseTest{
+	@Test(groups = {"bulkupload" ,"Regresion"})
+	@RetryCountIfFailed(2)
 
-	@Test(groups = {"bulkupload" ,"regresion"})
 	public void ProductPriceTest() throws Throwable {
 
 		new 

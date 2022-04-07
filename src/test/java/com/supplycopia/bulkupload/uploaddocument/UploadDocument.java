@@ -2,6 +2,7 @@ package com.supplycopia.bulkupload.uploaddocument;
 
 import org.testng.annotations.Test;
 
+import com.supplycopia.listeners.RetryCountIfFailed;
 import com.supplycopia.workbench.base.BaseTest;
 import com.supplycopia.workbench.pages.LoginPage;
 
@@ -11,8 +12,9 @@ import com.supplycopia.workbench.pages.LoginPage;
  */
 
 public class UploadDocument extends BaseTest{
+	@Test(groups = {"uploaddocument" ,"Sanity","Regresion"})
+	@RetryCountIfFailed(2)
 
-	@Test(groups = {"bulkupload" ,"Sanity","Regresion"})
 	public void UploadDocumentTest() throws Throwable {
 
 		new 
@@ -35,6 +37,7 @@ public class UploadDocument extends BaseTest{
 		dragHeaderWithName("Filename", "Filename").
 		dragHeaderWithName("Product Reference No.", "Product Ref No").
 		proceedToReviewAndEdit().
+		ui_wait("10").
 		checkValidationErrorsOnReviewAndEdit("0").
 		checktotalRecordsOnReviewAndEdit("17").
 		proceedToUpdate().
@@ -42,6 +45,7 @@ public class UploadDocument extends BaseTest{
 		checktotalRecordsOnUpdatePage("17").
 		saveAndUpdate().
 		confirmUpdate().validateSuccessMessage();
+		
 		
 		
 	

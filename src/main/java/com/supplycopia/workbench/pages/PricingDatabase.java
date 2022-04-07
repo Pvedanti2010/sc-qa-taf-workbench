@@ -2,11 +2,11 @@ package com.supplycopia.workbench.pages;
 
 import java.util.List;
 
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-
 import com.supplycopia.report.Log;
 import com.supplycopia.utils.StringUtility;
 import com.supplycopia.utils.Pause;
@@ -17,9 +17,39 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class PricingDatabase extends BasePage {
 	
+	String rowelement_packSizeTxt= "//tbody/tr[%s]//input[@name='packSize']";
+	String rowelement_savePricing= "//tbody/tr[%s]//span[contains(@class,'action-save-icon')]";
+	String rowelement_changeHistory="//tbody/tr[%s]//span[contains(@class,'action-change-history')]";
+	String rowelement_deleteIcon="//tbody/tr[%s]//span[contains(@class,'action-delete-icon')]";
+	String rowelement_editIcon="(//tr/td//span[contains(@class,'edit-icon')])[%s]";
 	
-
-	String rowelement="(//tr/td//span[contains(@class,'edit-icon')])[%s]";
+	
+	
+	
+	
+	
+	@FindBy(xpath = "//span[@class='sc-filter-title' and contains(.,'Product Reference No ')]")
+	WebElement productRef_dd;
+    String productRefOption=	"(//span[@class='sc-filter-title' and contains(.,'Product Reference No ')]//ancestor::mat-expansion-panel//span[@class='mat-checkbox-inner-container'])[1]";
+	@FindBy(xpath = "//button/span[@class='mat-button-wrapper' and contains(.,'Filters')]")
+	WebElement filters_btn;
+	@FindBy(xpath = "//app-confirm-dialog//button[text()='Yes']")
+	WebElement filtersYes;
+	@FindBy(xpath = "//img[@class='back-icon cursor-pointer']")
+	WebElement filterBack_lnk;
+	@FindBy(xpath = "//span[contains(@class,'clearFilter')]")
+	WebElement clearFilter_lnk;
+	
+	
+	@FindBy(xpath = "//app-confirm-dialog//button[text()='Yes']")
+	WebElement deleteMappingYes;
+	@FindBy(xpath = "//mat-dialog-container[@role='dialog']//span[@class='close-text']")
+	WebElement changeHistoryCloseDialog;
+	
+	@FindBy(xpath = "//mat-dialog-container[@role='dialog']")
+	WebElement changeHistoryDialog;
+	@FindBy(xpath = "//span/img[@class='scroll-arrow' and contains(@src,'greaterthan')]")
+	WebElement scrollRight;
 	@FindBy(xpath = "//table/tbody/tr/td/span[contains(span,text())]")
 	WebElement productPricetableIdentifier;
 	
@@ -59,11 +89,11 @@ public class PricingDatabase extends BasePage {
 	WebElement Delete_btn;
 	@FindBy(xpath = "//span[@class=\"message\"and contains(.,'This will delete the mapping(s)')]")
 	WebElement Popup_Text;	
-	@FindBy(xpath = "//button[@class=\"btn save-button confirmButton\" and contains(.,'Yes')]")
+	@FindBy(xpath = "//app-bulk-delete-dialog//button[text()='Yes']")
 	WebElement clickYes_btn;
 	@FindBy(xpath = "//tbody//span[contains(@class,'mat-checkbox-inner')]")
 	private List<WebElement> SubCheckboxes;
-	@FindBy(xpath = "//button[contains(.,'Bulk Delete')]")
+	@FindBy(xpath = "//button[contains(@class,'bulk-delete-button-enabled')]")
 	WebElement bulkDelete_btn;
 	@FindBy(xpath = "//button[contains(.,' Export')]/span[@class='mat-button-wrapper']")
 	WebElement export_btn;
@@ -136,13 +166,14 @@ public class PricingDatabase extends BasePage {
 		int subcheckboxesSize=SubCheckboxes.size()-1;
 		assertThat(num, is(lessThan(subcheckboxesSize)));
 		for (int i=0; i<num;i++) {
-			SubCheckboxes.get(i).click();}
+		ui_click(SubCheckboxes.get(i), "checkbox");	}
 	    return this;
 	}
 	
 	public PricingDatabase validatePageLoad() {
 		// TODO Auto-generated method stub
-		ui_IsElementPresent(ui_waitForElementToDisplay(pageIdentifier_ele,Pause.MEDIUM));
+		ui_IsElementDisplay(ui_waitForElementToDisplay(pageIdentifier_ele,Pause.MEDIUM));
+		//ui_IsElementPresent(ui_waitForElementToDisplay(pageIdentifier_ele,Pause.MEDIUM),"5");
 		Log.info("Successful navigation is validated for "+this.getClass().getSimpleName());
 		return this;
 	}	
@@ -181,8 +212,8 @@ public class PricingDatabase extends BasePage {
 		return this;		
 	}
 	public PricingDatabase clickOnSaveBtn() {	
-		ui_click(saveAddNew_btn, "ClickOnSave");
-		ui_IsElementPresent(ui_waitForElementToDisplay(SaveStatus_Message,Pause.MEDIUM));
+		ui_click(saveAddNew_btn, "ClickOnSave");		
+		ui_IsElementPresent(ui_waitForElementToDisplay(SaveStatus_Message,Pause.MEDIUM),"5");
 		Log.info("Successful navigation is validated for "+this.getClass().getSimpleName());
 	    return this;	    
 	}
@@ -204,7 +235,7 @@ public class PricingDatabase extends BasePage {
 	public PricingDatabase clickDeleteBtn() {
 		// TODO Auto-generated method stub
 		ui_click(Delete_btn, "DeleteButton");
-		ui_IsElementPresent(ui_waitForElementToDisplay(Popup_Text,Pause.HIGH));
+		ui_IsElementPresent(ui_waitForElementToDisplay(Popup_Text,Pause.HIGH),"5");
 		Log.info("popup message"+this.getClass().getSimpleName());
 	    return this;
 	}
@@ -257,28 +288,28 @@ public class PricingDatabase extends BasePage {
 	public PricingDatabase clickUpdatePopUp() {
 		// TODO Auto-generated method stub
 		ui_click(updateValue_btn, "UpdateButton");	
-		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Manufacturer,Pause.HIGH));
+		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Manufacturer,Pause.HIGH),"5");
 		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
 		return this; 
 		}
 	public PricingDatabase clickUpdateManufacturerPopUp() {
 		// TODO Auto-generated method stub
 		ui_click(updateValue_btn, "UpdateButton");	
-		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Manufacturer,Pause.HIGH));
+		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Manufacturer,Pause.HIGH),"5");
 		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
 		return this; 
 		}
 	public PricingDatabase clickUpdateSupplierPopUp() {
 		// TODO Auto-generated method stub
 		ui_click(updateValue_btn, "UpdateButton");	
-		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Supplier,Pause.HIGH));
+		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Supplier,Pause.HIGH),"5");
 		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
 		return this; 
 		}
 	public PricingDatabase clickUpdateCountryPopUp() {
 		// TODO Auto-generated method stub
 		ui_click(updateValue_btn, "UpdateButton");	
-		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Country,Pause.HIGH));
+		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Country,Pause.HIGH),"5");
 		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
 		return this; 
 		}
@@ -286,7 +317,7 @@ public class PricingDatabase extends BasePage {
 	public PricingDatabase clickUpdateCategoryPopUp() {
 		// TODO Auto-generated method stub
 		ui_click(updateValue_btn, "UpdateButton");	
-		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Category,Pause.HIGH));
+		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Category,Pause.HIGH),"5");
 		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
 		return this; 
 		}
@@ -698,7 +729,7 @@ public class PricingDatabase extends BasePage {
 	public PricingDatabase validateColumnPresent(String choice,boolean value) {
 		ui_waitForElementToDisplay(productPricetableIdentifier, 30);
 		switch(choice) {
-		case "Account":Assert.assertEquals(ui_IsElementPresent(accountHeader), value);
+		case "Account":Assert.assertEquals(ui_IsElementPresent(accountHeader,"5"), value);
 		break;
 		default:
 			Assert.assertTrue(value);
@@ -712,8 +743,14 @@ public class PricingDatabase extends BasePage {
 	
 		switch(choice.toLowerCase()) {
 		case "edit":
-			ui_click(String.format(rowelement, row),"");   
-		break;
+			ui_click(String.format(rowelement_editIcon, row),"EditIcon");
+			break;
+		case "changehistory":
+			ui_click(String.format(rowelement_changeHistory, row),"changeHistoryIcon");	
+			break;
+		case "delete":
+			ui_click(String.format(rowelement_deleteIcon, row),"deleteIcon");	
+			break;
 		default:
 			Assert.assertTrue(false);
 		     
@@ -721,11 +758,78 @@ public class PricingDatabase extends BasePage {
 		return this;	
 	}
 
-	public PricingDatabase editPackSizeFirstRow() {
+	public PricingDatabase setPackSize(String value, String row) {
 		// TODO Auto-generated method stub
-		ui_click(AccountOption, rowelement);
+			ui_clearAndSetValue(String.format(rowelement_packSizeTxt, row), value);
+	        ui_wait(6);
+		   
+		return this;
+	}
 	
-	return this;
+	public PricingDatabase clickSaveProductPrices(String value, String row) {
+		// TODO Auto-generated method stub
+		ui_wait(4);
+		ui_click(String.format(rowelement_savePricing, row), value);
+		ui_waitForElementToDisplay(productPricetableIdentifier, 30);
+		return this;
+	}
+	
 		
-	}	
+	public PricingDatabase scrollRight(String value) {
+		// TODO Auto-generated method stub
+		for (int i = 0; i < Integer.valueOf(value); i++) {
+			ui_click(scrollRight, "Scrolling right");ui_wait(1);
+		}
+		
+		return this;
+	}
+
+	public PricingDatabase verifyChangeHistoryPopUp() {
+		// TODO Auto-generated method stubchange
+		Assert.assertEquals(ui_IsElementDisplay(changeHistoryDialog),true);
+		return this;
+	}
+
+	public PricingDatabase closeChangeHistoryPopUp() {
+		// TODO Auto-generated method stub
+	ui_click(changeHistoryCloseDialog, "changeHistoryCloseDialog");	
+		return this;
+	}
+
+	public PricingDatabase confirmDeleteMapping() {
+		// TODO Auto-generated method stub
+	ui_click(deleteMappingYes, "Confirm Yes Button");
+	return this;	
+	}
+
+	public PricingDatabase confirmBulkDeleteMapping() {
+		// TODO Auto-generated method stub
+		ui_click(clickYes_btn, "confirmBulkDelete");
+		return this;
+	}
+
+	public PricingDatabase clickFilter() {
+		// TODO Auto-generated method stub
+		ui_click(filters_btn, "confirmBulkDelete");
+		return this;		
+	}
+	
+	public PricingDatabase expendProductRef() {
+	ui_click(productRef_dd, "");
+	return this;
+	}
+	public PricingDatabase selectProdRefOption(String option) {
+		ui_click(productRefOption, ""); 
+		return this;
+		}
+	public PricingDatabase clickBackFilter() {
+		ui_click(filterBack_lnk,"filterBack button"); 
+		return this;
+		}
+	public PricingDatabase clearFilter() {
+		ui_click(clearFilter_lnk,""); 
+		return this;
+		}
+
+
 }

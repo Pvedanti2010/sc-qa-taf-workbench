@@ -5,6 +5,8 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import com.supplycopia.cms.pages.CmsBulkUpload;
 import com.supplycopia.report.Log;
 import com.supplycopia.utils.Configuration;
 import com.supplycopia.utils.Pause;
@@ -120,8 +122,10 @@ public class BulkUpload extends BasePage {
 
 	public BulkUpload validatePageLoad() {
 		// TODO Auto-generated method stub
-		ui_IsElementPresent(ui_waitForElementToDisplay(pageIdentifier_ele, Pause.MEDIUM));
-		Log.info("Successful navigation is validated for " + this.getClass().getSimpleName());
+
+		ui_IsElementPresent(ui_waitForElementToDisplay(pageIdentifier_ele,Pause.MEDIUM),"5");
+		Log.info("Successful navigation is validated for "+this.getClass().getSimpleName());
+
 		return this;
 	}
 
@@ -174,7 +178,7 @@ public class BulkUpload extends BasePage {
 	public BulkUpload uploadFromComputer(String file) {
 		// TODO Auto-generated method stub
 		ui_wait(2);
-		String completeFile = System.getProperty("user.dir") + "/" + Configuration.get("uploadFilePath") + "//" + file;
+		String completeFile = System.getProperty("user.dir")+Configuration.get("uploadFilePath")+"\\"+file;
 		ui_waitForElementToDisplay(fileUploadPopUp_btn, Pause.MEDIUM);
 		uploadFile_txt.sendKeys(completeFile);
 
@@ -182,8 +186,9 @@ public class BulkUpload extends BasePage {
 	}
 
 	public BulkUpload validateUploadSuccessMessage() {
-		ui_IsElementPresent(ui_waitForElementToDisplay(uploadSuccessMessage, Pause.HIGH));
-		return this;
+		ui_IsElementPresent(ui_waitForElementToDisplay(uploadSuccessMessage, Pause.HIGH),"5");
+		return this;	
+
 	}
 
 	public BulkUpload clickImportFile() {
@@ -332,10 +337,8 @@ public class BulkUpload extends BasePage {
 		return this;
 	}
 
-	public BulkUpload validateSuccessMessage() {
-		ui_IsElementPresent(ui_waitForElementToDisplay(successMessage, Pause.HIGH));
-		return this;
-	}
+	
+
 	public BulkUpload dragHeaderWithIndexOnreviewEditScreen(String fromRowItem, String toRowItem) {
 		// TODO Auto-generated method stub
 		//ui_wait(2);
@@ -349,15 +352,23 @@ public class BulkUpload extends BasePage {
 		ui_click(ConfirmDelete_btn, "Confirmation Yes button");
 		return this;
 	}
+	public BulkUpload validateSuccessMessage() {
+			ui_IsElementDisplay(ui_waitForElementToDisplay(successMessage, Pause.HIGH));
+			return this;	
+		}
+	public BulkUpload ui_wait(String time) {
+		ui_wait(Integer.parseInt(time));
+		return this;	
+	}
 	public BulkUpload validatedeleteMessage() {
-		ui_IsElementPresent(ui_waitForElementToDisplay(deleteConfirmMessage, Pause.LOW));
+		ui_IsElementDisplay(ui_waitForElementToDisplay(deleteConfirmMessage, Pause.LOW));
 		return this;
 
 	}
 	public BulkUpload ValueinValidationErrorPriceTable(String ContractIdVal,String CountryVal,String AccountVal,String SupplierVal,int index) {		
 		List<WebElement> listErrorFlag = errorFlagIcons;
-		for (int i = 0; i < listErrorFlag.size(); i++) {
-			deleteValidationErrorFileToCrossIcon();
+	for (int i = 0; i < listErrorFlag.size(); i++) {
+		deleteValidationErrorFileToCrossIcon();
 			validatedeleteMessage();
 			dragHeaderWithIndexOnreviewEditScreen("1","1");
 	

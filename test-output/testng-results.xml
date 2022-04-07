@@ -2,13 +2,13 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[####### Starting  Test Case: PricingDatabaseTest #######]]>
+      <![CDATA[####### Starting  Test Case: PricingDataBaseTest #######]]>
     </line>
     <line>
-      <![CDATA[Test Execution ID : 07Apr_183738]]>
+      <![CDATA[Test Execution ID : 07Apr_212444]]>
     </line>
     <line>
-      <![CDATA[Getting test data for PricingDatabaseTest]]>
+      <![CDATA[Getting test data for PricingDataBaseTest]]>
     </line>
     <line>
       <![CDATA[checking if driver exist]]>
@@ -26,112 +26,154 @@
       <![CDATA[Setting driver]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183741.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212449.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212449.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[Getting driver ]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183742.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212449.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212449.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[Launching driver]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183742.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212449.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212449.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[Executing; ui_launch]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> name: userId]is displayed on screen]]>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> name: userId]is displayed on screen]]>
     </line>
     <line>
       <![CDATA[Setting value on element USER_NAME]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183754.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212455.jpg]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> name: password]is displayed on screen]]>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212455.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> name: password]is displayed on screen]]>
     </line>
     <line>
       <![CDATA[Setting value on element PASSWORD]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183755.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212456.jpg]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //input[@value='Next']]is displayed on screen]]>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212456.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //input[@value='Next']]is displayed on screen]]>
     </line>
     <line>
       <![CDATA[Clicking on element LOGIN_BTN]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183755.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212456.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212456.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[Getting driver ]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183755.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212456.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212456.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[checking if driver exist]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183755.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212456.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212456.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[Getting driver ]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183755.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212456.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212456.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[Getting driver ]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183756.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212457.jpg]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //div[@class='greet-text' and text()=' Welcome Back! ']]is displayed on screen]]>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212457.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
-      <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //div[@class='greet-text' and text()=' Welcome Back! ']]]]>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //div[@class='greet-text' and text()=' Welcome Back! ']]is displayed on screen]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183758.jpg]]>
+      <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //div[@class='greet-text' and text()=' Welcome Back! ']]]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //p[text()='Procedure Cards']]is displayed on screen]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212501.jpg]]>
     </line>
     <line>
-      <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //p[text()='Procedure Cards']]]]>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212501.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183759.jpg]]>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //p[text()='Procedure Cards']]is displayed on screen]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //p[text()='VIM-Workbench']/../../../div/p[contains(text(),'Start Using')]]is displayed on screen]]>
+      <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //p[text()='Procedure Cards']]]]>
     </line>
     <line>
-      <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //p[text()='VIM-Workbench']/../../../div/p[contains(text(),'Start Using')]]]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212501.jpg]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183759.jpg]]>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212501.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //p[text()='VIM-Workbench']/../../../div/p[contains(text(),'Start Using')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //p[text()='VIM-Workbench']/../../../div/p[contains(text(),'Start Using')]]]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212502.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212502.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[Successful navigation is validated for LaunchPad]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //p[text()='VIM-Workbench']/../../../div/p[contains(text(),'Start Using')]]is displayed on screen]]>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //p[text()='VIM-Workbench']/../../../div/p[contains(text(),'Start Using')]]is displayed on screen]]>
     </line>
     <line>
       <![CDATA[Clicking on element Procedure button]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183800.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212504.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212504.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[Navigating to Preference card]]>
@@ -140,262 +182,862 @@
       <![CDATA[Getting driver ]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183800.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212506.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212506.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[checking if driver exist]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183800.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212507.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212507.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[Getting driver ]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183800.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212507.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212507.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[Getting driver ]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183801.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212508.jpg]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //app-workbench-your-apps//div[text()='Your Workbench Apps']]is displayed on screen]]>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212508.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
-      <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //app-workbench-your-apps//div[text()='Your Workbench Apps']]]]>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //app-workbench-your-apps//div[text()='Your Workbench Apps']]is displayed on screen]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183801.jpg]]>
+      <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //app-workbench-your-apps//div[text()='Your Workbench Apps']]]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //div[text()='Bulk Upload']/../..//div[@class='arrow arrow-right']]is displayed on screen]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212508.jpg]]>
     </line>
     <line>
-      <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //div[text()='Bulk Upload']/../..//div[@class='arrow arrow-right']]]]>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212508.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183802.jpg]]>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //div[text()='Bulk Upload']/../..//div[@class='arrow arrow-right']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //div[text()='Bulk Upload']/../..//div[@class='arrow arrow-right']]]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212509.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212509.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[Successful navigation is validated for Workbench]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //div[text()='Pricing Database']/../..//div[@class='arrow arrow-right']]is displayed on screen]]>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //div[text()='Pricing Database']/../..//div[@class='arrow arrow-right']]is displayed on screen]]>
     </line>
     <line>
       <![CDATA[Clicking on element PricingDatabase_lnk]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183802.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212510.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212510.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[Getting driver ]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183803.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212510.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212510.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[checking if driver exist]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183803.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212511.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212511.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[Getting driver ]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183803.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212511.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212511.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[Getting driver ]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183803.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212512.jpg]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //table/tbody/tr/td/span[contains(span,text())]]is displayed on screen]]>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212512.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //button[contains(.,' Export')]/span[@class='mat-button-wrapper']]is displayed on screen]]>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //table/tbody/tr/td/span[contains(span,text())]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]] is not clickable using selenium click]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212515.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212515.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element checkbox]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212515.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212515.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]] is not clickable using selenium click]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212517.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212517.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element checkbox]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212517.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212517.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]] is not clickable using selenium click]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212519.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212519.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element checkbox]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212519.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212519.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]] is not clickable using selenium click]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212521.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212521.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element checkbox]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212521.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212521.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]] is not clickable using selenium click]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212523.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212523.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element checkbox]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212523.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212523.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //button[contains(.,' Export')]/span[@class='mat-button-wrapper']]is displayed on screen]]>
     </line>
     <line>
       <![CDATA[Clicking on element ExportButton]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183806.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212523.jpg]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //button[@id="exportCardsBtn" and contains(.,'Export')]]is displayed on screen]]>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212523.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //button[@id="exportCardsBtn" and contains(.,'Export')]]is displayed on screen]]>
     </line>
     <line>
       <![CDATA[Clicking on element ExportButtomTray]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183806.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212524.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212524.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[Export function successfully validated for PricingDatabase]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //table/tbody/tr/td/span[contains(span,text())]]is displayed on screen]]>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //table/tbody/tr/td/span[contains(span,text())]]is displayed on screen]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]]is displayed on screen]]>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]]is displayed on screen]]>
     </line>
     <line>
-      <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]] is not clickable using selenium click]]>
+      <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]] is not clickable using selenium click]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183809.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212525.jpg]]>
     </line>
     <line>
-      <![CDATA[Clicking on element ]]>
-    </line>
-    <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183809.jpg]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //div[@role='menu']//span[contains(.,'Account') and @class='mat-checkbox-label']/../span[@class='mat-checkbox-inner-container']]is displayed on screen]]>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212525.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[Clicking on element ]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183809.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212526.jpg]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]]is displayed on screen]]>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212526.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
-      <![CDATA[Clicking on element ]]>
-    </line>
-    <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183810.jpg]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //table/tbody/tr/td/span[contains(span,text())]]is displayed on screen]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]]is displayed on screen]]>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //div[@role='menu']//span[contains(.,'Account') and @class='mat-checkbox-label']/../span[@class='mat-checkbox-inner-container']]is displayed on screen]]>
     </line>
     <line>
       <![CDATA[Clicking on element ]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183816.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212526.jpg]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //div[@role='menu']//span[contains(.,'Account') and @class='mat-checkbox-label']/../span[@class='mat-checkbox-inner-container']]is displayed on screen]]>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212526.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
-      <![CDATA[Clicking on element ]]>
-    </line>
-    <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183817.jpg]]>
-    </line>
-    <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]]is displayed on screen]]>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]]is displayed on screen]]>
     </line>
     <line>
       <![CDATA[Clicking on element ]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183817.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212527.jpg]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //table/tbody/tr/td/span[contains(span,text())]]is displayed on screen]]>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212527.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //table/tbody/tr/td/span[contains(span,text())]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element ]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212534.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212534.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //div[@role='menu']//span[contains(.,'Account') and @class='mat-checkbox-label']/../span[@class='mat-checkbox-inner-container']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element ]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212534.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212534.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element ]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212535.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212535.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //table/tbody/tr/td/span[contains(span,text())]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span/img[@class='scroll-arrow' and contains(@src,'greaterthan')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element Scrolling right]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212537.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212537.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span/img[@class='scroll-arrow' and contains(@src,'greaterthan')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element Scrolling right]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212539.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212539.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[Getting driver ]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183822.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212540.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212540.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
       <![CDATA[Element is present (//tr/td//span[contains(@class,'edit-icon')])[1]]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183822.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212540.jpg]]>
     </line>
     <line>
-      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: (//tr/td//span[contains(@class,'edit-icon')])[1]]is displayed on screen]]>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212540.jpg alt='alternative text'>Step</a>]]>
     </line>
     <line>
-      <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: (//tr/td//span[contains(@class,'edit-icon')])[1]] is not clickable using selenium click]]>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: (//tr/td//span[contains(@class,'edit-icon')])[1]]is displayed on screen]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183823.jpg]]>
+      <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: (//tr/td//span[contains(@class,'edit-icon')])[1]] is not clickable using selenium click]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212541.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212541.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element EditIcon]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212542.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212542.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody/tr[1]//input[@name='packSize']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span/img[@class='scroll-arrow' and contains(@src,'greaterthan')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element Scrolling right]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212548.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212548.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span/img[@class='scroll-arrow' and contains(@src,'greaterthan')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element Scrolling right]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212549.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212549.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span/img[@class='scroll-arrow' and contains(@src,'greaterthan')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element Scrolling right]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212551.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212551.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Getting driver ]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212556.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212556.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element is present //tbody/tr[1]//span[contains(@class,'action-save-icon')]]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212556.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212556.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody/tr[1]//span[contains(@class,'action-save-icon')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody/tr[1]//span[contains(@class,'action-save-icon')]] is not clickable using selenium click]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212557.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212557.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element saveButton]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212558.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212558.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //table/tbody/tr/td/span[contains(span,text())]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Getting driver ]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212558.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212558.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element is present //tbody/tr[1]//span[contains(@class,'action-change-history')]]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212604.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212604.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody/tr[1]//span[contains(@class,'action-change-history')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody/tr[1]//span[contains(@class,'action-change-history')]] is not clickable using selenium click]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212606.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212606.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element changeHistoryIcon]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212606.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212606.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //mat-dialog-container[@role='dialog']]]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212606.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212606.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //mat-dialog-container[@role='dialog']//span[@class='close-text']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element changeHistoryCloseDialog]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212607.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212607.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Getting driver ]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212607.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212607.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element is present //tbody/tr[4]//span[contains(@class,'action-delete-icon')]]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212607.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212607.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody/tr[4]//span[contains(@class,'action-delete-icon')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody/tr[4]//span[contains(@class,'action-delete-icon')]] is not clickable using selenium click]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212609.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212609.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element deleteIcon]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212609.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212609.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //app-confirm-dialog//button[text()='Yes']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element Confirm Yes Button]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212609.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212609.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //table/tbody/tr/td/span[contains(span,text())]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]] is not clickable using selenium click]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212611.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212611.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element checkbox]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212611.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212611.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]] is not clickable using selenium click]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212613.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212613.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element checkbox]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212613.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212613.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]] is not clickable using selenium click]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212614.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212614.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element checkbox]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212615.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212615.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Exception while scroll to view of element: ]]>
+    </line>
+    <line>
+      <![CDATA[Exception while scroll to view of element: ]]>
+    </line>
+    <line>
+      <![CDATA[ Element +Proxy element for: DefaultElementLocator 'By.xpath: //button[contains(@class,'bulk-delete-button-enabled')]' is not clickable using javaScript]]>
+    </line>
+    <line>
+      <![CDATA[ Element +Proxy element for: DefaultElementLocator 'By.xpath: //button[contains(@class,'bulk-delete-button-enabled')]' is not clickable using selenium click]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212620.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212620.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element BulkDeleteButton]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212620.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212620.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Exception while scroll to view of element: ]]>
+    </line>
+    <line>
+      <![CDATA[Exception while scroll to view of element: ]]>
+    </line>
+    <line>
+      <![CDATA[ Element +Proxy element for: DefaultElementLocator 'By.xpath: //app-bulk-delete-dialog//button[text()='Yes']' is not clickable using javaScript]]>
+    </line>
+    <line>
+      <![CDATA[ Element +Proxy element for: DefaultElementLocator 'By.xpath: //app-bulk-delete-dialog//button[text()='Yes']' is not clickable using selenium click]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212626.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212626.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element confirmBulkDelete]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212626.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212626.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //button/span[@class='mat-button-wrapper' and contains(.,'Filters')]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element confirmBulkDelete]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212626.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212626.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span[@class='sc-filter-title' and contains(.,'Product Reference No ')]]is displayed on screen]]>
     </line>
     <line>
       <![CDATA[Clicking on element ]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183823.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212627.jpg]]>
     </line>
     <line>
-      <![CDATA[####### End of Test Case: PricingDatabaseTest #######]]>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212627.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Getting driver ]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212627.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212627.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element is present (//span[@class='sc-filter-title' and contains(.,'Product Reference No ')]//ancestor::mat-expansion-panel//span[@class='mat-checkbox-inner-container'])[1]]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212627.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212627.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: (//span[@class='sc-filter-title' and contains(.,'Product Reference No ')]//ancestor::mat-expansion-panel//span[@class='mat-checkbox-inner-container'])[1]]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element ]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212628.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212628.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //img[@class='back-icon cursor-pointer']]is displayed on screen]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element filterBack button]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212628.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212628.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[ Element +Proxy element for: DefaultElementLocator 'By.xpath: //span[contains(@class,'clearFilter')]' is not clickable using selenium click]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212634.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212634.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on element ]]>
+    </line>
+    <line>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212634.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212634.jpg alt='alternative text'>Step</a>]]>
+    </line>
+    <line>
+      <![CDATA[####### End of Test Case: PricingDataBaseTest #######]]>
     </line>
     <line>
       <![CDATA[closing driver]]>
     </line>
     <line>
-      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183824.jpg]]>
+      <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212634.jpg]]>
+    </line>
+    <line>
+      <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212634.jpg alt='alternative text'>Step</a>]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-04-07T18:37:38 IST" name="Default suite" finished-at="2022-04-07T18:38:24 IST" duration-ms="46426">
+  <suite started-at="2022-04-07T21:24:44 IST" name="Default suite" finished-at="2022-04-07T21:26:35 IST" duration-ms="111190">
     <groups>
       <group name="bulkupload">
-        <method signature="PricingDatabase.PricingDatabaseTest()[pri:0, instance:com.supplycopia.bulkupload.pricingdatabase.PricingDatabase@2a4fb17b]" name="PricingDatabaseTest" class="com.supplycopia.bulkupload.pricingdatabase.PricingDatabase"/>
+        <method signature="PricingDatabase.PricingDataBaseTest()[pri:0, instance:com.supplycopia.bulkupload.pricingdatabase.PricingDatabase@5c6648b0]" name="PricingDataBaseTest" class="com.supplycopia.bulkupload.pricingdatabase.PricingDatabase"/>
       </group> <!-- bulkupload -->
-      <group name="regresion">
-        <method signature="PricingDatabase.PricingDatabaseTest()[pri:0, instance:com.supplycopia.bulkupload.pricingdatabase.PricingDatabase@2a4fb17b]" name="PricingDatabaseTest" class="com.supplycopia.bulkupload.pricingdatabase.PricingDatabase"/>
-      </group> <!-- regresion -->
+      <group name="Regresion">
+        <method signature="PricingDatabase.PricingDataBaseTest()[pri:0, instance:com.supplycopia.bulkupload.pricingdatabase.PricingDatabase@5c6648b0]" name="PricingDataBaseTest" class="com.supplycopia.bulkupload.pricingdatabase.PricingDatabase"/>
+      </group> <!-- Regresion -->
     </groups>
-    <test started-at="2022-04-07T18:37:38 IST" name="Default test" finished-at="2022-04-07T18:38:24 IST" duration-ms="46426">
+    <test started-at="2022-04-07T21:24:44 IST" name="Default test" finished-at="2022-04-07T21:26:35 IST" duration-ms="111190">
       <class name="com.supplycopia.bulkupload.pricingdatabase.PricingDatabase">
-        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.supplycopia.bulkupload.pricingdatabase.PricingDatabase@2a4fb17b]" started-at="2022-04-07T18:37:38 IST" name="setUp" finished-at="2022-04-07T18:37:38 IST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.supplycopia.bulkupload.pricingdatabase.PricingDatabase@5c6648b0]" started-at="2022-04-07T21:24:44 IST" name="setUp" finished-at="2022-04-07T21:24:44 IST" duration-ms="12" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@570a62a5]]>
+                <![CDATA[org.testng.TestRunner@7573c7b5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="Reportsetup()[pri:0, instance:com.supplycopia.bulkupload.pricingdatabase.PricingDatabase@2a4fb17b]" started-at="2022-04-07T18:37:38 IST" name="Reportsetup" finished-at="2022-04-07T18:37:38 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="Reportsetup()[pri:0, instance:com.supplycopia.bulkupload.pricingdatabase.PricingDatabase@5c6648b0]" started-at="2022-04-07T21:24:44 IST" name="Reportsetup" finished-at="2022-04-07T21:24:44 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Reportsetup -->
-        <test-method is-config="true" signature="testName(org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:com.supplycopia.bulkupload.pricingdatabase.PricingDatabase@2a4fb17b]" started-at="2022-04-07T18:37:38 IST" name="testName" finished-at="2022-04-07T18:37:39 IST" duration-ms="1305" status="PASS">
+        <test-method is-config="true" signature="testName(org.testng.ITestContext,java.lang.reflect.Method)[pri:0, instance:com.supplycopia.bulkupload.pricingdatabase.PricingDatabase@5c6648b0]" started-at="2022-04-07T21:24:44 IST" name="testName" finished-at="2022-04-07T21:24:45 IST" duration-ms="1571" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@570a62a5]]>
+                <![CDATA[org.testng.TestRunner@7573c7b5]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void com.supplycopia.bulkupload.pricingdatabase.PricingDatabase.PricingDatabaseTest() throws java.lang.Throwable]]>
+                <![CDATA[public void com.supplycopia.bulkupload.pricingdatabase.PricingDatabase.PricingDataBaseTest() throws java.lang.Throwable]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[####### Starting  Test Case: PricingDatabaseTest #######]]>
+              <![CDATA[####### Starting  Test Case: PricingDataBaseTest #######]]>
             </line>
             <line>
-              <![CDATA[Test Execution ID : 07Apr_183738]]>
+              <![CDATA[Test Execution ID : 07Apr_212444]]>
             </line>
             <line>
-              <![CDATA[Getting test data for PricingDatabaseTest]]>
+              <![CDATA[Getting test data for PricingDataBaseTest]]>
             </line>
           </reporter-output>
         </test-method> <!-- testName -->
-        <test-method signature="PricingDatabaseTest()[pri:0, instance:com.supplycopia.bulkupload.pricingdatabase.PricingDatabase@2a4fb17b]" started-at="2022-04-07T18:37:39 IST" name="PricingDatabaseTest" finished-at="2022-04-07T18:38:23 IST" duration-ms="44586" status="PASS">
+        <test-method signature="PricingDataBaseTest()[pri:0, instance:com.supplycopia.bulkupload.pricingdatabase.PricingDatabase@5c6648b0]" started-at="2022-04-07T21:24:45 IST" name="PricingDataBaseTest" finished-at="2022-04-07T21:26:34 IST" duration-ms="108950" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[checking if driver exist]]>
@@ -413,112 +1055,154 @@
               <![CDATA[Setting driver]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183741.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212449.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212449.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[Getting driver ]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183742.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212449.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212449.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[Launching driver]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183742.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212449.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212449.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[Executing; ui_launch]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> name: userId]is displayed on screen]]>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> name: userId]is displayed on screen]]>
             </line>
             <line>
               <![CDATA[Setting value on element USER_NAME]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183754.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212455.jpg]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> name: password]is displayed on screen]]>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212455.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> name: password]is displayed on screen]]>
             </line>
             <line>
               <![CDATA[Setting value on element PASSWORD]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183755.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212456.jpg]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //input[@value='Next']]is displayed on screen]]>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212456.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //input[@value='Next']]is displayed on screen]]>
             </line>
             <line>
               <![CDATA[Clicking on element LOGIN_BTN]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183755.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212456.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212456.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[Getting driver ]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183755.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212456.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212456.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[checking if driver exist]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183755.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212456.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212456.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[Getting driver ]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183755.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212456.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212456.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[Getting driver ]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183756.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212457.jpg]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //div[@class='greet-text' and text()=' Welcome Back! ']]is displayed on screen]]>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212457.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
-              <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //div[@class='greet-text' and text()=' Welcome Back! ']]]]>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //div[@class='greet-text' and text()=' Welcome Back! ']]is displayed on screen]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183758.jpg]]>
+              <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //div[@class='greet-text' and text()=' Welcome Back! ']]]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //p[text()='Procedure Cards']]is displayed on screen]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212501.jpg]]>
             </line>
             <line>
-              <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //p[text()='Procedure Cards']]]]>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212501.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183759.jpg]]>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //p[text()='Procedure Cards']]is displayed on screen]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //p[text()='VIM-Workbench']/../../../div/p[contains(text(),'Start Using')]]is displayed on screen]]>
+              <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //p[text()='Procedure Cards']]]]>
             </line>
             <line>
-              <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //p[text()='VIM-Workbench']/../../../div/p[contains(text(),'Start Using')]]]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212501.jpg]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183759.jpg]]>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212501.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //p[text()='VIM-Workbench']/../../../div/p[contains(text(),'Start Using')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //p[text()='VIM-Workbench']/../../../div/p[contains(text(),'Start Using')]]]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212502.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212502.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[Successful navigation is validated for LaunchPad]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //p[text()='VIM-Workbench']/../../../div/p[contains(text(),'Start Using')]]is displayed on screen]]>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //p[text()='VIM-Workbench']/../../../div/p[contains(text(),'Start Using')]]is displayed on screen]]>
             </line>
             <line>
               <![CDATA[Clicking on element Procedure button]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183800.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212504.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212504.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[Navigating to Preference card]]>
@@ -527,223 +1211,823 @@
               <![CDATA[Getting driver ]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183800.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212506.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212506.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[checking if driver exist]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183800.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212507.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212507.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[Getting driver ]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183800.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212507.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212507.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[Getting driver ]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183801.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212508.jpg]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //app-workbench-your-apps//div[text()='Your Workbench Apps']]is displayed on screen]]>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212508.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
-              <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //app-workbench-your-apps//div[text()='Your Workbench Apps']]]]>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //app-workbench-your-apps//div[text()='Your Workbench Apps']]is displayed on screen]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183801.jpg]]>
+              <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //app-workbench-your-apps//div[text()='Your Workbench Apps']]]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //div[text()='Bulk Upload']/../..//div[@class='arrow arrow-right']]is displayed on screen]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212508.jpg]]>
             </line>
             <line>
-              <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //div[text()='Bulk Upload']/../..//div[@class='arrow arrow-right']]]]>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212508.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183802.jpg]]>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //div[text()='Bulk Upload']/../..//div[@class='arrow arrow-right']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //div[text()='Bulk Upload']/../..//div[@class='arrow arrow-right']]]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212509.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212509.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[Successful navigation is validated for Workbench]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //div[text()='Pricing Database']/../..//div[@class='arrow arrow-right']]is displayed on screen]]>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //div[text()='Pricing Database']/../..//div[@class='arrow arrow-right']]is displayed on screen]]>
             </line>
             <line>
               <![CDATA[Clicking on element PricingDatabase_lnk]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183802.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212510.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212510.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[Getting driver ]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183803.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212510.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212510.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[checking if driver exist]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183803.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212511.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212511.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[Getting driver ]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183803.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212511.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212511.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[Getting driver ]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183803.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212512.jpg]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //table/tbody/tr/td/span[contains(span,text())]]is displayed on screen]]>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212512.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //button[contains(.,' Export')]/span[@class='mat-button-wrapper']]is displayed on screen]]>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //table/tbody/tr/td/span[contains(span,text())]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]] is not clickable using selenium click]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212515.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212515.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element checkbox]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212515.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212515.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]] is not clickable using selenium click]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212517.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212517.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element checkbox]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212517.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212517.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]] is not clickable using selenium click]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212519.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212519.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element checkbox]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212519.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212519.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]] is not clickable using selenium click]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212521.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212521.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element checkbox]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212521.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212521.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]] is not clickable using selenium click]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212523.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212523.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element checkbox]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212523.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212523.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //button[contains(.,' Export')]/span[@class='mat-button-wrapper']]is displayed on screen]]>
             </line>
             <line>
               <![CDATA[Clicking on element ExportButton]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183806.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212523.jpg]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //button[@id="exportCardsBtn" and contains(.,'Export')]]is displayed on screen]]>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212523.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //button[@id="exportCardsBtn" and contains(.,'Export')]]is displayed on screen]]>
             </line>
             <line>
               <![CDATA[Clicking on element ExportButtomTray]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183806.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212524.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212524.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[Export function successfully validated for PricingDatabase]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //table/tbody/tr/td/span[contains(span,text())]]is displayed on screen]]>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //table/tbody/tr/td/span[contains(span,text())]]is displayed on screen]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]]is displayed on screen]]>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]]is displayed on screen]]>
             </line>
             <line>
-              <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]] is not clickable using selenium click]]>
+              <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]] is not clickable using selenium click]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183809.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212525.jpg]]>
             </line>
             <line>
-              <![CDATA[Clicking on element ]]>
-            </line>
-            <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183809.jpg]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //div[@role='menu']//span[contains(.,'Account') and @class='mat-checkbox-label']/../span[@class='mat-checkbox-inner-container']]is displayed on screen]]>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212525.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[Clicking on element ]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183809.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212526.jpg]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]]is displayed on screen]]>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212526.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
-              <![CDATA[Clicking on element ]]>
-            </line>
-            <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183810.jpg]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //table/tbody/tr/td/span[contains(span,text())]]is displayed on screen]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]]is displayed on screen]]>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //div[@role='menu']//span[contains(.,'Account') and @class='mat-checkbox-label']/../span[@class='mat-checkbox-inner-container']]is displayed on screen]]>
             </line>
             <line>
               <![CDATA[Clicking on element ]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183816.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212526.jpg]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //div[@role='menu']//span[contains(.,'Account') and @class='mat-checkbox-label']/../span[@class='mat-checkbox-inner-container']]is displayed on screen]]>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212526.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
-              <![CDATA[Clicking on element ]]>
-            </line>
-            <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183817.jpg]]>
-            </line>
-            <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]]is displayed on screen]]>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]]is displayed on screen]]>
             </line>
             <line>
               <![CDATA[Clicking on element ]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183817.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212527.jpg]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: //table/tbody/tr/td/span[contains(span,text())]]is displayed on screen]]>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212527.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //table/tbody/tr/td/span[contains(span,text())]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element ]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212534.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212534.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //div[@role='menu']//span[contains(.,'Account') and @class='mat-checkbox-label']/../span[@class='mat-checkbox-inner-container']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element ]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212534.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212534.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element ]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212535.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212535.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //table/tbody/tr/td/span[contains(span,text())]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span/img[@class='scroll-arrow' and contains(@src,'greaterthan')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element Scrolling right]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212537.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212537.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span/img[@class='scroll-arrow' and contains(@src,'greaterthan')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element Scrolling right]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212539.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212539.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[Getting driver ]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183822.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212540.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212540.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
               <![CDATA[Element is present (//tr/td//span[contains(@class,'edit-icon')])[1]]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183822.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212540.jpg]]>
             </line>
             <line>
-              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: (//tr/td//span[contains(@class,'edit-icon')])[1]]is displayed on screen]]>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212540.jpg alt='alternative text'>Step</a>]]>
             </line>
             <line>
-              <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (55b27a15cd67725fbfdcc747a671b4c7)] -> xpath: (//tr/td//span[contains(@class,'edit-icon')])[1]] is not clickable using selenium click]]>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: (//tr/td//span[contains(@class,'edit-icon')])[1]]is displayed on screen]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183823.jpg]]>
+              <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: (//tr/td//span[contains(@class,'edit-icon')])[1]] is not clickable using selenium click]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212541.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212541.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element EditIcon]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212542.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212542.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody/tr[1]//input[@name='packSize']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span/img[@class='scroll-arrow' and contains(@src,'greaterthan')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element Scrolling right]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212548.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212548.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span/img[@class='scroll-arrow' and contains(@src,'greaterthan')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element Scrolling right]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212549.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212549.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span/img[@class='scroll-arrow' and contains(@src,'greaterthan')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element Scrolling right]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212551.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212551.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Getting driver ]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212556.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212556.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element is present //tbody/tr[1]//span[contains(@class,'action-save-icon')]]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212556.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212556.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody/tr[1]//span[contains(@class,'action-save-icon')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody/tr[1]//span[contains(@class,'action-save-icon')]] is not clickable using selenium click]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212557.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212557.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element saveButton]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212558.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212558.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //table/tbody/tr/td/span[contains(span,text())]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Getting driver ]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212558.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212558.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element is present //tbody/tr[1]//span[contains(@class,'action-change-history')]]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212604.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212604.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody/tr[1]//span[contains(@class,'action-change-history')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody/tr[1]//span[contains(@class,'action-change-history')]] is not clickable using selenium click]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212606.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212606.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element changeHistoryIcon]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212606.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212606.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element is present [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //mat-dialog-container[@role='dialog']]]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212606.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212606.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //mat-dialog-container[@role='dialog']//span[@class='close-text']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element changeHistoryCloseDialog]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212607.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212607.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Getting driver ]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212607.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212607.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element is present //tbody/tr[4]//span[contains(@class,'action-delete-icon')]]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212607.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212607.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody/tr[4]//span[contains(@class,'action-delete-icon')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody/tr[4]//span[contains(@class,'action-delete-icon')]] is not clickable using selenium click]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212609.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212609.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element deleteIcon]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212609.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212609.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //app-confirm-dialog//button[text()='Yes']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element Confirm Yes Button]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212609.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212609.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //table/tbody/tr/td/span[contains(span,text())]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]] is not clickable using selenium click]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212611.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212611.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element checkbox]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212611.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212611.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]] is not clickable using selenium click]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212613.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212613.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element checkbox]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212613.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212613.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[ Element +[[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //tbody//span[contains(@class,'mat-checkbox-inner')]] is not clickable using selenium click]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212614.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212614.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element checkbox]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212615.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212615.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Exception while scroll to view of element: ]]>
+            </line>
+            <line>
+              <![CDATA[Exception while scroll to view of element: ]]>
+            </line>
+            <line>
+              <![CDATA[ Element +Proxy element for: DefaultElementLocator 'By.xpath: //button[contains(@class,'bulk-delete-button-enabled')]' is not clickable using javaScript]]>
+            </line>
+            <line>
+              <![CDATA[ Element +Proxy element for: DefaultElementLocator 'By.xpath: //button[contains(@class,'bulk-delete-button-enabled')]' is not clickable using selenium click]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212620.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212620.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element BulkDeleteButton]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212620.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212620.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Exception while scroll to view of element: ]]>
+            </line>
+            <line>
+              <![CDATA[Exception while scroll to view of element: ]]>
+            </line>
+            <line>
+              <![CDATA[ Element +Proxy element for: DefaultElementLocator 'By.xpath: //app-bulk-delete-dialog//button[text()='Yes']' is not clickable using javaScript]]>
+            </line>
+            <line>
+              <![CDATA[ Element +Proxy element for: DefaultElementLocator 'By.xpath: //app-bulk-delete-dialog//button[text()='Yes']' is not clickable using selenium click]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212626.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212626.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element confirmBulkDelete]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212626.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212626.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //button/span[@class='mat-button-wrapper' and contains(.,'Filters')]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element confirmBulkDelete]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212626.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212626.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //span[@class='sc-filter-title' and contains(.,'Product Reference No ')]]is displayed on screen]]>
             </line>
             <line>
               <![CDATA[Clicking on element ]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183823.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212627.jpg]]>
             </line>
             <line>
-              <![CDATA[####### End of Test Case: PricingDatabaseTest #######]]>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212627.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Getting driver ]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212627.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212627.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element is present (//span[@class='sc-filter-title' and contains(.,'Product Reference No ')]//ancestor::mat-expansion-panel//span[@class='mat-checkbox-inner-container'])[1]]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212627.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212627.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: (//span[@class='sc-filter-title' and contains(.,'Product Reference No ')]//ancestor::mat-expansion-panel//span[@class='mat-checkbox-inner-container'])[1]]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element ]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212628.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212628.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Element [[ChromeDriver: chrome on WINDOWS (56060b80f3398fc97b2e660b3d8aa274)] -> xpath: //img[@class='back-icon cursor-pointer']]is displayed on screen]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element filterBack button]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212628.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212628.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[ Element +Proxy element for: DefaultElementLocator 'By.xpath: //span[contains(@class,'clearFilter')]' is not clickable using selenium click]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212634.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212634.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[Clicking on element ]]>
+            </line>
+            <line>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212634.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212634.jpg alt='alternative text'>Step</a>]]>
+            </line>
+            <line>
+              <![CDATA[####### End of Test Case: PricingDataBaseTest #######]]>
             </line>
             <line>
               <![CDATA[closing driver]]>
             </line>
             <line>
-              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\Screenshots\07Apr_183738\PricingDatabaseTest\PricingDatabaseTest_chrome_97_Apr_183824.jpg]]>
+              <![CDATA[C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212634.jpg]]>
+            </line>
+            <line>
+              <![CDATA[<a href=C:\Soft\New program\Workbench\sc-qa-taf-workbench\Reports\07Apr_212444\PricingDataBaseTest_chrome\PricingDataBaseTest_chrome_97_Apr_212634.jpg alt='alternative text'>Step</a>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- PricingDatabaseTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.supplycopia.bulkupload.pricingdatabase.PricingDatabase@2a4fb17b]" started-at="2022-04-07T18:38:23 IST" name="getResult" finished-at="2022-04-07T18:38:24 IST" duration-ms="505" status="PASS">
+        </test-method> <!-- PricingDataBaseTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.supplycopia.bulkupload.pricingdatabase.PricingDatabase@5c6648b0]" started-at="2022-04-07T21:26:34 IST" name="getResult" finished-at="2022-04-07T21:26:35 IST" duration-ms="639" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PricingDatabaseTest status=SUCCESS method=PricingDatabase.PricingDatabaseTest()[pri:0, instance:com.supplycopia.bulkupload.pricingdatabase.PricingDatabase@2a4fb17b] output=checking if driver exist]]]>
+                <![CDATA[[TestResult name=PricingDataBaseTest status=SUCCESS method=PricingDatabase.PricingDataBaseTest()[pri:0, instance:com.supplycopia.bulkupload.pricingdatabase.PricingDatabase@5c6648b0] output=checking if driver exist]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.supplycopia.bulkupload.pricingdatabase.PricingDatabase@2a4fb17b]" started-at="2022-04-07T18:38:24 IST" name="tearDown" finished-at="2022-04-07T18:38:24 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.supplycopia.bulkupload.pricingdatabase.PricingDatabase@5c6648b0]" started-at="2022-04-07T21:26:35 IST" name="tearDown" finished-at="2022-04-07T21:26:35 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

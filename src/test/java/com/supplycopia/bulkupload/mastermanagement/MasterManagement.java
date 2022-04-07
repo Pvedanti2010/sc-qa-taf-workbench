@@ -1,4 +1,4 @@
-package com.supplycopia.template.mastermanagement;
+package com.supplycopia.bulkupload.mastermanagement;
 import org.testng.annotations.Test;
 
 
@@ -12,12 +12,8 @@ import com.supplycopia.workbench.pages.LoginPage;
 
 public class MasterManagement extends BaseTest{
 
-	@Test(groups = {"masterManagement","Sanity" })
-	public void MasterManagementSanityTest() throws Throwable {
-
-		
-	
-		
+	@Test(groups = {"masterManagement","sanity" })
+	public void MasterManagementSanityTest() throws Throwable {		
 		new 
 		LoginPage().
 		login("qauser").	

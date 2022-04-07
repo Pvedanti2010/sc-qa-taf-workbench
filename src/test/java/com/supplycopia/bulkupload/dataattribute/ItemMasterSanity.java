@@ -13,7 +13,7 @@ import com.supplycopia.workbench.pages.LoginPage;
 
 public class ItemMasterSanity extends BaseTest{
 
-	@Test(groups = {"itemClass","Sanity" })
+	@Test(groups = {"itemClass","sanity" })
 	public void ItemMasterSanityTest() throws Throwable {
 
 		new 

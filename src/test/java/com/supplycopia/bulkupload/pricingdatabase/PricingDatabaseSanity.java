@@ -12,7 +12,7 @@ import com.supplycopia.workbench.pages.LoginPage;
 
 public class PricingDatabaseSanity extends BaseTest{
 
-	@Test(groups = {"bulkupload" ,"Sanity"})
+	@Test(groups = {"bulkupload" ,"sanity"})
 	public void PricingDatabaseSanityTest() throws Throwable {
 
 		new 

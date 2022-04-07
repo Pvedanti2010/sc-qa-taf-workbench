@@ -103,7 +103,7 @@ public class MasterManagement extends BasePage {
 	 */
 	public MasterManagement validatePageLoad() {
 		// TODO Auto-generated method stub
-		ui_IsElementPresent(ui_waitForElementToDisplay(pageIdentifier_ele,Pause.MEDIUM));
+		ui_IsElementPresent(ui_waitForElementToDisplay(pageIdentifier_ele,Pause.MEDIUM),"5");
 		Log.info("Successful navigation is validated for "+this.getClass().getSimpleName());
 		return this;
 	}		
@@ -118,7 +118,7 @@ public class MasterManagement extends BasePage {
 	}	
 	public MasterManagement validateMasterPageLoad() {
 		// TODO Auto-generated method stub
-		ui_IsElementPresent(ui_waitForElementToDisplay(masterpageIdentifier_ele,Pause.MEDIUM));
+		ui_IsElementDisplay(ui_waitForElementToDisplay(masterpageIdentifier_ele,Pause.MEDIUM));
 		Log.info("Successful navigation is validated for "+this.getClass().getSimpleName());
 		return this;
 	}	
@@ -182,7 +182,7 @@ public class MasterManagement extends BasePage {
 	 */
 	public MasterManagement clickOnSaveBtn() {	
 		ui_click(saveAddNew_btn, "ClickOnSave");
-		ui_IsElementPresent(ui_waitForElementToDisplay(SaveStatus_Message,Pause.MEDIUM));
+		ui_IsElementPresent(ui_waitForElementToDisplay(SaveStatus_Message,Pause.MEDIUM),"5");
 		Log.info("Successful navigation is validated for "+this.getClass().getSimpleName());
 	    return this;	    
 	}
@@ -220,7 +220,7 @@ public class MasterManagement extends BasePage {
 	public MasterManagement clickDeleteBtn() {
 		// TODO Auto-generated method stub
 		ui_click(Delete_btn, "DeleteButton");
-		ui_IsElementPresent(ui_waitForElementToDisplay(Popup_Text,Pause.HIGH));
+		ui_IsElementPresent(ui_waitForElementToDisplay(Popup_Text,Pause.HIGH),"5");
 		Log.info("popup message"+this.getClass().getSimpleName());
 	    return this;
 	}
@@ -277,7 +277,7 @@ public class MasterManagement extends BasePage {
 	 */
 	public MasterManagement clickExportButtomTray() {		
 		ui_click(exportButtomTray_btn, "ExportButtomTray");	
-		ui_IsElementPresent(ui_waitForElementToDisplay(ExportStatus_Message,Pause.HIGH));
+		ui_IsElementPresent(ui_waitForElementToDisplay(ExportStatus_Message,Pause.HIGH),"5");
 		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
 	    return this;
 	} 
@@ -329,7 +329,7 @@ public class MasterManagement extends BasePage {
 	public MasterManagement clickUpdatePopUp() {
 		// TODO Auto-generated method stub
 		ui_click(updateValue_btn, "UpdateButton");	
-		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Manufacturer,Pause.HIGH));
+		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Manufacturer,Pause.HIGH),"5");
 		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
 		return this; 
 		}
@@ -340,7 +340,7 @@ public class MasterManagement extends BasePage {
 	public MasterManagement clickUpdateManufacturerPopUp() {
 		// TODO Auto-generated method stub
 		ui_click(updateValue_btn, "UpdateButton");	
-		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Manufacturer,Pause.HIGH));
+		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Manufacturer,Pause.HIGH),"5");
 		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
 		return this; 
 		}
@@ -351,7 +351,7 @@ public class MasterManagement extends BasePage {
 	public MasterManagement clickUpdateSupplierPopUp() {
 		// TODO Auto-generated method stub
 		ui_click(updateValue_btn, "UpdateButton");	
-		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Supplier,Pause.HIGH));
+		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Supplier,Pause.HIGH),"5");
 		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
 		return this; 
 		}
@@ -362,7 +362,7 @@ public class MasterManagement extends BasePage {
 	public MasterManagement clickUpdateCountryPopUp() {
 		// TODO Auto-generated method stub
 		ui_click(updateValue_btn, "UpdateButton");	
-		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Country,Pause.HIGH));
+		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Country,Pause.HIGH),"5");
 		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
 		return this; 
 		}
@@ -374,7 +374,7 @@ public class MasterManagement extends BasePage {
 	public MasterManagement clickUpdateCategoryPopUp() {
 		// TODO Auto-generated method stub
 		ui_click(updateValue_btn, "UpdateButton");	
-		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Category,Pause.HIGH));
+		ui_IsElementPresent(ui_waitForElementToDisplay(updateStatus_Category,Pause.HIGH),"5");
 		Log.info("Export FileSuccessfulis validated for "+this.getClass().getSimpleName());
 		return this; 
 		}	
