@@ -108,7 +108,7 @@ public class BulkUpload extends BasePage {
 	public BulkUpload uploadFromComputer(String file) {
 		// TODO Auto-generated method stub
 		ui_wait(2);
-		String completeFile = System.getProperty("user.dir")+"/"+Configuration.get("uploadFilePath")+"//"+file;
+		String completeFile = System.getProperty("user.dir")+Configuration.get("uploadFilePath")+"\\"+file;
 		ui_waitForElementToDisplay(fileUploadPopUp_btn, Pause.MEDIUM);
 		uploadFile_txt.sendKeys(completeFile);
 		

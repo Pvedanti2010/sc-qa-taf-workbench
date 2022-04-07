@@ -2,6 +2,7 @@ package com.supplycopia.bulkupload.uploaddocument;
 
 import org.testng.annotations.Test;
 
+import com.supplycopia.listeners.RetryCountIfFailed;
 import com.supplycopia.workbench.base.BaseTest;
 import com.supplycopia.workbench.pages.LoginPage;
 
@@ -13,6 +14,7 @@ import com.supplycopia.workbench.pages.LoginPage;
 public class UploadDocument extends BaseTest{
 
 	@Test(groups = {"uploaddocument" ,"sanity"})
+	@RetryCountIfFailed(2)
 	public void UploadDocumentTest() throws Throwable {
 
 		new 

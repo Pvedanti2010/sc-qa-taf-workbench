@@ -2,6 +2,7 @@ package com.supplycopia.bulkupload.dataattribute;
 
 import org.testng.annotations.Test;
 
+import com.supplycopia.listeners.RetryCountIfFailed;
 import com.supplycopia.workbench.base.BaseTest;
 import com.supplycopia.workbench.pages.LoginPage;
 
@@ -12,7 +13,8 @@ import com.supplycopia.workbench.pages.LoginPage;
 
 public class CategoryMaster extends BaseTest{
 
-	@Test(groups = {"bulkupload" ,"sanity"})
+	@Test(groups = {"bulkupload" ,"sanity","smoke"})
+	@RetryCountIfFailed(2)
 	public void CategoryMasterTest() throws Throwable {
 
 		new 

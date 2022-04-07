@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="testsuite">
-	<test name="testname">
+<suite name="sanity-testsuite">
+	<test name="sanitytest">
 		<groups>
             <run>
               <include name = "sanity"></include>
@@ -12,17 +12,12 @@
             <package name="com.supplycopia.bulkupload.mastermanagement"/> 
              <package name="com.supplycopia.bulkupload.uploaddocument"/>
         </packages>
-        <!-- <classes>
-			<class name="com.supplycopia.template.bulkupload.CategoryMaster"></class>
-			<class name="com.supplycopia.template.bulkupload.ContractSupplierMaster"></class>
-			<class name="com.supplycopia.template.bulkupload.CountryAccountMaster"></class>
-			<class name="com.supplycopia.template.bulkupload.ProductAttributes"></class>	
-		</classes> -->
 	</test>
 	<listeners>	
 		<!-- <listener class-name="com.supplycopia.listeners.AutoTestListener"></listener>
 		<listener class-name="com.supplycopia.listeners.RetryListener"></listener>
 		 -->
 		 <listener class-name="com.supplycopia.report.ExtentReportListener"></listener>
+		<listener class-name="com.supplycopia.listeners.AnnotationTransformer"></listener> 
 	</listeners>
 </suite> 
