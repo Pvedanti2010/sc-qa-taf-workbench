@@ -148,6 +148,39 @@ public class PricingDatabase extends BasePage {
 	WebElement packSize_inputBox;
 	@FindBy(xpath = "//input[@name=\"pricePerEaUsd\"]")
 	WebElement pricePerEaUsd_inputBox;
+	@FindBy(xpath = "//button//span[contains(.,'Add New')]")
+	WebElement addNew_button;
+	@FindBy(xpath = "//div//input[@formcontrolname=\"productReferencrNumber\"]")
+	WebElement productRefNo_inputBox;
+	String productRefNo_dropDown = "(//span[@class=\"mat-option-text\"]/span)[%s]";
+	String supplierSelect_dropDown = "(//span[@class=\"mat-option-text\"]/span)[%s]";
+	@FindBy(xpath = "//select[@formcontrolname=\"country\"]")
+	WebElement selectCountryDropDown;
+	@FindBy(xpath = "//select[@formcontrolname=\"account\"]")
+	WebElement selectAccountDropDown;
+	@FindBy(xpath = "//select[@formcontrolname=\\\"contractId\\\"]//option[%s]")
+	WebElement contractId_textbox;
+	String ContractSelect_dropDown = "(//span[@class=\"mat-option-text\"]/span)[%s]";
+	@FindBy(xpath = "//select[@formcontrolname=\"supplier\"]")
+	WebElement selectSupplier_dropdown;
+	@FindBy(xpath = "//input[@placeholder=\"Enter Pack Size\"]")
+	WebElement packSize_InputBox;
+	@FindBy(xpath = "//select[@formcontrolname=\"currency\"]")
+	WebElement currency_dropdown;
+	@FindBy(xpath = "//input[@formcontrolname=\"pricePerEaOriginalCurreny\"]")
+	WebElement pricePerEaOriginalCurreny_InputBox;
+	@FindBy(xpath = "//input[@formcontrolname=\"pricePerEaUsd\"]")
+	WebElement pricePerEaUsd_InputBox;
+	@FindBy(xpath = "//input[@formcontrolname=\"packPriceOriginalCurrency\"]")
+	WebElement packPriceOriginalCurrency_InputBox;
+	@FindBy(xpath = "//input[@formcontrolname=\"packPriceUsd\"]")
+	WebElement packPriceUsd_InputBox;
+	@FindBy(xpath = "//button[contains(.,'Save')]")
+	WebElement Save_btn;
+	@FindBy(xpath = "//span[text()='Yayy! New entry has been added']")
+	WebElement successAdedMessage;
+	
+	
 	
 	
 	
@@ -830,6 +863,103 @@ public class PricingDatabase extends BasePage {
 		ui_click(clearFilter_lnk,""); 
 		return this;
 		}
+	public PricingDatabase clickAddNewButton() {
+		ui_click(addNew_button, "clickOnAddNew"); 
+		return this;
+		}
 
+	public PricingDatabase selectproductRefNoFromDropDownValue(String index) {
+		// TODO Auto-generated method stub
+		ui_wait(5);		
+		productRefNo_inputBox.sendKeys("prod");	
+		ui_ActionClick(ui_getElementWithXpath(String.format(productRefNo_dropDown, index)),"productRefNo");	
+		return this;
+	}
 
-}
+	public PricingDatabase selectCountryFromDropDown(String str) {
+		// TODO Auto-generated method stub
+		ui_waitForElementToDisplay(selectCountryDropDown, 10);
+		ui_selectValueFromDropDownByText(selectCountryDropDown, str);		
+		ui_click(selectCountryDropDown,"SelectCountryDropDownValue");
+	    return this;
+	}
+
+	public PricingDatabase addselectAccountFromDropDown(String str) {
+		// TODO Auto-generated method stub
+		ui_waitForElementToDisplay(selectAccountDropDown,10);
+		ui_selectValueFromDropDownByText(selectAccountDropDown, str);		
+		ui_click(selectAccountDropDown,"SelectAccountDropDownValue");
+	    return this;
+	}
+
+	public PricingDatabase selectSupplierfromDropDownValue(String str) {
+		// TODO Auto-generated method stub		
+		ui_waitForElementToDisplay(selectSupplier_dropdown,10);
+		ui_selectValueFromDropDownByText(selectSupplier_dropdown, str);			
+	    return this;
+	}
+	
+	public PricingDatabase selectContractIdFromDropDownValue() {
+		// TODO Auto-generated method stub		
+		ui_wait(10);			
+		ui_selectValueFromDropDownByIndex(selectSupplier_dropdown,1);
+		ui_click(selectSupplier_dropdown, "clickSupplierTextbox");	
+		return this;
+	}
+
+	public PricingDatabase enterValuePackSizeInputBox() {
+		// TODO Auto-generated method stub
+		ui_click(packSize_InputBox, "EnterpackSizeValue");
+		packSize_InputBox.sendKeys("11.4");
+		return this;		
+	}	
+	public PricingDatabase selectCurrencyDropDownValue(String str) {
+		// TODO Auto-generated method stub		
+		ui_wait(10);	
+		ui_selectValueFromDropDownByText(currency_dropdown,str);		
+		ui_click(currency_dropdown,"selectCurrencyOriginalDropDownvalue");
+	    return this;
+	}
+	public PricingDatabase enterValuePricePerEaOriginalCurrenyInputBox() {
+		// TODO Auto-generated method stub
+		ui_click(pricePerEaOriginalCurreny_InputBox, "EnterPricePerEaOriginalCurrenyValue");
+		pricePerEaOriginalCurreny_InputBox.sendKeys("142");
+		return this;		
+	}	
+	public PricingDatabase enterValuePricePerEaUsdInputBox() {
+		// TODO Auto-generated method stub
+		ui_click(pricePerEaUsd_InputBox, "EnterpricePerEaUsdValue");
+		pricePerEaUsd_InputBox.sendKeys("142");
+		return this;		
+	}	
+	public PricingDatabase enterValuePackPriceOriginalCurrencyInputBox() {
+		// TODO Auto-generated method stub
+		ui_click(packPriceOriginalCurrency_InputBox, "EnterPriceOriginalCurrencyValue");
+		packPriceOriginalCurrency_InputBox.sendKeys("142");
+		return this;		
+	}	
+	public PricingDatabase enterValuepackPriceUsdInputBox() {
+		// TODO Auto-generated method stub
+		ui_click(packPriceUsd_InputBox, "EnterpackPriceUsdValue");
+		packPriceUsd_InputBox.sendKeys("142");
+		return this;		
+	}	
+	public PricingDatabase clickSaveBtn() {
+		// TODO Auto-generated method stub
+		ui_click(Save_btn, "clickSaveBtn");
+		ui_IsElementPresent(ui_waitForElementToDisplay(successAdedMessage,Pause.MEDIUM),"5");
+		Log.info("Successful navigation is validated for "+this.getClass().getSimpleName());		
+		return this;		
+	}	
+	
+	}
+	
+	
+	
+		
+	
+		
+	
+		
+	
+

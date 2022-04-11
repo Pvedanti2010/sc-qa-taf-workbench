@@ -5,8 +5,6 @@ import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import com.supplycopia.cms.pages.CmsBulkUpload;
 import com.supplycopia.report.Log;
 import com.supplycopia.utils.Configuration;
 import com.supplycopia.utils.Pause;

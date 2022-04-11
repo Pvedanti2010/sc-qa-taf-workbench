@@ -54,7 +54,20 @@ public class PricingDatabase extends BaseTest{
 		expendProductRef().
 		selectProdRefOption("1").
 		clickBackFilter().
-		clearFilter();
+		clearFilter().
+		clickAddNewButton().
+		selectproductRefNoFromDropDownValue("20").
+		selectCountryFromDropDown("Bhutan").
+		addselectAccountFromDropDown("AccountUpdate-06").
+		selectSupplierfromDropDownValue("SupplierAnkit-31").
+		selectContractIdFromDropDownValue().
+		enterValuePackSizeInputBox().
+		selectCurrencyDropDownValue("USD").
+		enterValuePricePerEaOriginalCurrenyInputBox().
+		enterValuePricePerEaUsdInputBox().
+		enterValuePackPriceOriginalCurrencyInputBox().
+		enterValuepackPriceUsdInputBox().
+		clickSaveBtn();
 
 	}
 

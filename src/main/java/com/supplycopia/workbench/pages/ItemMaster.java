@@ -2,6 +2,7 @@ package com.supplycopia.workbench.pages;
 import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 import com.supplycopia.report.Log;
 import com.supplycopia.utils.Configuration;
@@ -12,7 +13,11 @@ import com.supplycopia.workbench.base.BasePage;
 
 public class ItemMaster extends BasePage {
 
-
+	String rowelement_editIcon="(//td/div//span[contains(@class,'edit-icon')])[%s]";
+	String rowelement_editHistory="//tbody/tr[%s]//span[contains(@class,'action-info-icon')]";
+	String rowelement_deleteIcon="//tbody/tr[%s]//span[contains(@class,'action-delete-icon')]";
+	
+	
 	@FindBy(xpath = "//div[text()='Item Master']/../..//div[@class='arrow arrow-right']" )
 	WebElement itemMaster_lnk;
 	@FindBy(xpath = "//mat-checkbox[@id='mat-checkbox-190']")
@@ -47,7 +52,7 @@ public class ItemMaster extends BasePage {
 	WebElement save_btn;
 	@FindBy(xpath = "//select[@name=\"category\"]")
 	WebElement selectCategoryDropDown;
-	@FindBy(xpath = "//select[@name=\"subcategory\"]")
+	@FindBy(xpath = "//span//select[@name=\"subcategory\"]")
 	WebElement selectSubCategoryDropdown;
 	@FindBy(xpath = "//td//div//span[@class=\"mat-tooltip-trigger action-doc-management-icon\"]")
 	WebElement documnetManage_btn;	
@@ -97,6 +102,17 @@ public class ItemMaster extends BasePage {
 	WebElement bulkUpdate_Btn;
 	@FindBy(xpath = "//app-table-view[contains(.,'Product Reference No')]" )
 	WebElement ItemMasterpageIdentifier_ele;
+	@FindBy(xpath = "//table/tbody/tr/td/span[contains(span,text())]")
+	WebElement productPricetableIdentifier;
+	@FindBy(xpath = "//th[text()=' Product Description ']")
+	WebElement productDescHeader;
+	@FindBy(xpath = "//span[contains(.,'Columns')]//mat-icon[contains(.,'keyboard_arrow_down')]")
+	WebElement ColumnDropDown;
+	
+	@FindBy(xpath = "//div[@role='menu']//span[contains(.,' Product Description ') and @class='mat-checkbox-label']/../span[@class='mat-checkbox-inner-container']")
+	WebElement productDescOption;
+	@FindBy(xpath = "//mat-dialog-container[@role='dialog']")
+	WebElement changeHistoryDialog;
 
 
 	public ItemMaster(){	
@@ -185,15 +201,11 @@ public class ItemMaster extends BasePage {
 		ui_click(selectCategoryDropDown,"selectCategoryDropDownValue");
 		return this;
 	}
-	public ItemMaster clickSubCategoryInputBox() {
-		ui_click(subCategory_InputBox,"SubcategoryInputbox");
-		return this;
-	}
-	public ItemMaster selectSubCategoryDropDown() {
-		ui_waitForElementToDisplay(selectSubCategoryDropdown, 10);
-		ui_selectValueFromDropDownByText(selectSubCategoryDropdown,"SubCategory");
-		ui_click(selectSubCategoryDropdown,"SubCategory");
-		//ui_selectValueFromDropDownByIndex(selectSubCategoryDropdown,1);
+	public ItemMaster selectSubCategoryDropDown(String str) {
+		ui_waitForElementToDisplay(selectSubCategoryDropdown,10);
+		ui_selectValueFromDropDownByText(selectSubCategoryDropdown, str);			
+	 
+		
 		return this;
 	}
 	public ItemMaster clickOnSaveBtn() {
@@ -460,6 +472,28 @@ public class ItemMaster extends BasePage {
 		
 	}
 
+	public ItemMaster validateColumnPresent(String choice,boolean value) {
+		ui_waitForElementToDisplay(productPricetableIdentifier, 30);
+		switch(choice) {
+		case " Product Description ":Assert.assertEquals(ui_IsElementPresent(productDescHeader,"10"), value);
+		break;
+		default:
+			Assert.assertTrue(value);
+		
+		}
+		return this;	
+	}
+	public ItemMaster clickColumns() {
+		// TODO Auto-generated method stub
+		ui_click(ColumnDropDown, "");
+		return this;
+	}
+	public ItemMaster selectColumnAccount() {
+		// TODO Auto-generated method stub
+		ui_click(productDescOption, "");
+		return this;
+	}
+	
 
 }
 
