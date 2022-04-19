@@ -12,7 +12,7 @@ import com.supplycopia.workbench.pages.LoginPage;
  */
 
 public class ProductCategoryMappingSanity extends BaseTest{
-	@Test(groups = {"bulkupload" ,"sanity"})
+	@Test(groups = {"bulkupload" ,"Sanity"})
 	@RetryCountIfFailed(2)
 	public void ProductCategoryMappingTest() throws Throwable {
 

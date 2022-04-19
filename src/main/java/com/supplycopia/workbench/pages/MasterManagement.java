@@ -136,7 +136,7 @@ public class MasterManagement extends BasePage {
 	 * @return
 	 */
 	public MasterManagement clickOnRadioBtnOnAddNewCategory() {
-		ui_waitForElementToDisplay(radio_Btn, 2);
+		ui_waitForElementToDisplay(radio_Btn, Pause.LOW);
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}
@@ -393,7 +393,7 @@ public class MasterManagement extends BasePage {
 	 * @return
 	 */
 	public MasterManagement clickOnRadioBtnOnAddNewSuppler() {
-		ui_waitForElementToDisplay(radio_Btn, 2);
+		ui_waitForElementToDisplay(radio_Btn, Pause.LOW);
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}
@@ -483,7 +483,7 @@ public class MasterManagement extends BasePage {
 	 * @return
 	 */
 	public MasterManagement clickOnRadioBtnOnAddNewCountry() {
-		ui_waitForElementToDisplay(radio_Btn, 2);
+		ui_waitForElementToDisplay(radio_Btn, Pause.LOW);
 		ui_click(radio_Btn, "RadioBtn");
 		return this;			
 	}
@@ -491,16 +491,16 @@ public class MasterManagement extends BasePage {
 	 * This method will enter random number in country text box
 	 * @return
 	 */
-	public MasterManagement inputBoxCountry_random() {			
-		ui_setvalue(InputBox1, "EnterValueInputBox", "AotoCountry_"+StringUtility.randomGenarotor("number", 4));
+	public MasterManagement enterCountry(String country) {			
+		ui_setvalue(InputBox1, "EnterValueInputBox", country);
 		return this;			
 	}
 	/**
 	 * This method will enter random number in account text box
 	 * @return
 	 */
-	public MasterManagement inputBoxAccount_random() {	
-		ui_setvalue(InputBox2, "EnterValueInputBox", "AutoAccount_"+StringUtility.randomGenarotor("number", 5));
+	public MasterManagement enterAccount(String account) {	
+		ui_setvalue(InputBox2, "EnterValueInputBox", account);
 		ui_wait(5);
 		return this;		
 	}
@@ -565,7 +565,7 @@ public class MasterManagement extends BasePage {
 	 * @return
 	 */
 	public MasterManagement clickOnRadioBtnOnAddNewManufacturer() {
-		ui_waitForElementToDisplay(radio_Btn, 2);
+		ui_waitForElementToDisplay(radio_Btn, Pause.LOW);
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}
@@ -805,13 +805,13 @@ public class MasterManagement extends BasePage {
 	 * This method will add the new country account  in the country-account master
 	 * @return
 	 */
-	public MasterManagement addNewCountryAccount() {
+	public MasterManagement addNewCountryAccount(String country,String account) {
 		// TODO Auto-generated method stub
 		clickCountryAccountMaster();
 		clickAddNewBtn();
 		clickOnRadioBtnOnAddNewSuppler();
-		inputBoxCountry_random();
-		inputBoxAccount_random();
+		enterCountry(country);
+		enterAccount(account);
 		clickOnSaveBtn();
 		return this;
 	}
@@ -819,16 +819,16 @@ public class MasterManagement extends BasePage {
 	 * This method will edit the country account  in the country-account master
 	 * @return
 	 */
-	public MasterManagement editNewCountryAccount() {
+	public MasterManagement editNewCountryAccount(String country,String account) {
 			// TODO Auto-generated method stub
 		clickEditBtn();
 		clickOnRadioBtnOnAddNewCountry();
 		clickTextBoxAccount();
 		clearChooseAccountTextBox();
-		inputBoxAccount_random();
+		enterAccount(account);
 		clickTextBoxCountry();
 		clearMainCountryTextBox();
-		inputBoxCountry_random();		
+		enterCountry(country);		
 		clickOnSaveBtn();
 		return this;		
 	}
@@ -873,14 +873,14 @@ public class MasterManagement extends BasePage {
 	 * This method will update the country account in the country-account master data base
 	 * @return
 	 */
-	public MasterManagement updateCountryAccount() {
+	public MasterManagement updateCountryAccount(String country) {
 			// TODO Auto-generated method stub
 		clickUpdateBtn();
 		clickUpdateCountry();
 		clearChooseAccountTextBox();
 		ui_wait(2);
 	    selectDropDownValue();
-		inputBoxCountry_random();
+		enterCountry(country);
 		clickUpdateCountryPopUp();
 		return this;
 	}

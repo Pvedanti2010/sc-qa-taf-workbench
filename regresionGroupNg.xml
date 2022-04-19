@@ -1,18 +1,31 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="sanity-testsuite">
-	<test name="sanitytest">
+	<test name="regressiontest">
 		<groups>
             <run>
               <include name = "Regresion"></include>
             </run>
         </groups>
-        <packages>
-            <package name="com.supplycopia.bulkupload.dataattribute"/>
-            <package name="com.supplycopia.bulkupload.pricingdatabase"/>
-            <package name="com.supplycopia.bulkupload.uploaddocument"/>
-            <package name="com.supplycopia.template.mastermanagement"/>
-            
-        </packages>            
+     
+
+<classes>
+			<class name="com.supplycopia.bulkupload.dataattribute.CategoryMaster" />
+			<class name="com.supplycopia.bulkupload.dataattribute.ProductCategoryMapping" />
+			<class name="com.supplycopia.bulkupload.dataattribute.ProductManufacturerMapping" />
+			<class name="com.supplycopia.bulkupload.dataattribute.ProductAttributes" />
+			<class name="com.supplycopia.bulkupload.dataattribute.ContractSupplierMaster" />
+			<class name="com.supplycopia.bulkupload.dataattribute.CountryAccountMaster" />
+			<class name="com.supplycopia.bulkupload.dataattribute.ProductPrices" />
+			<class name="com.supplycopia.bulkupload.uploaddocument.UploadDocument" />
+			<class name="com.supplycopia.bulkupload.pricingdatabase.PricingDatabase" />
+			<class name="com.supplycopia.bulkupload.dataattribute.ItemMaster" />	
+			<class name="com.supplycopia.bulkupload.mastermanagement.CategoryMasterManagement" />
+			<class name="com.supplycopia.bulkupload.mastermanagement.ContractSupplierMasterManagement" />
+			<class name="com.supplycopia.bulkupload.mastermanagement.CountryAccountManagement" />
+			<class name="com.supplycopia.bulkupload.mastermanagement.ProductManufactureMasterManagement" />		
+
+		</classes>
+                
 	</test>
 	<listeners>	
 		<!-- <listener class-name="com.supplycopia.listeners.AutoTestListener"></listener>
@@ -21,4 +34,4 @@
 		 <listener class-name="com.supplycopia.report.ExtentReportListener"></listener>
 		<listener class-name="com.supplycopia.listeners.AnnotationTransformer"></listener> 
 	</listeners>
-</suite> 
+</suite>

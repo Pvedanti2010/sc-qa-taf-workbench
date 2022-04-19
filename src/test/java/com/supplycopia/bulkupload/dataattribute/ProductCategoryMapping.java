@@ -11,11 +11,10 @@ import com.supplycopia.workbench.pages.LoginPage;
  *
  */
 
-public class CategoryMaster extends BaseTest{
-	@Test(groups = {"bulkupload" ,"Sanity","Regresion"})
+public class ProductCategoryMapping extends BaseTest{
+	@Test(groups = {"bulkupload" ,"Regression"})
 	@RetryCountIfFailed(2)
-
-	public void CategoryMasterTest() throws Throwable {
+	public void ProductCategoryMappingTest() throws Throwable {
 
 		new 
 		LoginPage().
@@ -26,24 +25,24 @@ public class CategoryMaster extends BaseTest{
 		navigateToBulkUpload().
 		validatePageLoad().
 		selectDataType("Upload Data Attributes").
-		selectCustomeSet("Category Master").
+		selectCustomeSet("Product Category Mapping").
 		clickUpload().
 		clickProceedToUpload().
-		uploadFromComputer("Category_Master.xlsx").
+		uploadFromComputer("Product_Category_Mapping.xlsx").
 		clickImportFile().
 		validateUploadSuccessMessage().
-		dragHeaderWithIndex("2", "2").
-		dragHeaderWithIndex("1", "1").
+		dragHeaderWithName("Product Reference No", "Product Reference No").
+		dragHeaderWithName("Category", "Category").
+		dragHeaderWithName("Sub Category", "Subcategory").
 		proceedToReviewAndEdit().
 		checkValidationErrorsOnReviewAndEdit("0").
-		checktotalRecordsOnReviewAndEdit("9").
+		checktotalRecordsOnReviewAndEdit("17").
 		proceedToUpdate().
 		checkValidationErrorsOnUpdatePage("0").
-		checktotalRecordsOnUpdatePage("9").
+		checktotalRecordsOnUpdatePage("17").
 		saveAndUpdate().
-		confirmUpdate().
-		validateSuccessMessage();
-		
+		confirmUpdate().validateSuccessMessage();
+
 	}
 
 }

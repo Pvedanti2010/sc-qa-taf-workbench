@@ -17,10 +17,10 @@ public class CategoryMasterManagement extends BaseTest{
 
 	public void CategoryMasterManagementTest() throws Throwable {
 
-		String category="AutoMainCategory_"+StringUtility.randomGenarotor("number", 4);
-		String subCategory="AutoSubCategory_"+StringUtility.randomGenarotor("number", 5);
-		String updatedSubCategory="AutoSubCategory_"+StringUtility.randomGenarotor("number", 5);
-		String updatedCategory="AutoMainCategory_"+StringUtility.randomGenarotor("number", 4);
+		String category="AutoMainCategory_"+StringUtility.randomGenarotor("number", 7);
+		String subCategory="AutoSubCategory_"+StringUtility.randomGenarotor("number", 7);
+		String updatedSubCategory="AutoSubCategory_"+StringUtility.randomGenarotor("number", 7);
+		String updatedCategory="AutoMainCategory_"+StringUtility.randomGenarotor("number", 7);
 	
 		
 		new 

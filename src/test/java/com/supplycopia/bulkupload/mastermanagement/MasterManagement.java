@@ -12,7 +12,7 @@ import com.supplycopia.workbench.pages.LoginPage;
 
 public class MasterManagement extends BaseTest{
 
-	@Test(groups = {"masterManagement","sanity" })
+	@Test(groups = {"masterManagement","Sanity" })
 	public void MasterManagementSanityTest() throws Throwable {		
 		new 
 		LoginPage().

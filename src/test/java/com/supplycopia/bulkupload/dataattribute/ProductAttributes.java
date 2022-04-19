@@ -36,10 +36,10 @@ public class ProductAttributes extends BaseTest{
 		dragHeaderWithName("Description", "Product Description").
 		proceedToReviewAndEdit().
 		checkValidationErrorsOnReviewAndEdit("0").
-		checktotalRecordsOnReviewAndEdit("9").
+		checktotalRecordsOnReviewAndEdit("17").
 		proceedToUpdate().
 		checkValidationErrorsOnUpdatePage("0").
-		checktotalRecordsOnUpdatePage("9").
+		checktotalRecordsOnUpdatePage("17").
 		saveAndUpdate().
 		confirmUpdate().validateSuccessMessage();
 

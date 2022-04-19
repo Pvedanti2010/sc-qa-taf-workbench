@@ -141,22 +141,22 @@ public class BulkUpload extends BasePage {
 
 	public BulkUpload clickDataTypeInputBox() {
 		// TODO Auto-generated method stub
-		ui_wait((int) Pause.V_SMALL);
+		ui_wait(Integer.valueOf(Pause.V_SMALL));
 		ui_click(dataType_sel, "click data type Field");
-		ui_wait((int) Pause.SMALL);
+		ui_wait(Integer.valueOf(Pause.V_SMALL));
 		return this;
 	}
 
 	public BulkUpload clickCustomeSetInputBox() {
 		// TODO Auto-generated method stub
-		ui_wait((int) Pause.V_SMALL);
+		ui_wait(Integer.valueOf(Pause.V_SMALL));
 		ui_click(customeSet_sel, "customeSet");
-		ui_wait((int) Pause.SMALL);
+		ui_wait(Integer.valueOf(Pause.V_SMALL));
 		return this;
 	}
 	public BulkUpload selectCustomeSet(String customeSet) {
 		// TODO Auto-generated method stub
-		ui_wait((int) Pause.V_SMALL);
+		ui_wait(Integer.valueOf(Pause.V_SMALL));
 		ui_selectValueFromDropDownByText(customeSet_sel, customeSet);
 		return this;
 	}
