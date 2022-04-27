@@ -12,7 +12,7 @@ import com.supplycopia.workbench.pages.LoginPage;
  */
 
 public class CategoryMaster extends BaseTest{
-	@Test(groups = {"bulkupload" ,"sanity","Regresion"})
+	@Test(groups = {"bulkupload" ,"Sanity","Regression"})
 	@RetryCountIfFailed(2)
 
 	public void CategoryMasterTest() throws Throwable {
@@ -25,21 +25,21 @@ public class CategoryMaster extends BaseTest{
 		validatePageLoad().
 		navigateToBulkUpload().
 		validatePageLoad().
-		selectDataType("Upload Data Attributes").
-		selectCustomeSet("Category Master").
+		selectDataType(_session.get_data().get("DataType")).
+		selectCustomeSet(_session.get_data().get("CustomeSet")).
 		clickUpload().
 		clickProceedToUpload().
-		uploadFromComputer("Category_Master.xlsx").
+		uploadFromComputer(_session.get_data().get("ImportSheetName")).
 		clickImportFile().
 		validateUploadSuccessMessage().
 		dragHeaderWithIndex("2", "2").
 		dragHeaderWithIndex("1", "1").
 		proceedToReviewAndEdit().
-		checkValidationErrorsOnReviewAndEdit("0").
-		checktotalRecordsOnReviewAndEdit("9").
+		checkValidationErrorsOnReviewAndEdit(_session.get_data().get("ValidationErrors")).
+		checktotalRecordsOnReviewAndEdit(_session.get_data().get("TotalRecords")).
 		proceedToUpdate().
-		checkValidationErrorsOnUpdatePage("0").
-		checktotalRecordsOnUpdatePage("9").
+		checkValidationErrorsOnUpdatePage(_session.get_data().get("ValidationErrors")).
+		checktotalRecordsOnUpdatePage(_session.get_data().get("TotalRecords")).
 		saveAndUpdate().
 		confirmUpdate().
 		validateSuccessMessage();

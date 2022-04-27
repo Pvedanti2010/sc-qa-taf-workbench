@@ -136,7 +136,7 @@ public class MasterManagement extends BasePage {
 	 * @return
 	 */
 	public MasterManagement clickOnRadioBtnOnAddNewCategory() {
-		ui_waitForElementToDisplay(radio_Btn, 2);
+		ui_IsElementDisplay(ui_waitForElementToDisplay(radio_Btn, Pause.V_SMALL));		
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}
@@ -393,7 +393,7 @@ public class MasterManagement extends BasePage {
 	 * @return
 	 */
 	public MasterManagement clickOnRadioBtnOnAddNewSuppler() {
-		ui_waitForElementToDisplay(radio_Btn, 2);
+		ui_IsElementDisplay(ui_waitForElementToDisplay(radio_Btn, Pause.V_SMALL));	
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}
@@ -483,7 +483,7 @@ public class MasterManagement extends BasePage {
 	 * @return
 	 */
 	public MasterManagement clickOnRadioBtnOnAddNewCountry() {
-		ui_waitForElementToDisplay(radio_Btn, 2);
+		ui_IsElementDisplay(ui_waitForElementToDisplay(radio_Btn, Pause.V_SMALL));	
 		ui_click(radio_Btn, "RadioBtn");
 		return this;			
 	}
@@ -565,7 +565,7 @@ public class MasterManagement extends BasePage {
 	 * @return
 	 */
 	public MasterManagement clickOnRadioBtnOnAddNewManufacturer() {
-		ui_waitForElementToDisplay(radio_Btn, 2);
+		ui_IsElementDisplay(ui_waitForElementToDisplay(radio_Btn, Pause.V_SMALL));	
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}

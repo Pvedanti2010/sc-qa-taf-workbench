@@ -12,7 +12,7 @@ import com.supplycopia.workbench.pages.LoginPage;
 
 public class ContractSupplierMasterManagement extends BaseTest{
 
-	@Test(groups = {"categoryMaster","Regresion" })
+	@Test(groups = {"categoryMaster","Regression" })
 	@RetryCountIfFailed(2)
 	public void ContractSupplierMasterManagementTest() throws Throwable {
 		new 
@@ -26,7 +26,7 @@ public class ContractSupplierMasterManagement extends BaseTest{
 		addNewContractsupplier().
 		editNewContractsupplier().
 		deleteContractsupplierItem().
-		bulkDeleteContractsupplier("3").		
+		bulkDeleteContractsupplier(_session.get_data().get("NumberOfMapping")).		
 		exportContractsupplier().
 		updateContractsupplier();
 		}		

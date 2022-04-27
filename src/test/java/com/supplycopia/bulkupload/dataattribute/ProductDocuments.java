@@ -24,24 +24,24 @@ public class ProductDocuments extends BaseTest{
 		validatePageLoad().
 		navigateToBulkUpload().
 		validatePageLoad().
-		selectDataType("Upload Documents").
-		selectCustomeSet("Product Documents").
+		selectDataType(_session.get_data().get("DataType")).
+		selectCustomeSet(_session.get_data().get("CustomeSet")).
 		clickUpload().
 		clickProceedToUpload().
-		uploadFromComputer("Product_Documents.xlsx").
+		uploadFromComputer(_session.get_data().get("ImportSheetName")).
 		clickImportFile().
-		uploadFromComputer("prod_document").
+  		uploadFromComputer(_session.get_data().get("prod_document")).
 		clickImportFile().
 		validateUploadSuccessMessage().
 		dragHeaderWithName("Product Reference No.", "Product Ref No").
 		dragHeaderWithName("Filename", "Filename").
 		proceedToReviewAndEdit().
 		ui_wait("10").
-		checkValidationErrorsOnReviewAndEdit("0").
-		checktotalRecordsOnReviewAndEdit("17").
+		checkValidationErrorsOnReviewAndEdit(_session.get_data().get("ValidationErrors")).
+		checktotalRecordsOnReviewAndEdit(_session.get_data().get("TotalRecords")).
 		proceedToUpdate().
-		checkValidationErrorsOnUpdatePage("0").
-		checktotalRecordsOnUpdatePage("17").
+		checkValidationErrorsOnReviewAndEdit(_session.get_data().get("ValidationErrors")).
+		checktotalRecordsOnReviewAndEdit(_session.get_data().get("TotalRecords")).
 		saveAndUpdate().
 		confirmUpdate().validateSuccessMessage();
 

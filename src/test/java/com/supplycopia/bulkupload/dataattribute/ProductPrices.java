@@ -12,7 +12,7 @@ import com.supplycopia.workbench.pages.LoginPage;
  */
 
 public class ProductPrices extends BaseTest{
-	@Test(groups = {"bulkupload" ,"Regresion"})
+	@Test(groups = {"bulkupload" ,"Regression"})
 	@RetryCountIfFailed(2)
 
 	public void ProductPriceTest() throws Throwable {
@@ -25,11 +25,11 @@ public class ProductPrices extends BaseTest{
 		validatePageLoad().
 		navigateToBulkUpload().
 		validatePageLoad().
-		selectDataType("Upload Data Attributes").
-		selectCustomeSet("Products Prices").
+		selectDataType(_session.get_data().get("DataType")).
+		selectCustomeSet(_session.get_data().get("CustomeSet")).
 		clickUpload().
 		clickProceedToUpload().
-		uploadFromComputer("Product_Prices.xlsx").
+		uploadFromComputer(_session.get_data().get("ImportSheetName")).
 		clickImportFile().
 		validateUploadSuccessMessage().
 		dragHeaderWithName("Product Reference No", "Product Ref No").
@@ -44,11 +44,11 @@ public class ProductPrices extends BaseTest{
 		dragHeaderWithName("Pack Price", "Pack Price").
 		dragHeaderWithName("Pack Price USD", "Pack Price USD").
 		proceedToReviewAndEdit().
-		checkValidationErrorsOnReviewAndEdit("0").
-		checktotalRecordsOnReviewAndEdit("9").
+		checkValidationErrorsOnReviewAndEdit(_session.get_data().get("ValidationErrors")).
+		checktotalRecordsOnReviewAndEdit(_session.get_data().get("TotalRecords")).
 		proceedToUpdate().
-		checkValidationErrorsOnUpdatePage("0").
-		checktotalRecordsOnUpdatePage("9").
+		checkValidationErrorsOnReviewAndEdit(_session.get_data().get("ValidationErrors")).
+		checktotalRecordsOnReviewAndEdit(_session.get_data().get("TotalRecords")).
 		saveAndUpdate().
 		confirmUpdate().validateSuccessMessage();
 

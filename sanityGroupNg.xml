@@ -10,8 +10,7 @@
             <package name="com.supplycopia.bulkupload.dataattribute"/>
             <package name="com.supplycopia.bulkupload.pricingdatabase"/>
             <package name="com.supplycopia.bulkupload.uploaddocument"/>
-            <package name="com.supplycopia.template.mastermanagement"/>
-            
+            <package name="com.supplycopia.bulkupload.mastermanagement"/>            
         </packages>            
 	</test>
 	<listeners>	

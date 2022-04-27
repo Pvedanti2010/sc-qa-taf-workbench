@@ -12,7 +12,7 @@ import com.supplycopia.workbench.pages.LoginPage;
  */
 
 public class CountryAccountMaster extends BaseTest{
-	@Test(groups = {"bulkupload","Regresion" })
+	@Test(groups = {"bulkupload","Regression" })
 	@RetryCountIfFailed(2)
 
 	public void CountryAccountMasterTest() throws Throwable {
@@ -25,21 +25,21 @@ public class CountryAccountMaster extends BaseTest{
 		validatePageLoad().
 		navigateToBulkUpload().
 		validatePageLoad().
-		selectDataType("Upload Data Attributes").
-		selectCustomeSet("Country Account Master").
+		selectDataType(_session.get_data().get("DataType")).
+		selectCustomeSet(_session.get_data().get("CustomeSet")).
 		clickUpload().
 		clickProceedToUpload().
-		uploadFromComputer("Country_Account_Master.xlsx").
+		uploadFromComputer(_session.get_data().get("ImportSheetName")).
 		clickImportFile().
 		validateUploadSuccessMessage().
 		dragHeaderWithName("Account", "Account").
 		dragHeaderWithName("Country", "Country").
 		proceedToReviewAndEdit().
-		checkValidationErrorsOnReviewAndEdit("0").
-		checktotalRecordsOnReviewAndEdit("9").
+		checkValidationErrorsOnReviewAndEdit(_session.get_data().get("ValidationErrors")).
+		checktotalRecordsOnReviewAndEdit(_session.get_data().get("TotalRecords")).
 		proceedToUpdate().
-		checkValidationErrorsOnUpdatePage("0").
-		checktotalRecordsOnUpdatePage("9").
+		checkValidationErrorsOnReviewAndEdit(_session.get_data().get("ValidationErrors")).
+		checktotalRecordsOnReviewAndEdit(_session.get_data().get("TotalRecords")).
 		saveAndUpdate().
 		confirmUpdate().validateSuccessMessage();
 

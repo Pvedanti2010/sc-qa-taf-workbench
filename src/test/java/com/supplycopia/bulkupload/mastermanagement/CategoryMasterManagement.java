@@ -12,7 +12,7 @@ import com.supplycopia.workbench.pages.LoginPage;
  */
 
 public class CategoryMasterManagement extends BaseTest{
-	@Test(groups = {"categoryMaster","Regresion" })
+	@Test(groups = {"categoryMaster","Regression" })
 	@RetryCountIfFailed(2)
 
 	public void CategoryMasterManagementTest() throws Throwable {
@@ -33,7 +33,7 @@ public class CategoryMasterManagement extends BaseTest{
 		addNewCategory(category,subCategory).
 		editNewCategorySubcategory(updatedCategory,updatedSubCategory).
 		deleteMapping().
-		bulkDeleteMapping("3").
+		bulkDeleteMapping(_session.get_data().get("NumberOfMapping")).
 		exportCategoryItem().
 		updateCategory();
 		}		

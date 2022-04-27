@@ -25,8 +25,8 @@ public class UploadDocument extends BaseTest{
 		validatePageLoad().
 		navigateToBulkUpload().
 		validatePageLoad().
-		selectDataType("Upload Documents").
-		selectCustomeSet("Product Documents").
+		selectDataType(_session.get_data().get("DataType")).
+		selectCustomeSet(_session.get_data().get("CustomeSet")).
 		clickUpload().
 		clickProceedToUpload().
 		uploadFromComputer("Product_Documents.xlsx").

@@ -3,12 +3,15 @@ package com.supplycopia.workbench.pages;
 
 import java.util.List;
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.supplycopia.report.Log;
-import com.supplycopia.utils.Configuration;
 import com.supplycopia.utils.Pause;
+import com.supplycopia.utils.Configuration;
 import com.supplycopia.workbench.base.BasePage;
+
+
 
 public class BulkUpload extends BasePage {
 
@@ -135,28 +138,33 @@ public class BulkUpload extends BasePage {
 
 	public BulkUpload selectDataType(String dataType) {
 		// TODO Auto-generated method stub
+		ui_waitForElementToDisplay(dataType_sel,Pause.SMALL);
 		ui_selectValueFromDropDownByText(dataType_sel, dataType);
 		return this;
 	}
 
 	public BulkUpload clickDataTypeInputBox() {
 		// TODO Auto-generated method stub
-		ui_wait((int) Pause.V_SMALL);
+		
+		//ui_wait((int) Pause.V_SMALL);
 		ui_click(dataType_sel, "click data type Field");
-		ui_wait((int) Pause.SMALL);
+		//ui_wait((int) Pause.SMALL);
 		return this;
 	}
 
 	public BulkUpload clickCustomeSetInputBox() {
 		// TODO Auto-generated method stub
-		ui_wait((int) Pause.V_SMALL);
+		//ui_wait((int) Pause.V_SMALL);
+		ui_waitForElementToDisplay(customeSet_sel, Pause.V_SMALL);
 		ui_click(customeSet_sel, "customeSet");
-		ui_wait((int) Pause.SMALL);
+		//ui_wait((int) Pause.SMALL);
 		return this;
 	}
 	public BulkUpload selectCustomeSet(String customeSet) {
 		// TODO Auto-generated method stub
-		ui_wait((int) Pause.V_SMALL);
+		ui_wait(5);
+		//ui_wait((int) Pause.V_SMALL);
+		ui_waitForElementToDisplay(customeSet_sel, Pause.LOW);
 		ui_selectValueFromDropDownByText(customeSet_sel, customeSet);
 		return this;
 	}
@@ -207,7 +215,7 @@ public class BulkUpload extends BasePage {
 		// TODO Auto-generated method stub
 		ui_wait(2);
 		ui_clickHoldAndDrop(ui_getElementWithXpath(String.format(ListFromMatchWithText, fromRowItem)),
-				ui_getElementWithXpath(String.format(ListToMatchWithText, toRowItem)));
+		ui_getElementWithXpath(String.format(ListToMatchWithText, toRowItem)));
 		return this;
 	}
 

@@ -3,7 +3,7 @@
 	<test name="sanitytest">
 		<groups>
             <run>
-              <include name = "Regresion"></include>
+              <include name = "Regression"></include>
             </run>
         </groups>
         <packages>

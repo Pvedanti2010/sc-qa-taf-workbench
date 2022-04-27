@@ -11,7 +11,7 @@ import com.supplycopia.workbench.pages.LoginPage;
  */
 
 public class ProductManufactureMasterManagement extends BaseTest{
-	@Test(groups = {"categoryMaster" ,"Regresion"})
+	@Test(groups = {"categoryMaster" ,"Regression"})
 	@RetryCountIfFailed(2)
 	public void ProductManufactureMasterManagementTest() throws Throwable {
 		new 
@@ -25,7 +25,7 @@ public class ProductManufactureMasterManagement extends BaseTest{
 		addNewProductManufacture().
 		editNewProductManufacture().
 		deleteProductManufactureItem().
-		bulkDeleteProductManufacture("3").		
+		bulkDeleteProductManufacture(_session.get_data().get("NumberOfMapping")).	
 		exportProductManufacture().
 		updateProductManufacture();
 		}		

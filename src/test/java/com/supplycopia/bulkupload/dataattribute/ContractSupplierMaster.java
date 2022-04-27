@@ -12,7 +12,7 @@ import com.supplycopia.workbench.pages.LoginPage;
  */
 
 public class ContractSupplierMaster extends BaseTest{
-	@Test(groups = {"dataattribute" ,"Regresion"})
+	@Test(groups = {"dataattribute" ,"Regression"})
 	@RetryCountIfFailed(2)
 	public void ContractSupplierMasterTest() throws Throwable {
 		new 
@@ -23,22 +23,22 @@ public class ContractSupplierMaster extends BaseTest{
 		validatePageLoad().
 		navigateToBulkUpload().
 		validatePageLoad().
-		selectDataType("Upload Data Attributes").
+		selectDataType(_session.get_data().get("DataType")).
 		ui_wait("8").
-		selectCustomeSet("Contract Supplier Master").
+		selectCustomeSet(_session.get_data().get("CustomeSet")).
 		clickUpload().
 		clickProceedToUpload().
-		uploadFromComputer("Contract_Supplier_Master.xlsx").
+		uploadFromComputer(_session.get_data().get("ImportSheetName")).
 		clickImportFile().
 		validateUploadSuccessMessage().
 		dragHeaderWithName("Contract id", "Contract Id").
 		dragHeaderWithName("Supplier", "Supplier").
 		proceedToReviewAndEdit().
-		checkValidationErrorsOnReviewAndEdit("0").
-		checktotalRecordsOnReviewAndEdit("9").
+		checkValidationErrorsOnReviewAndEdit(_session.get_data().get("ValidationErrors")).
+		checktotalRecordsOnReviewAndEdit(_session.get_data().get("TotalRecords")).
 		proceedToUpdate().
-		checkValidationErrorsOnUpdatePage("0").
-		checktotalRecordsOnUpdatePage("9").
+		checkValidationErrorsOnReviewAndEdit(_session.get_data().get("ValidationErrors")).
+		checktotalRecordsOnReviewAndEdit(_session.get_data().get("TotalRecords")).
 		saveAndUpdate().
 		confirmUpdate().validateSuccessMessage();
 

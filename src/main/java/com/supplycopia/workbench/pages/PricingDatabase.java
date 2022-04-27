@@ -30,7 +30,7 @@ public class PricingDatabase extends BasePage {
 	
 	@FindBy(xpath = "//span[@class='sc-filter-title' and contains(.,'Product Reference No ')]")
 	WebElement productRef_dd;
-    String productRefOption=	"(//span[@class='sc-filter-title' and contains(.,'Product Reference No ')]//ancestor::mat-expansion-panel//span[@class='mat-checkbox-inner-container'])[1]";
+    String productRefOption="(//span[@class='sc-filter-title' and contains(.,'Product Reference No ')]//ancestor::mat-expansion-panel//span[@class='mat-checkbox-inner-container'])[1]";
 	@FindBy(xpath = "//button/span[@class='mat-button-wrapper' and contains(.,'Filters')]")
 	WebElement filters_btn;
 	@FindBy(xpath = "//app-confirm-dialog//button[text()='Yes']")
@@ -158,8 +158,9 @@ public class PricingDatabase extends BasePage {
 	WebElement selectCountryDropDown;
 	@FindBy(xpath = "//select[@formcontrolname=\"account\"]")
 	WebElement selectAccountDropDown;
-	@FindBy(xpath = "//select[@formcontrolname=\\\"contractId\\\"]//option[%s]")
-	WebElement contractId_textbox;
+	@FindBy(xpath ="//select[@formcontrolname=\"contractId\"]")
+	WebElement contractId_Dropdown;	
+	
 	String ContractSelect_dropDown = "(//span[@class=\"mat-option-text\"]/span)[%s]";
 	@FindBy(xpath = "//select[@formcontrolname=\"supplier\"]")
 	WebElement selectSupplier_dropdown;
@@ -195,7 +196,7 @@ public class PricingDatabase extends BasePage {
 	public PricingDatabase bulkSelectReferenceNumbers(String numberOfMapping) {
 		// TODO Auto-generated method stub
 		int num=Integer.valueOf(numberOfMapping);
-		ui_waitForElementToDisplay(productPricetableIdentifier, 6);
+		ui_IsElementDisplay(ui_waitForElementToDisplay(productPricetableIdentifier, Pause.SMALL));		
 		int subcheckboxesSize=SubCheckboxes.size()-1;
 		assertThat(num, is(lessThan(subcheckboxesSize)));
 		for (int i=0; i<num;i++) {
@@ -222,7 +223,7 @@ public class PricingDatabase extends BasePage {
 		  return this;			
 	}
 	public PricingDatabase clickOnRadioBtnOnAddNewCategory() {
-		ui_waitForElementToDisplay(radio_Btn, 2);
+		ui_IsElementDisplay(ui_waitForElementToDisplay(radio_Btn,Pause.V_SMALL));		
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}
@@ -364,7 +365,7 @@ public class PricingDatabase extends BasePage {
 	}
 	
 	public PricingDatabase clickOnRadioBtnOnAddNewSuppler() {
-		ui_waitForElementToDisplay(radio_Btn, 2);
+		ui_IsElementDisplay(ui_waitForElementToDisplay(radio_Btn, Pause.SMALL));		
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}
@@ -414,7 +415,7 @@ public class PricingDatabase extends BasePage {
 	    return this; 
 	} 
 	public PricingDatabase clickOnRadioBtnOnAddNewCountry() {
-		ui_waitForElementToDisplay(radio_Btn, 2);
+		ui_IsElementDisplay(ui_waitForElementToDisplay(radio_Btn, Pause.SMALL));		
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}
@@ -460,7 +461,7 @@ public class PricingDatabase extends BasePage {
 	    return this; 
 	} 
 	public PricingDatabase clickOnRadioBtnOnAddNewManufacturer() {
-		ui_waitForElementToDisplay(radio_Btn, 2);
+		ui_IsElementDisplay(ui_waitForElementToDisplay(radio_Btn, Pause.SMALL));		
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}
@@ -760,7 +761,7 @@ public class PricingDatabase extends BasePage {
 	}
 
 	public PricingDatabase validateColumnPresent(String choice,boolean value) {
-		ui_waitForElementToDisplay(productPricetableIdentifier, 30);
+		ui_IsElementDisplay(ui_waitForElementToDisplay(productPricetableIdentifier, Pause.V_HIGH));		
 		switch(choice) {
 		case "Account":Assert.assertEquals(ui_IsElementPresent(accountHeader,"5"), value);
 		break;
@@ -803,7 +804,8 @@ public class PricingDatabase extends BasePage {
 		// TODO Auto-generated method stub
 		ui_wait(4);
 		ui_click(String.format(rowelement_savePricing, row), value);
-		ui_waitForElementToDisplay(productPricetableIdentifier, 30);
+		
+		ui_IsElementDisplay(ui_waitForElementToDisplay(productPricetableIdentifier, Pause.V_HIGH));
 		return this;
 	}
 	
@@ -878,7 +880,8 @@ public class PricingDatabase extends BasePage {
 
 	public PricingDatabase selectCountryFromDropDown(String str) {
 		// TODO Auto-generated method stub
-		ui_waitForElementToDisplay(selectCountryDropDown, 10);
+		ui_wait(2);
+		ui_waitForElementToDisplay(selectCountryDropDown, Pause.MEDIUM);		
 		ui_selectValueFromDropDownByText(selectCountryDropDown, str);		
 		ui_click(selectCountryDropDown,"SelectCountryDropDownValue");
 	    return this;
@@ -886,24 +889,26 @@ public class PricingDatabase extends BasePage {
 
 	public PricingDatabase addselectAccountFromDropDown(String str) {
 		// TODO Auto-generated method stub
-		ui_waitForElementToDisplay(selectAccountDropDown,10);
+		ui_wait(2);
+		ui_waitForElementToDisplay(selectAccountDropDown, Pause.MEDIUM);		
 		ui_selectValueFromDropDownByText(selectAccountDropDown, str);		
 		ui_click(selectAccountDropDown,"SelectAccountDropDownValue");
 	    return this;
 	}
 
 	public PricingDatabase selectSupplierfromDropDownValue(String str) {
-		// TODO Auto-generated method stub		
-		ui_waitForElementToDisplay(selectSupplier_dropdown,10);
+		// TODO Auto-generated method stub	
+		ui_waitForElementToDisplay(selectSupplier_dropdown, Pause.MEDIUM);		
 		ui_selectValueFromDropDownByText(selectSupplier_dropdown, str);			
 	    return this;
 	}
 	
 	public PricingDatabase selectContractIdFromDropDownValue() {
-		// TODO Auto-generated method stub		
-		ui_wait(10);			
-		ui_selectValueFromDropDownByIndex(selectSupplier_dropdown,1);
-		ui_click(selectSupplier_dropdown, "clickSupplierTextbox");	
+		// TODO Auto-generated method stub	
+		
+		ui_wait(5);	
+		ui_click(contractId_Dropdown, "clickSupplierTextbox");	
+		ui_selectValueFromDropDownByIndex(contractId_Dropdown,1);		
 		return this;
 	}
 
@@ -915,33 +920,33 @@ public class PricingDatabase extends BasePage {
 	}	
 	public PricingDatabase selectCurrencyDropDownValue(String str) {
 		// TODO Auto-generated method stub		
-		ui_wait(10);	
+		ui_wait(2);	
 		ui_selectValueFromDropDownByText(currency_dropdown,str);		
 		ui_click(currency_dropdown,"selectCurrencyOriginalDropDownvalue");
 	    return this;
 	}
-	public PricingDatabase enterValuePricePerEaOriginalCurrenyInputBox() {
+	public PricingDatabase enterValuePricePerEaOriginalCurrenyInputBox(String PPEA) {
 		// TODO Auto-generated method stub
 		ui_click(pricePerEaOriginalCurreny_InputBox, "EnterPricePerEaOriginalCurrenyValue");
-		pricePerEaOriginalCurreny_InputBox.sendKeys("142");
+		pricePerEaOriginalCurreny_InputBox.sendKeys(PPEA);
 		return this;		
 	}	
-	public PricingDatabase enterValuePricePerEaUsdInputBox() {
+	public PricingDatabase enterValuePricePerEaUsdInputBox(String PPEAUSD) {
 		// TODO Auto-generated method stub
 		ui_click(pricePerEaUsd_InputBox, "EnterpricePerEaUsdValue");
-		pricePerEaUsd_InputBox.sendKeys("142");
+		pricePerEaUsd_InputBox.sendKeys(PPEAUSD);
 		return this;		
 	}	
-	public PricingDatabase enterValuePackPriceOriginalCurrencyInputBox() {
+	public PricingDatabase enterValuePackPriceOriginalCurrencyInputBox(String PPOC) {
 		// TODO Auto-generated method stub
 		ui_click(packPriceOriginalCurrency_InputBox, "EnterPriceOriginalCurrencyValue");
-		packPriceOriginalCurrency_InputBox.sendKeys("142");
+		packPriceOriginalCurrency_InputBox.sendKeys(PPOC);
 		return this;		
 	}	
-	public PricingDatabase enterValuepackPriceUsdInputBox() {
+	public PricingDatabase enterValuepackPriceUsdInputBox(String PPOU ) {
 		// TODO Auto-generated method stub
 		ui_click(packPriceUsd_InputBox, "EnterpackPriceUsdValue");
-		packPriceUsd_InputBox.sendKeys("142");
+		packPriceUsd_InputBox.sendKeys(PPOU);
 		return this;		
 	}	
 	public PricingDatabase clickSaveBtn() {

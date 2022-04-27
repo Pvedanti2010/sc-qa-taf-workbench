@@ -12,7 +12,7 @@ import com.supplycopia.workbench.pages.LoginPage;
 
 public class CountryAccountManagement extends BaseTest{
 
-	@Test(groups = {"categoryMaster","Regresion" })
+	@Test(groups = {"categoryMaster","Regression" })
 	@RetryCountIfFailed(2)
 	public void CountryAccountManagementTest() throws Throwable {
 		new 
@@ -25,7 +25,7 @@ public class CountryAccountManagement extends BaseTest{
 		addNewCountryAccount().
 		editNewCountryAccount().
 		deleteCountryAccountItem().
-		bulkDeleteCountryAccount("3").		
+		bulkDeleteCountryAccount(_session.get_data().get("NumberOfMapping")).
 		exportCountryAccount().
 		updateCountryAccount();
 		}		

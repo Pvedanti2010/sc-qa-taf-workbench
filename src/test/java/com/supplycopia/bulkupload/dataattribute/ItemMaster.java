@@ -13,10 +13,11 @@ import com.supplycopia.workbench.pages.LoginPage;
  */
 
 public class ItemMaster extends BaseTest{
-	@Test(groups = {"categoryMaster","Regresion" })
+	@Test(groups = {"categoryMaster","Regression" })
 	@RetryCountIfFailed(2)
 	public void ItemMasterTest() throws Throwable {
-
+		
+		
 
 		new 
 		LoginPage().
@@ -25,27 +26,29 @@ public class ItemMaster extends BaseTest{
 		navigateToWorkbench().
 		validatePageLoad().
 		navigateToItemMaster().
-		exportProductEntries().		
-		//selectAllColumns().	
-		validateColumnPresent(" Product Description ", true).
+		exportProductEntries().			
+		validateColumnPresent(_session.get_data().get("ColumnName"),true).
 		clickColumns().
 		selectColumnAccount().
 		clickColumns().
-		validateColumnPresent(" Product Description ", false).
+		validateColumnPresent(_session.get_data().get("ColumnName"),false).
 		clickColumns().
 		selectColumnAccount().
 		clickColumns().
-		validateColumnPresent(" Product Description ", true).
+		validateColumnPresent(_session.get_data().get("ColumnName"),true).
 		editProductEntry("productDesc_"+StringUtility.randomGenarotor("number", 4),"cat").
-		selectCategoryFromDropDown("Category-2").
-		selectSubCategoryDropDown("Sub Category-2").
+		selectCategoryFromDropDown(_session.get_data().get("CatDropDown")).
+		selectSubCategoryDropDown(_session.get_data().get("SubCatDropDown")).
 		clickOnSaveBtn().		
-		validateDocumentManagement("Category_Master.xlsx").
+		validateDocumentManagement(_session.get_data().get("ImportSheetName")).
 		validateFunctionallyEquivalent().
 		deleteSingleProduct().
 		markAsFunctionalEquivalentFunctionallty().
-		validateBulkUpdateFunctionality().
-		validateBulkdeleteFunctionality();
+		validateBulkUpdateFunctionality();
+		//validateBulkdeleteFunctionality();
+		
+		
+		
 		}
 	
 	}

@@ -13,7 +13,7 @@ public class PricingDatabase extends BaseTest{
 
 
 	
-	@Test(groups = {"bulkupload" ,"Regresion"})
+	@Test(groups = {"bulkupload" ,"Regression"})
 	//@RetryCountIfFailed(2)
 	public void PricingDataBaseTest() throws Throwable {
 
@@ -25,18 +25,18 @@ public class PricingDatabase extends BaseTest{
 		navigateToWorkbench().
 		validatePageLoad().
 		navigateToPricingDatabase().
-		bulkSelectReferenceNumbers("5").
+		bulkSelectReferenceNumbers(_session.get_data().get("NumberOfMapping")).
 		clickExport().
 		clickExportButtomTray().
-		validateColumnPresent("Account", true).
+		validateColumnPresent(_session.get_data().get("ColumnName"), true).
 		clickColumns().
 		selectColumnAccount().
 		clickColumns().
-		validateColumnPresent("Account", false).
+		validateColumnPresent(_session.get_data().get("ColumnName"), false).
 		clickColumns().
 		selectColumnAccount().
 		clickColumns().
-		validateColumnPresent("Account", true).
+		validateColumnPresent(_session.get_data().get("ColumnName"), true).
 		scrollRight("2").
 		selectRowfor("Edit","1").
 		setPackSize("23", "1").
@@ -47,9 +47,9 @@ public class PricingDatabase extends BaseTest{
 		closeChangeHistoryPopUp().
 		selectRowfor("Delete","4").
 		confirmDeleteMapping().
-		bulkSelectReferenceNumbers("3").
-		clickBulkDelete().
-		confirmBulkDeleteMapping().
+		bulkSelectReferenceNumbers(_session.get_data().get("NumberOfMapping")).
+		//clickBulkDelete().
+		//confirmBulkDeleteMapping().
 		clickFilter().
 		expendProductRef().
 		selectProdRefOption("1").
@@ -57,17 +57,18 @@ public class PricingDatabase extends BaseTest{
 		clearFilter().
 		clickAddNewButton().
 		selectproductRefNoFromDropDownValue("20").
-		selectCountryFromDropDown("Bhutan").
-		addselectAccountFromDropDown("AccountUpdate-06").
-		selectSupplierfromDropDownValue("SupplierAnkit-31").
+		selectCountryFromDropDown(_session.get_data().get("CountryDropDown")).
+		addselectAccountFromDropDown(_session.get_data().get("AccountDropDown")).
+		selectSupplierfromDropDownValue(_session.get_data().get("SupplierDropDown")).
 		selectContractIdFromDropDownValue().
 		enterValuePackSizeInputBox().
-		selectCurrencyDropDownValue("USD").
-		enterValuePricePerEaOriginalCurrenyInputBox().
-		enterValuePricePerEaUsdInputBox().
-		enterValuePackPriceOriginalCurrencyInputBox().
-		enterValuepackPriceUsdInputBox().
+		selectCurrencyDropDownValue(_session.get_data().get("CurrencyDropDown")).
+		enterValuePricePerEaOriginalCurrenyInputBox(_session.get_data().get("PricePerEaOriginal")).
+		enterValuePricePerEaUsdInputBox(_session.get_data().get("PricePerEaUsd")).
+		enterValuePackPriceOriginalCurrencyInputBox(_session.get_data().get("PackPriceOriginal")).
+		enterValuepackPriceUsdInputBox(_session.get_data().get("packPriceUsd")).
 		clickSaveBtn();
+		
 
 	}
 
