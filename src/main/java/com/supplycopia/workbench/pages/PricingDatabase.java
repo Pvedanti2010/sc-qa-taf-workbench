@@ -196,7 +196,7 @@ public class PricingDatabase extends BasePage {
 	public PricingDatabase bulkSelectReferenceNumbers(String numberOfMapping) {
 		// TODO Auto-generated method stub
 		int num=Integer.valueOf(numberOfMapping);
-		ui_IsElementDisplay(ui_waitForElementToDisplay(productPricetableIdentifier, Pause.SMALL));		
+		ui_IsElementDisplay(ui_waitForElementToDisplay(productPricetableIdentifier, Pause.SMALL));
 		int subcheckboxesSize=SubCheckboxes.size()-1;
 		assertThat(num, is(lessThan(subcheckboxesSize)));
 		for (int i=0; i<num;i++) {
@@ -223,7 +223,8 @@ public class PricingDatabase extends BasePage {
 		  return this;			
 	}
 	public PricingDatabase clickOnRadioBtnOnAddNewCategory() {
-		ui_IsElementDisplay(ui_waitForElementToDisplay(radio_Btn,Pause.V_SMALL));		
+
+		ui_IsElementDisplay(ui_waitForElementToDisplay(radio_Btn,Pause.V_SMALL));
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}
@@ -365,7 +366,7 @@ public class PricingDatabase extends BasePage {
 	}
 	
 	public PricingDatabase clickOnRadioBtnOnAddNewSuppler() {
-		ui_IsElementDisplay(ui_waitForElementToDisplay(radio_Btn, Pause.SMALL));		
+		ui_IsElementDisplay(ui_waitForElementToDisplay(radio_Btn, Pause.SMALL));	
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}
@@ -415,7 +416,7 @@ public class PricingDatabase extends BasePage {
 	    return this; 
 	} 
 	public PricingDatabase clickOnRadioBtnOnAddNewCountry() {
-		ui_IsElementDisplay(ui_waitForElementToDisplay(radio_Btn, Pause.SMALL));		
+		ui_IsElementDisplay(ui_waitForElementToDisplay(radio_Btn, Pause.SMALL));
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}
@@ -462,6 +463,7 @@ public class PricingDatabase extends BasePage {
 	} 
 	public PricingDatabase clickOnRadioBtnOnAddNewManufacturer() {
 		ui_IsElementDisplay(ui_waitForElementToDisplay(radio_Btn, Pause.SMALL));		
+
 		ui_click(radio_Btn, "RadioBtn");
 		   return this;			
 	}
@@ -762,6 +764,7 @@ public class PricingDatabase extends BasePage {
 
 	public PricingDatabase validateColumnPresent(String choice,boolean value) {
 		ui_IsElementDisplay(ui_waitForElementToDisplay(productPricetableIdentifier, Pause.V_HIGH));		
+
 		switch(choice) {
 		case "Account":Assert.assertEquals(ui_IsElementPresent(accountHeader,"5"), value);
 		break;
@@ -803,9 +806,9 @@ public class PricingDatabase extends BasePage {
 	public PricingDatabase clickSaveProductPrices(String value, String row) {
 		// TODO Auto-generated method stub
 		ui_wait(4);
-		ui_click(String.format(rowelement_savePricing, row), value);
-		
+		ui_click(String.format(rowelement_savePricing, row), value);		
 		ui_IsElementDisplay(ui_waitForElementToDisplay(productPricetableIdentifier, Pause.V_HIGH));
+
 		return this;
 	}
 	
@@ -881,7 +884,7 @@ public class PricingDatabase extends BasePage {
 	public PricingDatabase selectCountryFromDropDown(String str) {
 		// TODO Auto-generated method stub
 		ui_wait(2);
-		ui_waitForElementToDisplay(selectCountryDropDown, Pause.MEDIUM);		
+		ui_waitForElementToDisplay(selectCountryDropDown, Pause.MEDIUM);
 		ui_selectValueFromDropDownByText(selectCountryDropDown, str);		
 		ui_click(selectCountryDropDown,"SelectCountryDropDownValue");
 	    return this;
@@ -890,7 +893,7 @@ public class PricingDatabase extends BasePage {
 	public PricingDatabase addselectAccountFromDropDown(String str) {
 		// TODO Auto-generated method stub
 		ui_wait(2);
-		ui_waitForElementToDisplay(selectAccountDropDown, Pause.MEDIUM);		
+		ui_waitForElementToDisplay(selectAccountDropDown, Pause.MEDIUM);
 		ui_selectValueFromDropDownByText(selectAccountDropDown, str);		
 		ui_click(selectAccountDropDown,"SelectAccountDropDownValue");
 	    return this;
@@ -898,14 +901,13 @@ public class PricingDatabase extends BasePage {
 
 	public PricingDatabase selectSupplierfromDropDownValue(String str) {
 		// TODO Auto-generated method stub	
-		ui_waitForElementToDisplay(selectSupplier_dropdown, Pause.MEDIUM);		
+		ui_waitForElementToDisplay(selectSupplier_dropdown, Pause.MEDIUM);
 		ui_selectValueFromDropDownByText(selectSupplier_dropdown, str);			
 	    return this;
 	}
 	
 	public PricingDatabase selectContractIdFromDropDownValue() {
 		// TODO Auto-generated method stub	
-		
 		ui_wait(5);	
 		ui_click(contractId_Dropdown, "clickSupplierTextbox");	
 		ui_selectValueFromDropDownByIndex(contractId_Dropdown,1);		

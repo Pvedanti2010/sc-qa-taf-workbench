@@ -2,6 +2,7 @@
 <suite name="sanity-testsuite">
 	<test name="sanitytest">
 		<groups>
+<<<<<<< HEAD
             <run>
               <include name = "Sanity"></include>
             </run>
@@ -12,12 +13,32 @@
             <package name="com.supplycopia.bulkupload.uploaddocument"/>
             <package name="com.supplycopia.bulkupload.mastermanagement"/>            
         </packages>            
+=======
+			<run>
+				<include name="Sanity"></include>
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.supplycopia.bulkupload.dataattribute.CategoryMaster" />
+			<class
+				name="com.supplycopia.bulkupload.uploaddocument.UploadDocument" />
+			<class
+				name="com.supplycopia.bulkupload.dataattribute.ItemMasterSanity" />
+			<class
+				name="com.supplycopia.bulkupload.pricingdatabase.PricingDatabaseSanity" />
+			<class
+				name="com.supplycopia.bulkupload.mastermanagement.MasterManagement" />
+		</classes>
+
+>>>>>>> 27ed2b2fb9a243929e7da8c1445355a1b5f9b88f
 	</test>
-	<listeners>	
-		<!-- <listener class-name="com.supplycopia.listeners.AutoTestListener"></listener>
-		<listener class-name="com.supplycopia.listeners.RetryListener"></listener>
-		 -->
-		 <listener class-name="com.supplycopia.report.ExtentReportListener"></listener>
-		<listener class-name="com.supplycopia.listeners.AnnotationTransformer"></listener> 
+	<listeners>
+		<!-- <listener class-name="com.supplycopia.listeners.AutoTestListener"></listener> 
+			<listener class-name="com.supplycopia.listeners.RetryListener"></listener> -->
+		<listener
+			class-name="com.supplycopia.report.ExtentReportListener"></listener>
+		<listener
+			class-name="com.supplycopia.listeners.AnnotationTransformer"></listener>
 	</listeners>
-</suite> 
+</suite>

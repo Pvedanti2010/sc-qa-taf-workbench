@@ -5,20 +5,34 @@
     <listener class-name="com.supplycopia.report.ExtentReportListener"/>
     <listener class-name="com.supplycopia.listeners.AnnotationTransformer"/>
   </listeners>
-  <test thread-count="5" name="sanitytest(failed)">
+  <test thread-count="5" name="regressiontest(failed)">
     <groups>
       <run>
         <include name="Regression"/>
       </run>
     </groups>
     <classes>
-      <class name="com.supplycopia.bulkupload.dataattribute.ProductPrices">
+      <class name="com.supplycopia.bulkupload.mastermanagement.CountryAccountManagement">
         <methods>
-          <include name="ProductPriceTest"/>
           <include name="getResult"/>
+          <include name="CountryAccountManagementTest"/>
           <include name="testName"/>
         </methods>
-      </class> <!-- com.supplycopia.bulkupload.dataattribute.ProductPrices -->
+      </class> <!-- com.supplycopia.bulkupload.mastermanagement.CountryAccountManagement -->
+      <class name="com.supplycopia.bulkupload.mastermanagement.ProductManufactureMasterManagement">
+        <methods>
+          <include name="getResult"/>
+          <include name="testName"/>
+          <include name="ProductManufactureMasterManagementTest"/>
+        </methods>
+      </class> <!-- com.supplycopia.bulkupload.mastermanagement.ProductManufactureMasterManagement -->
+      <class name="com.supplycopia.bulkupload.mastermanagement.ContractSupplierMasterManagement">
+        <methods>
+          <include name="getResult"/>
+          <include name="ContractSupplierMasterManagementTest"/>
+          <include name="testName"/>
+        </methods>
+      </class> <!-- com.supplycopia.bulkupload.mastermanagement.ContractSupplierMasterManagement -->
     </classes>
-  </test> <!-- sanitytest(failed) -->
+  </test> <!-- regressiontest(failed) -->
 </suite> <!-- Failed suite [sanity-testsuite] -->

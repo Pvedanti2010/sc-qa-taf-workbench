@@ -13,6 +13,7 @@ import com.supplycopia.workbench.pages.LoginPage;
 
 public class CategoryMaster extends BaseTest{
 	@Test(groups = {"bulkupload" ,"Sanity","Regression"})
+
 	@RetryCountIfFailed(2)
 
 	public void CategoryMasterTest() throws Throwable {
@@ -44,9 +45,6 @@ public class CategoryMaster extends BaseTest{
 		confirmUpdate().
 		validateSuccessMessage();
 		
-		
-	
-
 	}
 
 }

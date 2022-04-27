@@ -133,7 +133,7 @@ public class ItemMaster extends BasePage {
 	 * @return
 	 */
 	public ItemMaster clickExportBtn() {
-		ui_IsElementDisplay(ui_waitForElementToDisplay(export_btn, Pause.LOW));			
+		ui_IsElementDisplay(ui_waitForElementToDisplay(export_btn, Pause.LOW));	
 		ui_click(export_btn, "ExportButton");
 		return this;
 	}	
@@ -154,8 +154,10 @@ public class ItemMaster extends BasePage {
 		return this;
 	}	
 
+
 	public ItemMaster clickColumnDropDown() {
-		ui_IsElementDisplay(ui_waitForElementToDisplay(column_btn, Pause.LOW));		
+		ui_IsElementDisplay(ui_waitForElementToDisplay(column_btn, Pause.LOW));	
+		ui_waitForElementToDisplay(column_btn,Pause.MEDIUM);
 		ui_click(column_btn, "ClickColumnButton");	
 		return this;
 	}	
@@ -165,7 +167,7 @@ public class ItemMaster extends BasePage {
 	}		
 	public ItemMaster selectAllCheckBox() {
 		ui_wait(5);
-		ui_IsElementDisplay(ui_waitForElementToDisplay(selectAll_CheckBox, Pause.LOW));		
+		ui_IsElementDisplay(ui_waitForElementToDisplay(selectAll_CheckBox, Pause.LOW));	
 		ui_click(selectAll_CheckBox, "SelectAllchechkbox");	
 		return this;
 	}	
@@ -197,13 +199,13 @@ public class ItemMaster extends BasePage {
 	}		
 	public ItemMaster selectCategoryFromDropDown(String str) {
 		ui_wait(8);
-		ui_waitForElementToDisplay(selectCategoryDropDown, Pause.SMALL);		
+		ui_waitForElementToDisplay(selectCategoryDropDown, Pause.SMALL);
 		ui_selectValueFromDropDownByText(selectCategoryDropDown, str);		
 		ui_click(selectCategoryDropDown,"selectCategoryDropDownValue");
 		return this;
 	}
 	public ItemMaster selectSubCategoryDropDown(String str) {
-		ui_IsElementDisplay(ui_waitForElementToDisplay(selectSubCategoryDropdown, Pause.LOW));		
+		ui_IsElementDisplay(ui_waitForElementToDisplay(selectSubCategoryDropdown, Pause.LOW));
 		ui_selectValueFromDropDownByText(selectSubCategoryDropdown, str);			
 	 
 		
@@ -258,7 +260,7 @@ public class ItemMaster extends BasePage {
 		return this;
 	}
 	public ItemMaster clickfunctionallyEquivalentButton() {
-		ui_IsElementDisplay(ui_waitForElementToDisplay(functionallyEquivalent_btn, Pause.LOW));		
+		ui_IsElementDisplay(ui_waitForElementToDisplay(functionallyEquivalent_btn, Pause.LOW));	
 		ui_click(functionallyEquivalent_btn,"FunctionallyEquivalent");
 		return this;
 	}	
@@ -269,11 +271,13 @@ public class ItemMaster extends BasePage {
 	}	
 	public ItemMaster clickBulkUpdate() {
 		ui_IsElementDisplay(ui_waitForElementToDisplay(bulkUpdate_btn, Pause.V_SMALL));		
+
 		ui_click(bulkUpdate_btn,"FunctionallyEquivalent");
 		return this;
 	}
 	public ItemMaster clickBulkDelete() {
 		ui_IsElementDisplay(ui_waitForElementToDisplay(bulkDelete_btn, Pause.LOW));		
+
 		ui_click(bulkDelete_btn,"FunctionallyEquivalent");
 		return this;
 	}
@@ -314,7 +318,7 @@ public class ItemMaster extends BasePage {
 		return this;
 	}
 	public ItemMaster selectBulkUpdatDropdown() {
-		ui_IsElementDisplay(ui_waitForElementToDisplay(bulkUpdatDropdownOption, Pause.V_SMALL));		
+		ui_waitForElementToDisplay(bulkUpdatDropdownOption,Pause.MEDIUM);
 		ui_click(bulkUpdatDropdownOption,"bulkUpdatDropdownOption");
 		return this;
 	}	
@@ -479,7 +483,8 @@ public class ItemMaster extends BasePage {
 	}
 
 	public ItemMaster validateColumnPresent(String choice,boolean value) {
-		ui_IsElementDisplay(ui_waitForElementToDisplay(productPricetableIdentifier, Pause.MEDIUM));		
+
+		ui_waitForElementToDisplay(productPricetableIdentifier, Pause.HIGH);
 		switch(choice) {
 		case " Product Description ":Assert.assertEquals(ui_IsElementPresent(productDescHeader,"10"), value);
 		break;

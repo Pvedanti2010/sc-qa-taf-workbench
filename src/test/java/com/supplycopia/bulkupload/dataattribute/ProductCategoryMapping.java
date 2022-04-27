@@ -11,8 +11,10 @@ import com.supplycopia.workbench.pages.LoginPage;
  *
  */
 
+
 public class ProductCategoryMapping extends BaseTest{
 	@Test(groups = {"bulkupload" ,"Regression"})
+
 	@RetryCountIfFailed(2)
 	public void ProductCategoryMappingTest() throws Throwable {
 

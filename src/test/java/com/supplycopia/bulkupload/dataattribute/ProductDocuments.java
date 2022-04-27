@@ -12,7 +12,7 @@ import com.supplycopia.workbench.pages.LoginPage;
  */
 
 public class ProductDocuments extends BaseTest{
-	@Test(groups = {"bulkupload" ,"sanity","Regresion"})
+	@Test(groups = {"bulkupload" ,"Sanity","Regresion"})
 	@RetryCountIfFailed(2)
 	public void ProductsDocumentTest() throws Throwable {
 
