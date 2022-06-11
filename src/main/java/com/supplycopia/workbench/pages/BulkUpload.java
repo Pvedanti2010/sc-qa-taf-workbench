@@ -1,7 +1,10 @@
 package com.supplycopia.workbench.pages;
 
 
+
 import java.util.List;
+
+
 import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.support.FindBy;
@@ -285,7 +288,6 @@ public class BulkUpload extends BasePage {
 				String txt = prdtName.get(i).getAttribute("value");
 				System.out.println("text--" + txt);
 				if (txt.contains(productNumber)) {
-
 					text = txt;
 					break;
 				}
@@ -348,7 +350,7 @@ public class BulkUpload extends BasePage {
 		// TODO Auto-generated method stub
 		//ui_wait(2);
 		ui_clickHoldAndDrop(ui_getElementWithXpath(String.format(ListDocumentItems, fromRowItem)),
-				ui_getElementWithXpath(String.format(ListToFile, toRowItem)));
+		ui_getElementWithXpath(String.format(ListToFile, toRowItem)));
 		return this;
 	}	
 	public BulkUpload deleteValidationErrorFileToCrossIcon() {
@@ -381,8 +383,22 @@ public class BulkUpload extends BasePage {
 
 		return this;
 	}
+	
 
-}
+	}
+	
+	
+
+		
+	
+		
+	
+		
+
+
+
+
+
 
 
 

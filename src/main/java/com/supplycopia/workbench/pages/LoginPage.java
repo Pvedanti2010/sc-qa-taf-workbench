@@ -18,7 +18,7 @@ public class LoginPage extends BasePage {
 	@FindBy(name = "password")
 	WebElement password_txt;
 	
-	@FindBy(xpath = "//input[@value='Next']" )
+	@FindBy(xpath = "//button[@type=\"submit\" and contains(.,'Next')]" )
 	WebElement next_btn;
 
 	@FindBy(xpath = "/html/head/title[contains(text(),'Making Healthcare Affordable')]" )

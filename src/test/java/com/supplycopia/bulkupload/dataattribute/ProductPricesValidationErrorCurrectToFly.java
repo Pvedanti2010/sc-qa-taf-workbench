@@ -24,11 +24,12 @@ public class ProductPricesValidationErrorCurrectToFly extends BaseTest{
 		validatePageLoad().
 		navigateToBulkUpload().
 		validatePageLoad().
-		selectDataType("Upload Data Attributes").
-		selectCustomeSet("Products Prices").
+		selectDataType(_session.get_data().get("DataType")).
+		selectCustomeSet(_session.get_data().get("CustomeSet")).
 		clickUpload().
 		clickProceedToUpload().
-		uploadFromComputer("Product_Prices_Fly.xlsx").
+		//readexcel().
+		uploadFromComputer(_session.get_data().get("ImportSheetName")).
 		clickImportFile().
 		validateUploadSuccessMessage().
 		dragHeaderWithName("Product Reference No", "Product Ref No").
@@ -43,14 +44,14 @@ public class ProductPricesValidationErrorCurrectToFly extends BaseTest{
 		dragHeaderWithName("Pack Price", "Pack Price").
 		dragHeaderWithName("Pack Price USD", "Pack Price USD").
 		proceedToReviewAndEdit().
-		checktotalRecordsOnReviewAndEdit("50").
-		validateProductNumber("Prod RefAAnkit -001").
+		checktotalRecordsOnReviewAndEdit(_session.get_data().get("TotalRecords")).
+		//validateProductNumber("Prod RefAAnkit -001").
 		insertValueinValidationErrorPriceTable("Co","ind","Acc","Sup",0).
-		checkValidationErrorsOnReviewAndEdit("23").
-		checktotalRecordsOnReviewAndEdit("50").
+		checkValidationErrorsOnReviewAndEdit(_session.get_data().get("ValidationErrors")).
+		checktotalRecordsOnReviewAndEdit(_session.get_data().get("TotalRecords")).
 		proceedToUpdate().
-		checkValidationErrorsOnUpdatePage("23").
-		checktotalRecordsOnUpdatePage("50").
+		checkValidationErrorsOnUpdatePage(_session.get_data().get("ValidationErrors")).
+		checktotalRecordsOnUpdatePage(_session.get_data().get("TotalRecords")).
 		saveAndUpdate().
 		confirmUpdate().validateSuccessMessage();
 
